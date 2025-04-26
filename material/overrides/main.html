@@ -11,7 +11,7 @@
       </span>
       <strong>LinkedIn</strong>
     </a>
-    <button id="close-announcement" class="close-button" aria-label="Close">&times;</button>
+      <button id="close-announcement" class="close-button" aria-label="Close" onclick="document.getElementById('announcement').style.display='none'">&times;</button>
   </div>
 {% endblock %}
 {% block scripts %}
@@ -19,11 +19,19 @@
   <script src="{{ 'assets/javascripts/custom.4e50d00f.min.js' | url }}"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var closeBtn = document.getElementById('close-announcement');
       var announcement = document.getElementById('announcement');
-      closeBtn.addEventListener('click', function() {
-        announcement.style.display = 'none';
-      });
+      // Hide if previously closed
+      if (localStorage.getItem('announcementClosed') === 'true') {
+        if (announcement) { announcement.style.display = 'none'; }
+      }
+      var closeBtn = document.getElementById('close-announcement');
+      if (closeBtn && announcement) {
+        closeBtn.addEventListener('click', function() {
+          announcement.style.display = 'none';
+          localStorage.setItem('announcementClosed', 'true');
+        });
+      }
     });
   </script>
+
 {% endblock %}

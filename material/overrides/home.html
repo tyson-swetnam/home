@@ -1,95 +1,157 @@
 {% extends "main.html" %}
 
-{% block tabs %}
+{% block extrahead %}
   {{ super() }}
   <style>
-    .md-header { position: initial; }
-    .md-main__inner { margin: 0; }
-    .md-content { display: none; }
-    @media screen and (min-width: 60em) { .md-sidebar--secondary { display: none; } }
-    @media screen and (min-width: 76.25em) { .md-sidebar--primary { display: none; } }
+    /* Hide default sidebars */
+    @media screen and (min-width: 60em) { .md-sidebar--secondary, .md-sidebar--primary { display: none; } }
+
+    /* Hero section */
+      .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px 20px;
+        background-image: url("{{ 'assets/oldmain.jpg' | url }}");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,0.7);
+        z-index: 0;
+      }
+      .hero > * {
+        position: relative;
+        z-index: 1;
+      }
+    .hero-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0.2em 0;
+    }
+    .hero .title {
+      font-size: 1.25rem;
+      color: #555;
+      margin: 0.1em 0;
+    }
+
+    /* About section */
+    .about {
+      max-width: 800px;
+      margin: 40px auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Card grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 0 20px;
+    }
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      width: 300px;
-      margin: 10px;
-      padding: 16px;
-      background-color: white;
+      background-color: #fff;
       border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
       text-align: center;
+      transition: box-shadow 0.3s ease;
     }
     .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
     .card img {
-      border-radius: 5px 5px 0 0;
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
     }
     .card-title {
-      font-size: 18px;
+      font-size: 1.1rem;
       font-weight: bold;
       margin: 10px 0;
+      color: #333;
     }
     .card-description {
-      font-size: 14px;
-      color: gray;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0 10px 15px;
     }
-    .card a {
-      color: #007BFF;
+
+    /* Buttons */
+    .btn-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff !important;
+      border-radius: 4px;
       text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
-    .card a:hover {
-      text-decoration: underline;
-    }
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    .btn:hover {
+      background-color: #0056b3;
     }
   </style>
-  <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="card-container">
-        <a href="/current_projects">
-          <div class="card">
-            <img src="blog/assets/tacc_tyson.jpeg" alt="Research">
-            <div class="card-title">Research</div>
-            <div class="card-description">Explore current and past projects, publications, and grants.</div>
-          </div>
-        </a>
-        <a href="/teaching">
-          <div class="card">
-            <img src="blog/assets/opendendro_class.jpg" alt="Teaching">
-            <div class="card-title">Teaching</div>
-            <div class="card-description">Discover courses, mentoring, and advising activities.</div>
-          </div>
-        </a>
-        <a href="/data">
-          <div class="card">
-            <img src="blog/assets/b2_group.jpg" alt="Open Science">
-            <div class="card-title">Open Science</div>
-           <div class="card-description">Access datasets, code, and open science initiatives.</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section>
-    <a href="/blog">
-      <div class="md-grid md-typeset">
-        <div class="card-container">
-          <div class="card">
-            <img src="blog/assets/euro_copenhagen.jpg" alt="Research">
-            <div class="card-title">Blog</div>
-          <div class="card-description">Musings and work travelogue</div>
-      </div>
-    </a>
-    </div>
-  </div>
-  </section>
 {% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <img class="hero-photo" src="{{ 'assets/tyson_profile.webp' | url }}" alt="Tyson Swetnam" />
+    <h1>Tyson L. Swetnam, PhD</h1>
+    <p class="title">Research Associate Professor, Geoinformatics</p>
+    <p class="title">Director, Open Science Initiatives</p>
+  </section>
+
+  <!-- Navigation Cards -->
+  <section class="card-grid">
+    <a href="/current_projects" class="card">
+      
+      <div class="card-title">Research</div>
+      <div class="card-description">Current and past projects, publications, and grants.</div>
+    </a>
+    <a href="/teaching" class="card">
+      
+      <div class="card-title">Teaching</div>
+      <div class="card-description">Courses, mentoring, and advising activities.</div>
+    </a>
+    <a href="/publications" class="card">
+      
+      <div class="card-title">Publications</div>
+      <div class="card-description">Peer-reviewed articles and conference proceedings.</div>
+    </a>
+    <a href="/blog" class="card">
+      
+      <div class="card-title">Blog</div>
+      <div class="card-description">Thoughts, insights, and travelogue.</div>
+    </a>
+  </section>
+
+{% endblock %}
+
 {% block footer %}{% endblock %}

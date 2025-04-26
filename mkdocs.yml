@@ -74,6 +74,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
   favicon: 'assets/ua.ico'
   logo: 'assets/ua.png'
 
