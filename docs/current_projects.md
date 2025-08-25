@@ -18,7 +18,7 @@ I am the site lead for CyVerse and University of Arizona on the [NCEMS](https://
 
 I am co-Principal Investigator of CyVerse and lead the science team. 
 
-### [Environmental Data Science Innovation and Inclusion Lab (ESIIL)](https://esiil.org)
+### [Environmental Data Science Innovation and Impact Lab (ESIIL)](https://esiil.org)
 
 [![NSF-2153040](https://img.shields.io/badge/NSF-2153040-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2153040)
 
