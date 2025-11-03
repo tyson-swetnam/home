@@ -6,7 +6,9 @@ I have served as Principal Investigator (PI) and co-Principal Investigator (co-P
 
 :material-biohazard: :material-quadcopter: :material-leaf: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r: :material-cloud:
 
-I am co-lead of the 30-year old Superfund DUST Center Data Management Core, supporting long term research from the National Institutes of Health.
+[![NIH-P42ES004940](https://img.shields.io/badge/NIH-P42ES004940-green.svg)](https://tools.niehs.nih.gov/srp/programs/Program_detail.cfm?Project_ID=P42ES004940)
+
+I am co-lead of the 30-year old Superfund DUST Center Data Management Core, supporting long term research from the National Institute of Environmental Health Sciences.
 
 ### [National Synthesis Center for Emergence in the Molecular and Cellular Sciences](https://ncems.psu.edu/)
 
