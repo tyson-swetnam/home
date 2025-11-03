@@ -2,6 +2,12 @@ I have served as Principal Investigator (PI) and co-Principal Investigator (co-P
 
 [:material-map-legend: emoji key](#emoji-key)
 
+### [DUST Superfund Research Center (Data Management Core)](https://superfund.arizona.edu/cores/data-management-and-analysis-core)
+
+:material-biohazard: :material-quadcopter: :material-leaf: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r: :material-cloud:
+
+I am co-lead of the 30-year old Superfund DUST Center Data Management Core, supporting long term research from the National Institutes of Health.
+
 ### [National Synthesis Center for Emergence in the Molecular and Cellular Sciences](https://ncems.psu.edu/)
 
 :material-database: :material-dna: :material-family-tree: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r: :material-cloud:
@@ -100,3 +106,4 @@ Assessing the Climate Change Mitigation Potential of Diverse Vegetation Types in
 | :material-cow: | cattle management |
 | :material-horse: | range management |
 | :material-bug: | entomology |
+| :material-biohazard: | superfund |
