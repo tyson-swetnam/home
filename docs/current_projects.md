@@ -26,14 +26,6 @@ I am co-Principal Investigator of CyVerse and lead the science team.
 
 I am the site lead for CyVerse and University of Arizona on the [ESIIL](https://esiil.org) Synthesis Center at the University of Colorado Boulder.
 
-### [Open Dendro](https://opendendro.github.io/opendendro)
-
-[![NSF-2054514](https://img.shields.io/badge/NSF-2054514-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054514) [![NSF-2054515](https://img.shields.io/badge/NSF-2054515-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054515) [![NSF-2054516](https://img.shields.io/badge/NSF-2054516-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054516)
-
-:material-weather-snowy-rainy: :material-pine-tree-fire: :material-forest: :material-leaf: :material-github: :material-docker: :material-linux: :material-language-python: :material-language-r:
-
-I am co-PI on a NSF collaborative research project to refactor dendrochronological software written in Fortran, C, and R into Python, and to ensure reproducibility and community engagement.
-
 ### [Open Forest Observatory](https://openforestobservatory.org/)
 
 [![NSF-2152671](https://img.shields.io/badge/NSF-2152671-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152671) [![NSF-2152672](https://img.shields.io/badge/NSF-2152672-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152672) [![NSF-2152673](https://img.shields.io/badge/NSF-2152673-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152673)
@@ -50,23 +42,7 @@ I am PI on a NSF collaborative research project to support reproducible research
 
 :material-weather-snowy-rainy: :fontawesome-solid-mountain: :material-graph: :material-github: :material-docker: :material-language-python:
 
-I am senior personnel, assisting on a new NSF Convergence Accelerator in Machine Learning with sub-surface hydrological research.
-
-### [TRIPODS-X:VIS](https://lemon-labs.github.io/)
-
-[![NSF-1839307](https://img.shields.io/badge/NSF-1839307-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1839307)
-
-:material-handshake: :material-open-source-initiative: 
-
-I am senior personnel, assisting on a community conversation about collaboration in data science.
-
-### [NIFA Genome2Fields](https://www.genomes2fields.org/home/)
-
-[![NIFA-1022368](https://img.shields.io/badge/NIFA-1022368-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1022368-high-intensity-phenotyping-sitesa-multi-scale-multi-modal-sensing-and-sense-making-cyber-ecosystem-for-genomes-to-fields.htm)
-
-:material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
-
-I am senior personnel on [Genome 2 Fields: High Intensity Phenotyping at Scale (HIPS)](https://www.genomes2fields.org/funded-projects/#high-intensity-phenotyping-sites) project with Dr. Eric Lyons at Arizona, in collaboration with Iowa State University.
+I am senior personnel, assisting on the NSF Convergence Accelerator in Machine Learning with sub-surface hydrological research.
 
 ### NIFA FACTS & [AIIRA](https://aiira.iastate.edu/) 
 
