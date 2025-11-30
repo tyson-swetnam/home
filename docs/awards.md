@@ -7,7 +7,7 @@
 | $122,228 | Wildland Urban Interface (WUI) Fire Fuel Mitigation | [![ABOR-TRIF](https://img.shields.io/badge/ABOR-TRIF-red.svg)](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf){target=_blank} | 2022-11-18 | 2026-1-31 | [:fontawesome-regular-file-pdf:](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf){target=_blank} | Principal Investigator |
 | $1,457,987 | Environmental Data Science Innovation and Impact Lab (ESIIL) | [![DBI-2153040](https://img.shields.io/badge/NSF-2153040-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2153040){target=_blank} | 2022-08-01 | 2027-07-31 | [website](https://esiil.org){target=_blank} | Sub Award lead |
 | $45,844 | Collaborative Research: High-Resolution Aerial Forest Mapping Infrastructure and Database to Support Forest and Disturbance Ecology Research | [![NSF-2152673](https://img.shields.io/badge/NSF-2152673-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152673){target=_blank} |  2022-09-01 | 2027-08-31 | [website](https://openforestobservatory.org){target=_blank} | Principal Investigator |
-| $15,199,324 | CyVerse: Cyberinfrastructure for the Life Sciences | [![NSF-1743442](https://img.shields.io/badge/NSF-1743442-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743442){target=_blank} | 2018-08-01 | 2023-07-31 | [website](https://cyverse.org){target=_blank} | Co-Principal Investigator |
+
 
 
 
@@ -15,6 +15,7 @@
 
 | Amount | Name | Agency | Start Date | End Date | Info | Role |
 |--------|------|--------|------------|----------|------|------|
+| $15,199,324 | CyVerse: Cyberinfrastructure for the Life Sciences | [![NSF-1743442](https://img.shields.io/badge/NSF-1743442-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743442){target=_blank} | 2018-08-01 | 2025-07-31 | [website](https://cyverse.org){target=_blank} | Co-Principal Investigator |
 | $5,000,000 | Track D: Hidden Water and Extreme Events: HydroGEN, A Physically Rigorous Machine Learning Platform for Hydrologic Scenario Generation | [![NSF-2134892](https://img.shields.io/badge/NSF-2134892-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2134892){target=_blank} | 2021-10-01 | 2023-09-30 | | Senior Personnel | 
 | $60,631 | Collaborative Research: CyberTraining: CIU: Towards Distributed and Scalable Personalized Cyber-Training | [![NSF-1829701](https://img.shields.io/badge/NSF-1829701-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829701){target=_blank} | 2018-09-01 | 2023-08-31 | | Principal Investigator |
 | $483,022 | Collaborative Research: Converging Genomics, Phenomics, and Environments Using Interpretable Machine Learning Models |  [![NSF-1940062](https://img.shields.io/badge/NSF-1940062-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1940062){target=_blank} | 2019-09-18 | 2023-07-31 | [website](https://genophenoenvo.github.io){target=_blank} | Co-Principal Investigator |
