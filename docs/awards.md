@@ -2,6 +2,7 @@
 
 | Amount | Name | Agency | Start Date | End Date | Info | Role |
 |--------|------|--------|------------|----------|------|------|
+| $1,300,000 | DUST Center: Superfund Research | [![NIH-P42ES004940](https://img.shields.io/badge/NIH-P42ES004940-green.svg)](https://tools.niehs.nih.gov/srp/programs/Program_detail.cfm?Project_ID=P42ES004940) | 1990 | 2030 | [website](https://superfund.arizona.edu/cores/data-management-and-analysis-core) | Senior Personnel |
 | $1,930,000  | National Synthesis Center for Emergence in Molecular & Cellular Sciences | [![DBI-2335029)](https://img.shields.io/badge/NSF-2335029-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2335029){target=_blank} | 2024-05-01 | 2029-04-30 | [website](https://ncems.psu.edu){target=_blank} | Sub Awared lead }
 | $122,228 | Wildland Urban Interface (WUI) Fire Fuel Mitigation | [![ABOR-TRIF](https://img.shields.io/badge/ABOR-TRIF-red.svg)](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf){target=_blank} | 2022-11-18 | 2026-1-31 | [:fontawesome-regular-file-pdf:](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf){target=_blank} | Principal Investigator |
 | $1,457,987 | Environmental Data Science Innovation and Impact Lab (ESIIL) | [![DBI-2153040](https://img.shields.io/badge/NSF-2153040-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2153040){target=_blank} | 2022-08-01 | 2027-07-31 | [website](https://esiil.org){target=_blank} | Sub Award lead |
