@@ -6,10 +6,11 @@ I co-advise graduate students at University of Arizona, and at other universitie
 
 # Current
 
-* 2025 [Bitan Mani, MBA/MIS](https://www.linkedin.com/in/bitan-mani/){target=_blank} - Eller College of Management
+* 2025 [Eli Schillinger, BS](https://www.linkedin.com/in/elischillinger/){target=_blank} - Computer Science
   
 # Past
 
+* 2025 [Bitan Mani, MBA/MIS](https://www.linkedin.com/in/bitan-mani/){target=_blank} - Eller College of Management
 * 2024 [Naman Jain, MSBA](https://www.linkedin.com/in/naman-jain-60b805179/) - Eller College of Management
 * 2024 [Dhanyapriya Somasundaram, MS](https://www.linkedin.com/in/dhanyapriya-somasundaram/){target=_blank} - Data Science 
 * 2024 [Ifeoluwa Ale, BS](https://www.linkedin.com/in/ifeoluwa-ale-6733b61a9/){target=_blank} - Computer Science
