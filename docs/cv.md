@@ -12,6 +12,6 @@ That experience led me to a master's degree working with Dr. Peter Brown and his
 
 Later, during my Ph.D. program I worked for the US Department of Agriculture in the Coronado National Forest Supervisor's Office (2008-2012) as a Fire Management Specialist. My doctoral research was inderdisciplinary around [restoration ecology](https://nature.arizona.edu/donald-falk){target=_blank}, GIS and remote sensing in [watershed management and ecohydrology](https://nature.arizona.edu/graduate/watershed-management-ecohydrology){target=_blank}. 
 
-My [dissertation :fontawesome-solid-file-pdf:](https://www.fs.usda.gov/research/treesearch/download/48047.pdf){target=_blank} relied on remote sensing and field plot data to analyze disturbance regimes and [carbon budgets of western US forest ecosystems](http://openknowledge.nau.edu/id/eprint/2293/){target=_blank}. 
+My [dissertation :fontawesome-solid-file-pdf:](https://research.fs.usda.gov/treesearch/48047){target=_blank} relied on remote sensing and field plot data to analyze disturbance regimes and [carbon budgets of western US forest ecosystems](http://openknowledge.nau.edu/id/eprint/2293/){target=_blank}. 
 
 Working with large remotely sensed data sets led me toward my current career in data science and geoinformatics.
