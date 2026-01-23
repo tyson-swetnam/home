@@ -1,0 +1,25 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "[![pages-build-deployment](https://github.com/tyson-swetnam/home/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tyson-swetnam/home/actions/workflows/pages/pages-build-deployment)",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vite": "^7.0.4"
+  }
+}

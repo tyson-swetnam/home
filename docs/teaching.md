@@ -8,19 +8,19 @@ I am available for guest lecturing on remote sensing with sUAS, lidar, structure
 
 ### Professional Training
 
-M-580 Fire in Ecosystem Management
+[M-580 Fire in Ecosystem Management](https://tyson-swetnam.github.io/awesome-fire-science){target=_blank}
 
 ## Workshops
 
-### Data Science Institute
+### Artificial Intelligence
 
-[GPT-101: Introduction to Large Language Models](https://ua-data7.github.io/introllms){target=_blank}
+[GPT-101: Introduction to Large Language Models](https://tyson-swetnam.github.io/intro-gpt){target=_blank}
 
 ### CyVerse Learning Center
 
-[Foundational Open Science Skills](https://learning.cyverse.org/projects/cyverse-foss/en/latest/index.html){target=_blank}
+[Foundational Open Science Skills](https://foss.cyverse.org){target=_blank}
 
-[Container Camp Basics & Advanced](https://learning.cyverse.org/projects/cyverse-container-camp/en/latest/index.html){target=_blank}
+[Container Camp Basics & Advanced](https://cc.cyverse.org){target=_blank}
 
 ### Geoinformatics
 

@@ -6,8 +6,8 @@ I co-advise graduate students at University of Arizona, and at other universitie
 
 # Current
 
-* 2025 [Eli Schillinger, BS](https://www.linkedin.com/in/elischillinger/){target=_blank} - Computer Science
-  
+* 2025 [Eli Schillinger](https://github.com/elischillinger){target=_blank} - Computer Science
+
 # Past
 
 * 2025 [Bitan Mani, MBA/MIS](https://www.linkedin.com/in/bitan-mani/){target=_blank} - Eller College of Management
