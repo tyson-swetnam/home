@@ -2,10 +2,9 @@ Most of my software projects are maintained through my personal GitHub username 
 
 All of these projects are licensed as Open Source 🔓 🆓 :material-open-source-initiative: :fontawesome-brands-creative-commons:. Any projects which I have built upon retain their original licenses.
 
-<figure markdown> 
-    ![python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg){ width="100" }
-    <figcaption>Python Based Projects</figcaption>
-</figure>
+### Python Based Projects
+
+![python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg){ width="100" }
     
 ## [Porder](https://github.com/tyson-swetnam/porder)
 
@@ -21,10 +20,9 @@ See the [Open Dendro project pages](https://opendendro.github.io/opendendro)
 
 See the [Rillgen2D project pages](https://tyson-swetnam.github.io/rillgen2d)
 
-<figure markdown> 
-    ![R](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png){ width="100" }
-    <figcaption>R Based Projects</figcaption>
-</figure>
+### R Based Projects
+
+![R](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png){ width="100" }
 
 ## NEON API Shiny App
 
@@ -32,10 +30,9 @@ Created by my undergraduate student [Daniel Lee](https://github.com/danielshulee
 
 See the [NEON Shiny App GitHub repository](https://github.com/cyverse-gis/neon-shiny-browser)
 
-<figure markdown> 
-    ![Docker](https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg){ width="200" }
-    <figcaption>Containers</figcaption>
-</figure>
+### Containers
+
+![Docker](https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg){ width="200" }
 
 See the [CyVerse-VICE GitHub Organization](https://github.com/cyverse-vice/) for featured containers that I maintain
 
@@ -53,10 +50,9 @@ Built atop the [Rocker Project RStudio Docker](https://www.rocker-project.org/),
 
 Built with Ubuntu and NVIDIA base drivers for remote GPU acceleration of large data sets, i.e. point clouds. 
 
-<figure markdown> 
-    ![java](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/234px-Java_programming_language_logo.svg.png){ width="100" }
-    <figcaption>Java Based Projects</figcaption>
-</figure>
+### Java Based Projects
+
+![java](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/234px-Java_programming_language_logo.svg.png){ width="100" }
 
 ### [Calliope](https://cyverse-gis.github.io/calliope/) 
 

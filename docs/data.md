@@ -36,4 +36,4 @@ Before transitioning to GitHub I used an Atlassian Confluence Wiki hosted by CyV
 
 My second professional website is archived [here](https://tyson-swetnam.github.io/old_website){target=_blank}
 
-My first professional website is archived [here](https://sites.google.com/a/email.arizona.edu/tyson-swetnam/){target=_blank}
+My first professional website is archived [here](https://web.archive.org/web/20201022014455/https://sites.google.com/a/email.arizona.edu/tyson-swetnam/code){target=_blank}
