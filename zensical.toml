@@ -1,0 +1,179 @@
+[project]
+# Site metadata
+site_name = "T.L. Swetnam"
+site_description = "professional pages for T.L. Swetnam"
+site_author = "Tyson L Swetnam"
+site_url = "https://tysonswetnam.com"
+copyright = "Copyright &copy; 2019-2025 Tyson Lee Swetnam"
+
+# Repository
+repo_name = "tyson-swetnam"
+repo_url = "https://github.com/tyson-swetnam/home"
+edit_uri = "edit/main/docs/"
+
+# Navigation
+nav = [
+  {"Home" = "index.md"},
+  {"Blog" = [
+    {"GPT-101 Revisited (2025-01-14)" = "blog/posts/2025-01-14-gpt101.md"},
+    {"A Year in Review (2024-10-14)" = "blog/posts/2024-10-14-year-in-review.md"},
+    {"AI for Agriculture (2023-04-17)" = "blog/posts/2023-04-17-ai4ag.md"},
+    {"Meet AI Assistant (2023-04-10)" = "blog/posts/2023-04-10-ai.md"},
+    {"Misc" = "blog/misc.md"}
+  ]},
+  {"Research" = [
+    {"Current" = "current_projects.md"},
+    {"Previous" = "previous_projects.md"},
+    {"Grants" = "awards.md"},
+    {"Publications" = "publications.md"},
+    {"ePublications" = "epubs.md"},
+    {"Talks" = "talks.md"},
+    {"Groups & Societies" = "groups.md"}
+  ]},
+  {"Teaching" = [
+    {"Classes" = "teaching.md"},
+    {"Advising & Mentoring" = "mentoring.md"}
+  ]},
+  {"Opportunities" = "jobs.md"},
+  {"Open Science" = [
+    {"Open Data Sets" = "data.md"},
+    {"Open Code" = "code.md"}
+  ]},
+  {"CV" = "cv.md"}
+]
+
+# Theme configuration
+[project.theme]
+variant = "modern"
+custom_dir = "material/overrides"
+language = "en"
+favicon = "assets/ua.ico"
+logo = "assets/ua.png"
+
+# Theme features
+features = [
+  "navigation.instant",
+  "navigation.tracking",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.indexes",
+  "navigation.top",
+  "search.highlight",
+  "search.share",
+  "search.suggest"
+]
+
+# Font configuration
+[project.theme.font]
+text = "Montserrat"
+code = "Regular"
+
+# Color palette configuration
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "home"
+toggle = { icon = "material/brightness-7", name = "Switch to dark mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle = { icon = "material/brightness-4", name = "Switch to system preference" }
+
+# Social links
+[[project.extra.social]]
+icon = "fontawesome/brands/orcid"
+link = "https://orcid.org/0000-0002-6639-7181"
+
+[[project.extra.social]]
+icon = "simple/googlescholar"
+link = "https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/tyson-swetnam/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/twitter"
+link = "https://twitter.com/tswetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/tyson-swetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/docker"
+link = "https://hub.docker.com/u/tswetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ"
+
+# Analytics
+[project.extra.analytics]
+provider = "google"
+property = "G-NYETZFD8DN"
+
+# Custom CSS and JavaScript
+extra_css = ["stylesheets/extra.css"]
+
+# Markdown extensions
+markdown_extensions = [
+  "abbr",
+  "admonition",
+  "attr_list",
+  "def_list",
+  "footnotes",
+  "md_in_html",
+  "tables",
+  "pymdownx.caret",
+  "pymdownx.details",
+  "pymdownx.inlinehilite",
+  "pymdownx.keys",
+  "pymdownx.mark",
+  "pymdownx.smartsymbols",
+  "pymdownx.tilde"
+]
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.attr_list]
+
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.tables]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.pymdownx.betterem]
+smart_enable = "all"
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
