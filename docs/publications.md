@@ -2,6 +2,16 @@
 
 [:material-map-legend: emoji key](#emoji-key)
 
+
+**41. The ARID Scoping Study Final Report**
+*ORNL DACC*
+
+:material-handshake: :material-airplane: :material-tower-fire: :material-file-tree: :material-database: :material-weather-partly-snowy-rainy: :fontawesome-solid-wind: :material-pine-tree-fire: :material-cactus: :material-grass: :material-bug: :material-dna: :material-graph-outline: :material-creative-commons: :material-open-source-initiative: 
+
+[10.3334/ORNLDAAC/2408](https://doi.org/10.3334/ORNLDAAC/2408){target=_blank}
+
+Reed, S.C., A.F. Feldman, N.P. Hanan, D.J.P. Moore, D.S. Ojima, W.K. Smith, K. Wessels, C. Amaral, F. Babst, J. Biederman, M.E. Litvak, N. MacBean, B. Poulter, R.L. Scott, A. Babst-Kostecka, Z. Fu, J.K. Green, R.F. Kokaly, R.J. Swap, S.P. Serbin, C.J. Tucker, L. Wang, J.D. Watts, G.M. Wolfe, A. Flores, J.R. Leaf, R. Washington-Allen, K. Prentice, E. Kachergis, J. Reyes, J. Ryan, M. SanClements, H. W. Loescher, A. Leidner, T. Swetnam, and B. Cook. 2025. The ARID Scoping Study Final Report. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/2408
+
 **40. MDRepo – an open environment for data warehousing and knowledge discovery from molecular dynamics simulations**
 *Preprint in BiorXiv*
 

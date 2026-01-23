@@ -1,5 +1,30 @@
 [:material-map-legend: emoji key](#emoji-key)
 
+### [Open Dendro](https://opendendro.github.io/opendendro)
+
+[![NSF-2054514](https://img.shields.io/badge/NSF-2054514-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054514) [![NSF-2054515](https://img.shields.io/badge/NSF-2054515-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054515) [![NSF-2054516](https://img.shields.io/badge/NSF-2054516-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054516)
+
+:material-weather-snowy-rainy: :material-pine-tree-fire: :material-forest: :material-leaf: :material-github: :material-docker: :material-linux: :material-language-python: :material-language-r:
+
+I was co-PI on a NSF collaborative research project to refactor dendrochronological software written in Fortran, C, and R into Python, and to ensure reproducibility and community engagement.
+
+### [TRIPODS-X:VIS](https://lemon-labs.github.io/)
+
+[![NSF-1839307](https://img.shields.io/badge/NSF-1839307-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1839307)
+
+:material-handshake: :material-open-source-initiative: 
+
+I was senior personnel, assisting on a community conversation about collaboration in data science.
+
+### [NIFA Genome2Fields](https://www.genomes2fields.org/home/)
+
+[![NIFA-1022368](https://img.shields.io/badge/NIFA-1022368-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1022368-high-intensity-phenotyping-sitesa-multi-scale-multi-modal-sensing-and-sense-making-cyber-ecosystem-for-genomes-to-fields.htm)
+
+:material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
+
+I was senior personnel on [Genome 2 Fields: High Intensity Phenotyping at Scale (HIPS)](https://www.genomes2fields.org/funded-projects/#high-intensity-phenotyping-sites) project with Dr. Eric Lyons at Arizona, in collaboration with Iowa State University.
+
+
 ### Towards Distributed and Scalable Personalized Cyber-Training
 
 :material-handshake: :material-github: :material-docker: :material-language-python:
