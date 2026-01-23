@@ -6,6 +6,9 @@ site_author = "Tyson L Swetnam"
 site_url = "https://tysonswetnam.com"
 copyright = "Copyright &copy; 2019-2025 Tyson Lee Swetnam"
 
+# Directories
+site_dir = "site"
+
 # Repository
 repo_name = "tyson-swetnam"
 repo_url = "https://github.com/tyson-swetnam/home"

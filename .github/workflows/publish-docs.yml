@@ -47,7 +47,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build Zensical site
-        run: zensical build --output-dir site
+        run: zensical build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
