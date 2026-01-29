@@ -1,5 +1,19 @@
 [:material-map-legend: emoji key](#emoji-key)
 
+### [NIFA FACTS](https://portal.nifa.usda.gov/web/crisprojectpages/1019752-facts-a-scalable-cyber-ecosystem-for-acquisition-curation-and-analysis-of-multispectral-uav-image-data.html)
+
+[![NIFA-1019752](https://img.shields.io/badge/NIFA-1019752-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1019752-facts-a-scalable-cyber-ecosystem-for-acquisition-curation-and-analysis-of-multispectral-uav-image-data.html)
+
+:material-satellite-variant: :material-airplane: :material-quadcopter: :material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
+
+I was senior personnel on FACTS: a scalable cyber ecosystem for acquisition, curation, and analysis of multispectral UAV image data with Iowa State University.
+
+### TRIF-WEES
+
+:material-weather-snowy-rainy: :material-pine-tree-fire: :material-forest:
+
+Assessing the Climate Change Mitigation Potential of Diverse Vegetation Types in the Pinaleño Mountains, Arizona.
+
 ### [Open Dendro](https://opendendro.github.io/opendendro)
 
 [![NSF-2054514](https://img.shields.io/badge/NSF-2054514-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054514) [![NSF-2054515](https://img.shields.io/badge/NSF-2054515-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054515) [![NSF-2054516](https://img.shields.io/badge/NSF-2054516-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054516)

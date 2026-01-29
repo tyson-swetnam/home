@@ -60,19 +60,13 @@ I am senior personnel, assisting on the NSF Convergence Accelerator in Machine L
 
 I am senior personnel on the NSF CPS Frontier collaborative research project led by Iowa State University and University of Illinois Urbana-Champaign. COALESCE develops context-aware cyber-agricultural systems for individualized plant management using coordinated robotic teams, adaptive sensing, and machine learning for sustainable agriculture.
 
-### NIFA FACTS & [AIIRA](https://aiira.iastate.edu/)
+### [AIIRA: AI Institute for Resilient Agriculture](https://aiira.iastate.edu/)
 
-[![NIFA-1019752](https://img.shields.io/badge/NIFA-1019752-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1019752-facts-a-scalable-cyber-ecosystem-for-acquisition-curation-and-analysis-of-multispectral-uav-image-data.html) [![NIFA-1027030](https://img.shields.io/badge/NIFA-1027030-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1027030-ai-institute-aiira-ai-institute-for-resilient-agriculture.html)
+[![NIFA-1027030](https://img.shields.io/badge/NIFA-1027030-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1027030-ai-institute-aiira-ai-institute-for-resilient-agriculture.html)
 
 :material-satellite-variant: :material-airplane: :material-quadcopter: :material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
 
-Also with Iowa State University, I am senior personnel on FACTS: a scalable cyber ecosystem for acquisition, curation, and analysis of multispectral UAV image data. Both NIFA G2F and FACTS projects link with CyVerse to help develop an [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University. 
-
-### TRIF-WEES
-
-:material-weather-snowy-rainy: :material-pine-tree-fire: :material-forest:
-
-Assessing the Climate Change Mitigation Potential of Diverse Vegetation Types in the Pinaleño Mountains, Arizona
+I am senior personnel at the [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University, developing AI-driven digital twins for modeling plants and deploying them to increase the resiliency of agricultural systems
 
 ### :material-map-legend: Emoji Key
 
