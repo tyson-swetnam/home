@@ -52,7 +52,15 @@ I am PI on a NSF collaborative research project to support reproducible research
 
 I am senior personnel, assisting on the NSF Convergence Accelerator in Machine Learning with sub-surface hydrological research.
 
-### NIFA FACTS & [AIIRA](https://aiira.iastate.edu/) 
+### [COALESCE: COntext Aware LEarning for Sustainable CybEr-agricultural systems](https://sites.google.com/view/coalescepreview/home)
+
+[![NSF-2005506](https://img.shields.io/badge/NSF-2005506-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2005506) [![NSF-1954556](https://img.shields.io/badge/NSF-1954556-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1954556) [![NIFA-1025720](https://img.shields.io/badge/NIFA-1025720-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1025720-cps-frontier-collaborative-research-coalesce-context-aware-learning-for-sustainable-cyber-agricultural-systems.html)
+
+:material-quadcopter: :material-robot: :material-leaf: :material-graph: :material-github: :material-docker: :material-language-python:
+
+I am senior personnel on the NSF CPS Frontier collaborative research project led by Iowa State University and University of Illinois Urbana-Champaign. COALESCE develops context-aware cyber-agricultural systems for individualized plant management using coordinated robotic teams, adaptive sensing, and machine learning for sustainable agriculture.
+
+### NIFA FACTS & [AIIRA](https://aiira.iastate.edu/)
 
 [![NIFA-1019752](https://img.shields.io/badge/NIFA-1019752-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1019752-facts-a-scalable-cyber-ecosystem-for-acquisition-curation-and-analysis-of-multispectral-uav-image-data.html) [![NIFA-1027030](https://img.shields.io/badge/NIFA-1027030-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1027030-ai-institute-aiira-ai-institute-for-resilient-agriculture.html)
 
