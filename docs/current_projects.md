@@ -52,13 +52,21 @@ I am PI on a NSF collaborative research project to support reproducible research
 
 I am senior personnel, assisting on the NSF Convergence Accelerator in Machine Learning with sub-surface hydrological research.
 
+### [Jetstream-2](https://jetstream-cloud.org/)
+
+[![NSF-2005506](https://img.shields.io/badge/NSF-2005506-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2005506)
+
+:material-cloud: :material-server: :material-kubernetes: :material-docker: :material-github: :material-language-python: :material-language-r: :material-linux:
+
+I am co-PI on Jetstream-2, a NSF-funded user-friendly cloud computing system designed for interactive computing and data analysis on demand. The system provides 8 PFLOPS of computing power with GPU resources across five regional nodes including University of Arizona.
+
 ### [COALESCE: COntext Aware LEarning for Sustainable CybEr-agricultural systems](https://sites.google.com/view/coalescepreview/home)
 
-[![NSF-2005506](https://img.shields.io/badge/NSF-2005506-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2005506) [![NSF-1954556](https://img.shields.io/badge/NSF-1954556-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1954556) [![NIFA-1025720](https://img.shields.io/badge/NIFA-1025720-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1025720-cps-frontier-collaborative-research-coalesce-context-aware-learning-for-sustainable-cyber-agricultural-systems.html)
+[![NSF-1954556](https://img.shields.io/badge/NSF-1954556-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1954556) [![NIFA-1025720](https://img.shields.io/badge/NIFA-1025720-green.svg)](https://portal.nifa.usda.gov/web/crisprojectpages/1025720-cps-frontier-collaborative-research-coalesce-context-aware-learning-for-sustainable-cyber-agricultural-systems.html)
 
 :material-quadcopter: :material-robot: :material-leaf: :material-graph: :material-github: :material-docker: :material-language-python:
 
-I am senior personnel on the NSF CPS Frontier collaborative research project led by Iowa State University and University of Illinois Urbana-Champaign. COALESCE develops context-aware cyber-agricultural systems for individualized plant management using coordinated robotic teams, adaptive sensing, and machine learning for sustainable agriculture.
+I am co-PI on the NSF CPS Frontier collaborative research project led by Iowa State University and University of Illinois Urbana-Champaign. COALESCE develops context-aware cyber-agricultural systems for individualized plant management using coordinated robotic teams, adaptive sensing, and machine learning for sustainable agriculture.
 
 ### [AIIRA: AI Institute for Resilient Agriculture](https://aiira.iastate.edu/)
 
@@ -66,7 +74,7 @@ I am senior personnel on the NSF CPS Frontier collaborative research project led
 
 :material-satellite-variant: :material-airplane: :material-quadcopter: :material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
 
-I am senior personnel at the [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University, developing AI-driven digital twins for modeling plants and deploying them to increase the resiliency of agricultural systems
+I am co-PI at the [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University, developing AI-driven digital twins for modeling plants and deploying them to increase the resiliency of agricultural systems
 
 ### :material-map-legend: Emoji Key
 
