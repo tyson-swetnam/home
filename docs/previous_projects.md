@@ -14,6 +14,14 @@ I was senior personnel on FACTS: a scalable cyber ecosystem for acquisition, cur
 
 Assessing the Climate Change Mitigation Potential of Diverse Vegetation Types in the Pinaleño Mountains, Arizona.
 
+### [Wildland Urban Interface Fire Fuel Mitigation](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf)
+
+[![ABOR-TRIF](https://img.shields.io/badge/ABOR-TRIF-red.svg)](https://www.azregents.edu/sites/default/files/public/rgos/trif_proposal_fire-fuel-mitigation.pdf)
+
+:material-satellite-variant: :material-airplane: :material-quadcopter: :material-pine-tree-fire: :material-forest: :material-map: :material-map-marker-path: :material-home-group: :material-github: :material-docker: :material-language-python: :material-language-r:
+
+I was PI on a TRIF project to assess wildland-urban interface fire risks and develop fuel mitigation strategies using remote sensing and geospatial analysis.
+
 ### [Open Dendro](https://opendendro.github.io/opendendro)
 
 [![NSF-2054514](https://img.shields.io/badge/NSF-2054514-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054514) [![NSF-2054515](https://img.shields.io/badge/NSF-2054515-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054515) [![NSF-2054516](https://img.shields.io/badge/NSF-2054516-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2054516)
