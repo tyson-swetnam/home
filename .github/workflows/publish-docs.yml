@@ -1,30 +1,27 @@
-name: Publish docs via GitHub
+name: Build editorial-redesign preview
 on:
   push:
     branches:
-      - main
+      - editorial-redesign
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    if: github.event.repository.fork == false
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+          python-version: '3.12'
+      - name: Install mkdocs-material and plugins
+        run: pip install mkdocs-material mkdocs-git-revision-date-plugin mkdocstrings mkdocstrings-python-legacy pymdown-extensions
+      - name: Build site
+        run: mkdocs build --site-dir site
+      - uses: actions/upload-artifact@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: sudo apt-get install pngquant -y
-      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+          name: editorial-redesign-site
+          path: site
+          retention-days: 14
