@@ -1,0 +1,3704 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "AMNH",
+        "Site Name": "American Museum of Natural History",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97403717041016,
+          40.78127259289776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ANL",
+        "Site Name": "Argonne National Lab",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.975157,
+          41.705917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ASU",
+        "Site Name": "Arizona State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9400,
+          33.4255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BAYU",
+        "Site Name": "Baylor University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1143,
+          31.5498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BELU",
+        "Site Name": "Bellarmine University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.703713,
+          38.219681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BOSU",
+        "Site Name": "Boston University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07276,
+          42.338724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BRAN",
+        "Site Name": "Brandeis Tier 3",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.242218,
+          42.381372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BNL",
+        "Site Name": "Brookhaven National Laboratory",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.878366,
+          40.868386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "BWNU",
+        "Site Name": "Brown University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.422119,
+          41.812267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CALT",
+        "Site Name": "California Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.124281,
+          34.137987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CSUF",
+        "Site Name": "California State University Fresno",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.746857,
+          36.812927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CCO",
+        "Site Name": "CancerComputer Ottawa",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.710,
+          45.400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CCM",
+        "Site Name": "CancerComputer-Minneapolis-UEL",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.203,
+          44.970
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CCKA",
+        "Site Name": "CancerComputer-Kitchener-Ardelt",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4759616,
+          43.4235682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CUAC",
+        "Site Name": "Clarkson University ACRES Cluster",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.997738,
+          44.663422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CLUN",
+        "Site Name": "Columbia University Nevis Labs",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.872435,
+          41.027292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CORU",
+        "Site Name": "Cornell University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.49685,
+          42.449454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CUNY",
+        "Site Name": "The City University of New York",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984509,
+          40.748362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "COSE",
+        "Site Name": "Cybera Openstack Edmonton",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.7728991,
+          53.555467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "DPSC",
+        "Site Name": "Donald Danforth Plant Sciences Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.397189,
+          38.674584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "DKU",
+        "Site Name": "Duke University Tier 3",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.942304,
+          36.003111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "FNAL",
+        "Site Name": "Fermi National Accelerator Laboratory",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.242767,
+          41.85143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "FLAM",
+        "Site Name": "Florida A&M University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.284816,
+          30.428152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "FLIT",
+        "Site Name": "Florida Instite of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.61987,
+          28.077494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "FIU",
+        "Site Name": "Florida International University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.372361,
+          25.758609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "FSU",
+        "Site Name": "Florida State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.29855,
+          30.442499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "GIT",
+        "Site Name": "Georgia Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3947,
+          33.7758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "GASU",
+        "Site Name": "Georgia State University Research Computing",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.867846,
+          37.401394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "GRDP",
+        "Site Name": "Gridplexus",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85721,
+          41.080196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "HAPU",
+        "Site Name": "Hampton University PPCF",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.336344,
+          37.019576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "HARM",
+        "Site Name": "Harvard Medical School",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.104092,
+          42.335822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "HARV",
+        "Site Name": "Harvard University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.104674,
+          42.336691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PRSJ",
+        "Site Name": "University of Puerto Rico",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.076093,
+          18.427525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ILIT",
+        "Site Name": "Illinois Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.627,
+          41.8349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "IUB",
+        "Site Name": "Indiana University Bloomington",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.501091,
+          39.173557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ISU",
+        "Site Name": "Iowa State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.467174,
+          42.034759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "KSU",
+        "Site Name": "Kansas State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.58088,
+          39.186514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UKS",
+        "Site Name": "University of Kansas GPN",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.275623,
+          38.952526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "KESU",
+        "Site Name": "Kennesaw State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.581597,
+          34.0226996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "KESU",
+        "Site Name": "Kennesaw State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.581597,
+          34.0226996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LAMU",
+        "Site Name": "Lamar University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.074729,
+          30.038388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LNGU",
+        "Site Name": "Langston University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.259847,
+          35.945191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LBNL",
+        "Site Name": "Lawrence Berkeley National Lab",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3,
+          37.866825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LLNL",
+        "Site Name": "Lawrence Livermore National Lab",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.70445,
+          37.68691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LUHC",
+        "Site Name": "Lehigh University Hawk Cluster",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.378569,
+          40.609049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LSU",
+        "Site Name": "Louisiana State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.182191,
+          30.4132625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LSUH",
+        "Site Name": "Louisiana State University Health Sciences",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.083,
+          29.958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "LTU",
+        "Site Name": "Louisiana Tech University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.645398,
+          32.525499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "MIT",
+        "Site Name": "Massachusetts Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10431,
+          42.364347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "MCGU",
+        "Site Name": "McGill University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.38,
+          45.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "MISU",
+        "Site Name": "Michigan State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.79248,
+          42.603642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NERSC",
+        "Site Name": "National Energy Research Scientific Computing Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.253582,
+          37.866825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NMSU",
+        "Site Name": "New Mexico State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.747541,
+          32.278267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NYU",
+        "Site Name": "New York University ATLAS Tier 3",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.994486,
+          40.729942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NYNU",
+        "Site Name": "Niagra University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.830681,
+          43.32684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NDSU",
+        "Site Name": "North Dakota State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.802372,
+          46.897592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NEU",
+        "Site Name": "North Eastern University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08919,
+          42.33787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NILU",
+        "Site Name": "Northern Illinios University ATLAS Tier 3",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.765218,
+          41.932271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NWU",
+        "Site Name": "Northwestern University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.68809,
+          42.05408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "NSFDC",
+        "Site Name": "National Science Foundation DC",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.110817,
+          38.87972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ORNL",
+        "Site Name": "Oak Ridge National Laboratory",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.195796,
+          36.105971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "OSC",
+        "Site Name": "Ohio Supercomputer Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.042908,
+          39.999742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "OKSU",
+        "Site Name": "Oklahoma State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0723655,
+          36.1230911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ODU",
+        "Site Name": "Old Dominion University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.30770625,
+          36.8857071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PSU",
+        "Site Name": "Penn State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.86281,
+          40.806956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PASC",
+        "Site Name": "Pittsburgh Supercomputing Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.959987,
+          40.444035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PRNC",
+        "Site Name": "Princeton University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.653473,
+          40.340526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PURU",
+        "Site Name": "Purdue University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.910768,
+          40.423004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "RICE",
+        "Site Name": "Sam Houston Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.409334,
+          29.716318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "RIT",
+        "Site Name": "Rochester Institute of Technology",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.677889,
+          43.088072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "RUTG",
+        "Site Name": "Rutgers University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.464514,
+          40.522918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "SMU",
+        "Site Name": "Southern Methodist University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.783886,
+          32.846297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "STAN",
+        "Site Name": "Stanford University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.164879,
+          37.424571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "STON",
+        "Site Name": "Stony Brook University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.126116,
+          40.916269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "SUNYA",
+        "Site Name": "SUNY Albany",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.755877,
+          42.651728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "SUSQ",
+        "Site Name": "Susquehanna University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.873155,
+          40.798506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "SYRU",
+        "Site Name": "Syracuse University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1326834,
+          43.0385961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TXAM",
+        "Site Name": "Texas A&M University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.342672,
+          30.619803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TACC",
+        "Site Name": "Texas Advanced Computing Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.726038,
+          30.390170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TXTU",
+        "Site Name": "Texas Tech University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.821292,
+          33.610018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TCNJ",
+        "Site Name": "The College of New Jersey",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.790909,
+          40.259987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TOSU",
+        "Site Name": "The Ohio State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.014476,
+          40.003407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TJNAF",
+        "Site Name": "Thomas Jefferson National Accelerator Facility",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.48161,
+          37.094401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TUFT",
+        "Site Name": "Tufts University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.11948,
+          42.40546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCIR",
+        "Site Name": "UC Irvine",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.840128,
+          33.643474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCSB",
+        "Site Name": "UC Santa Barbara",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.179687,
+          34.016242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UABAL",
+        "Site Name": "University of Alabama Birmingham",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.801155,
+          33.50305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UAZ",
+        "Site Name": "University of Arizona",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.953947,
+          32.229874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UAR",
+        "Site Name": "University of Arkansas",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.13376,
+          36.040467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UBNY",
+        "Site Name": "University of Buffalo",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.035645,
+          42.619813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCD",
+        "Site Name": "University of California Davis",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.751304,
+          38.536669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCLA",
+        "Site Name": "University of California Los Angeles",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.298662,
+          33.786594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCR",
+        "Site Name": "University of California Riverside",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.325385,
+          33.974645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCSD",
+        "Site Name": "University of California San Diego",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.239614,
+          32.884310
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCSC",
+        "Site Name": "University of California Santa Cruz",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.061303,
+          37.000779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCCC",
+        "Site Name": "University of Chicago Chameleon Cloud",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.98237,
+          41.71833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCCC",
+        "Site Name": "University of Chicago Chameleon Cloud",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.98237,
+          41.71833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "IRISH",
+        "Site Name": "University of Chicago IRIS HEP",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.601670,
+          41.790270
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "CUB",
+        "Site Name": "University of Colorado Boulder",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.25,
+          40.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCONN",
+        "Site Name": "University of Connecticut",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.217941,
+          41.777201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UCONNH",
+        "Site Name": "University of Connecticut Health Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.791183,
+          41.729962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UFLG",
+        "Site Name": "University of Florida Gainsville",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.353861,
+          29.681312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UGARC",
+        "Site Name": "University of Georgia Research Computing Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.375362,
+          33.945986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UIUC",
+        "Site Name": "University of Illinois at Urbana Champaign",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.21246,
+          40.109647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UIC",
+        "Site Name": "University of Illinois Chicago",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.65114,
+          41.875882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UIGROW",
+        "Site Name": "University of Iowa GROW",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.701172,
+          37.160317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UMDCMS",
+        "Site Name": "University of Maryland CMS",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.877743,
+          38.833563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UMI",
+        "Site Name": "University of Michigan",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.71831,
+          42.291637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UMI",
+        "Site Name": "University of Minesota",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.264999,
+          44.988841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UMS",
+        "Site Name": "University of Mississippi",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.53721,
+          34.366302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UNB",
+        "Site Name": "University of Nebrasa",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.705694,
+          40.819655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UNBL",
+        "Site Name": "University of Nebrasa Lincoln",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.705651,
+          40.819818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UNBO",
+        "Site Name": "University of Nebrasa Omaha",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.016817,
+          41.247321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UNM",
+        "Site Name": "University of New Mexico",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.672872,
+          35.044339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "RENCI",
+        "Site Name": "University of North Carolina RENCI",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.02,
+          35.56
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "GROW",
+        "Site Name": "University of Iowa GROW",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.45609,
+          42.527184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "ND",
+        "Site Name": "University of Notre Dame",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.24498,
+          41.701415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UOK",
+        "Site Name": "University of Oklahoma ATLAS",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.447073,
+          35.207175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PENN",
+        "Site Name": "University of Pennsylvania",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.171847,
+          39.949424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "PITT",
+        "Site Name": "University of Pittsburg ATLAS",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.958067,
+          40.444885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UPRM",
+        "Site Name": "University of Puerto Rico Mayaguez",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.140884,
+          18.211578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "USD",
+        "Site Name": "University of South Dakota",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.924136,
+          42.788065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "USFL",
+        "Site Name": "University of Southern Florida",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.412738,
+          28.058893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "USCISI",
+        "Site Name": "University of Southern California Information Sciences Institute",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4400,
+          33.9801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UTNC",
+        "Site Name": "University of Tennessee Chattanooga",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.295502,
+          35.046483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UTXA",
+        "Site Name": "University of Texas Arlington",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.291484,
+          32.771419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "TACC",
+        "Site Name": "Texas Advanced Computing Center",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.726038,
+          30.390170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UTXD",
+        "Site Name": "University of Texas Dallas",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.709986,
+          32.734332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UUT",
+        "Site Name": "University of Utah",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.891,
+          40.7608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UWA",
+        "Site Name": "University of Washington",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.303546,
+          47.655316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UWI",
+        "Site Name": "University of Wisconsin",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406931,
+          43.071568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "UWIM",
+        "Site Name": "University of Wisconsin Milwaukee",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.958409,
+          43.011264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "VAND",
+        "Site Name": "Vanderbuilt University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.796477,
+          36.141621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "VATECH",
+        "Site Name": "Virginia Tech",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.426488,
+          37.221196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "WAYSU",
+        "Site Name": "Wayne State University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.070494,
+          42.363855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "WTXAM",
+        "Site Name": "West Texas A&M University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.915859,
+          34.980868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2b00ff",
+        "marker-size": "small",
+        "marker-symbol": "square",
+        "Site ID": "WTXAM",
+        "Site Name": "West Texas A&M University",
+        "Type": "Open Science Grid",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Storage ": "",
+        "CPU": "Yes",
+        "GPU": "",
+        "Interconnect": "10",
+        "Website": "",
+        "XSEDE": "",
+        "Internet2": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.915859,
+          34.980868
+        ]
+      }
+    }
+  ]
+}

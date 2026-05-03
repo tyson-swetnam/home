@@ -1,0 +1,454 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "UAHPC",
+        "Site Name": "University of Arizona",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": "10",
+        "Website": "https://it.arizona.edu/research",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.95168679952621,
+          32.23565279494154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "large",
+        "marker-symbol": "rocket",
+        "SiteID": "CUS",
+        "Site Name": "CyVerse",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Cloud": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "No",
+        "Website": "https://cyverse.org/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.94798803329468,
+          32.237973724284515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "SDSC",
+        "Site Name": "San Diego Supercomputer Center",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Storage ": "No",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": "10",
+        "Website": "https://www.sdsc.edu/",
+        "XSEDE": "Yes",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.23993808031081,
+          32.884274615816295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "star",
+        "SiteID": "IU",
+        "Site Name": "Indiana University",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://jetstream-cloud.org/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.52179718017578,
+          39.173640127078166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "star",
+        "SiteID": "TACC",
+        "Site Name": "Texas Advanced Computing Center",
+        "Type": "Cloud",
+        "Scheduler": "Slurm",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://www.tacc.utexas.edu/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72564172744751,
+          30.390192260457724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "NCSA",
+        "Site Name": "National Center for Supercomputing Applications",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Cloud": "",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": "10",
+        "XSEDE": "Yes",
+        "Website": "http://www.ncsa.illinois.edu/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22503745555878,
+          40.11485173762457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "SiteID": "MARCC",
+        "Site Name": "Maryland Advanced Research Computing Center",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Cloud": "",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "Website": "https://www.marcc.jhu.edu/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.55173659324645,
+          39.29354073135018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "PSC",
+        "Site Name": "Pittsburg Superccomputing Center",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Cloud": "",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "Website": "https://www.psc.edu/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.94917675852776,
+          40.44551719792565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "ASU",
+        "Site Name": "Arizona State University",
+        "Type": "Cloud",
+        "Scheduler": "Slurm",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://cores.research.asu.edu/research-computing/about",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.93143606185913,
+          33.418900767918984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "CU",
+        "Site Name": "Cornell University",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://jetstream-cloud.org/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.48150563240051,
+          42.44334395007949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "UHDS",
+        "Site Name": "University of Hawai'i Data Science Institute",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://jetstream-cloud.org/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.81577110290527,
+          21.299735554754058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "UCAR",
+        "Site Name": "University Center for Atmospheric Research",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "",
+        "Cloud Platform": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "XSEDE Project": "Jetstream-2",
+        "Website": "https://jetstream-cloud.org/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.27500331401825,
+          39.9782176623468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "UKY",
+        "Site Name": "University of Kentucky",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Cloud": "",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "Website": "https://portal.xsede.org/kentucky-kyric",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.49784517288208,
+          38.03969238806747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "marker-symbol": "",
+        "SiteID": "UDDSI",
+        "Site Name": "University of Delaware Data Science Institute",
+        "Type": "High Performance Computing",
+        "Type ": "Storage",
+        "Scheduler": "Slurm",
+        "Cloud": "",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "Yes",
+        "Website": "https://dsi.udel.edu/core/computational-resources/",
+        "Internet2": "Yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75423002243042,
+          39.664196236888685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "large",
+        "marker-symbol": "star-stroked",
+        "SiteID": "CAT",
+        "Site Name": "CyVerse Austria TU Graz",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Cloud": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "No",
+        "Website": "https://www.tugraz.at/sites/cat/home/",
+        "Internet2": "No"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.46302080154419,
+          47.05868445324063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "large",
+        "marker-symbol": "star-stroked",
+        "SiteID": "CUK",
+        "Site Name": "CyVerse UK",
+        "Type": "Cloud",
+        "Type ": "Storage",
+        "Scheduler": "HTCondor",
+        "Cloud": "OpenStack",
+        "Storage ": "Yes",
+        "CPU": "Yes",
+        "GPU": "Yes",
+        "Interconnect": 10,
+        "XSEDE": "No",
+        "Website": "https://cyverseuk.org/",
+        "Internet2": "No"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2190425395965576,
+          52.621744411459005
+        ]
+      }
+    }
+  ]
+}

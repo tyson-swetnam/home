@@ -1,0 +1,278 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prescott, Arizona (AGIC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.4626,
+          34.5400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Haven, Connecticut (Yale University)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9279,
+          41.3083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tucson, Arizona (NASA-ARID & NSF CISE & OpenDendro & LTAR & SWEETER)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9747,
+          32.2226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salt Lake City, Utah (SHEKATE)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8910,
+          40.7608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Diego, California (Plant & Animal Genome)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1611,
+          32.7157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Long Beach, California (CI4MF)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1937,
+          33.7701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fairbanks, Alaska (ACUASI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.7164,
+          64.8378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brasília, Brasil (Sinbiose)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8825,
+          -15.7942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Catalina, Arizona (Biosphere 2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8068,
+          32.2011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Austin, Texas (Chishiki-AI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Portsmouth, New Hampshire (EFI Meeting)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7695,
+          43.0718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boulder, Colorado (ESIIL Summit)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2705,
+          40.0150
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jemez Mountains, New Mexico (Vacation)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.6329,
+          35.7610
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Alamos, New Mexico (Family Visit)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.2370,
+          35.8800
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Black Forest, Germany (Europe Trip)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0000,
+          48.0000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Switzerland (Europe Trip)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Italy (Europe Trip)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copenhagen, Denmark (Europe Trip)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5683,
+          55.6761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anchorage, Alaska (GASC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9003,
+          61.2181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madison, Wisconsin (MaGIC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4012,
+          43.0731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chicago, Illinois (NCEMS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.8781
+        ]
+      }
+    }
+  ]
+}

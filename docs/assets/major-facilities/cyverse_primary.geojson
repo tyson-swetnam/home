@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "name": "cyverse_primary",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "CUS",
+        "site_name": "CyVerse",
+        "type": "Cloud",
+        "scheduler": "HTCondor",
+        "storage": "Yes",
+        "cpu": "Yes",
+        "gpu": "Yes",
+        "interconnect": "10",
+        "website": "https://cyverse.org/",
+        "internet2": "Yes",
+        "latitude": "32.237973724284515",
+        "longitude": "-110.94798803329468",
+        "cloud": "OpenStack",
+        "xsede": "No",
+        "cloud_platform": null,
+        "xsede_project": null,
+        "uk_latitude": null,
+        "uk_longitude": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-110.94798803329468, 32.237973724284515]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "IU",
+        "site_name": "Indiana University",
+        "type": "Cloud",
+        "scheduler": "",
+        "storage": "Yes",
+        "cpu": "Yes",
+        "gpu": "Yes",
+        "interconnect": "10",
+        "website": "https://jetstream-cloud.org/",
+        "internet2": "Yes",
+        "latitude": "",
+        "longitude": "",
+        "cloud": null,
+        "xsede": "Yes",
+        "cloud_platform": "OpenStack",
+        "xsede_project": "Jetstream-2",
+        "uk_latitude": null,
+        "uk_longitude": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.52179718017578, 39.173640127078166]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "TACC",
+        "site_name": "Texas Advanced Computing Center",
+        "type": "Cloud",
+        "scheduler": "Slurm",
+        "storage": "Yes",
+        "cpu": "Yes",
+        "gpu": "Yes",
+        "interconnect": "10",
+        "website": "https://www.tacc.utexas.edu/",
+        "internet2": "Yes",
+        "latitude": "",
+        "longitude": "",
+        "cloud": null,
+        "xsede": "Yes",
+        "cloud_platform": "OpenStack",
+        "xsede_project": "Jetstream-2",
+        "uk_latitude": null,
+        "uk_longitude": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.72564172744751, 30.390192260457724]
+      }
+    }
+  ]
+}

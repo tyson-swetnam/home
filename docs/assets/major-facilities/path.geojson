@@ -1,0 +1,86 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+    {
+    "type": "Feature",
+    "properties": {
+    "name": "University of Nebraska Lincoln’s Holland Computing Center",
+    "majorfacilitytype": "PaTH",
+    "hardwaremetadata": "Hosts 32 machines with 64 AMD EPYC cores (AMD 7513), 1.6TB of NVMe, and 256 GB RAM each. One machine has 4 A100 GPUs, 1.6TB of NVMe, and 512 GB RAM.",
+    "address": "118 SHOR 1100 T St Lincoln, NE 68588-0150"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-96.7021, 40.8414]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "name": "Syracuse University Research Computing group",
+    "majorfacilitytype": "PaTH",
+    "hardwaremetadata": "Hosts 32 machines with 64 AMD EPYC cores (AMD 7513), 1.6TB of NVMe, and 256 GB RAM each. One machine will have 4 A100 GPUs, 1.6TB of NVMe, and 512 GB RAM.",
+    "address": "343 Hinds Hall, Syracuse, NY 13244"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-76.1475, 43.0522]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "name": "Florida International University AMPATH network",
+    "majorfacilitytype": "PaTH",
+    "hardwaremetadata": "Hosts PATh equipment in their Miami interchange point. This consists of 4 machines with 64 AMD EPYC cores (AMD 7513), 1.6TB of NVMe, and 256 GB RAM each. One machine has 4 A100 GPUs, 1.6TB of NVMe, and 512 GB RAM.",
+    "address": "11110 S.w. 11th St Rm VH166, Miami, Florida, 33199, United States"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-80.2276, 25.7672]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "name": "San Diego Supercomputing Center (SDSC)",
+    "majorfacilitytype": "PaTH",
+    "hardwaremetadata": "An additional 2 racks were added to the Expanse resource, usable via the PATh credit accounts. Each rack holds 16 A100 devices not part of the original Expanse design.",
+    "address": "9836 Hopkins Dr, La Jolla, CA 92093"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-117.2448, 32.8958]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "name": "University of Wisconsin-Madison’s Center for High Throughput Computing",
+    "majorfacilitytype": "PaTH",
+    "hardwaremetadata": "Served as a staging ground for the resources destined for Lincoln, Syracuse, and Miami. Four machines are kept at Madison, primarily for debugging and testing purposes.",
+    "address": "1210 W Dayton St, Madison, WI 53706"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-89.3842, 43.0737]
+    }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "name": "Texas Advanced Computing Center (TACC)",
+        "majorfacilitytype": "PaTH",
+        "hardwaremetadata": "PATh has received a large allocation in the recently-upgraded Stampede2 resource; this allocation is reachable via PATh computing credits. Stampede2’s new resources include 224 dual-socket Intel Xeon Platinum 8380 CPUs, 10,000 NVIDIA A100 GPUs, and 400 TB of high-speed DDR4 memory.",
+        "address": "10100 Burnet Rd, Austin, TX 78758"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-97.7509, 30.2677]
+        }
+    }
+    ]
+}
+        
+        
+  

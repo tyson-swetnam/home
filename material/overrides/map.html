@@ -1,0 +1,137 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <h1>Project Locations Map</h1>
+  <div id="map" style="width: 100%; height: 80vh; margin: 20px 0;"></div>
+  <script>
+  function tlsInitMap() {
+    // Define custom icons for each layer
+    var icons = {
+      "Projects": L.AwesomeMarkers.icon({ icon: "star", markerColor: "blue", prefix: "fa" }),
+      "Access CI": L.AwesomeMarkers.icon({ icon: "database", markerColor: "red", prefix: "fa" }),
+      "CyVerse Primary": L.AwesomeMarkers.icon({ icon: "hdd", markerColor: "green", prefix: "fa" }),
+      "Internet2": L.AwesomeMarkers.icon({ icon: "network-wired", markerColor: "orange", prefix: "fa" }),
+      "MF": L.AwesomeMarkers.icon({ icon: "cogs", markerColor: "purple", prefix: "fa" }),
+      "OSG": L.AwesomeMarkers.icon({ icon: "server", markerColor: "cadetblue", prefix: "fa" }),
+      "Path": L.AwesomeMarkers.icon({ icon: "route", markerColor: "darkred", prefix: "fa" }),
+      "Sites": L.AwesomeMarkers.icon({ icon: "map-marker-alt", markerColor: "darkgreen", prefix: "fa" })
+    };
+
+    // Build HTML table of feature properties
+    function buildPopup(properties) {
+      var html = "<table>";
+      for (var key in properties) {
+        html += "<tr><th>" + key + "</th><td>" + properties[key] + "</td></tr>";
+      }
+      html += "</table>";
+      return html;
+    }
+
+    // Initialize map
+    var map = L.map("map").setView([37.8, -96], 4);
+    map.addControl(new L.Control.Fullscreen({ position: "topright", title: "Toggle Fullscreen" }));
+
+    // Base layer: Mapbox Streets
+    L.tileLayer(
+      "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=MAPBOX_PUBLIC_TOKEN_HERE",
+      { attribution: "© Mapbox © OpenStreetMap", tileSize: 512, zoomOffset: -1 }
+    ).addTo(map);
+
+    // Major facilities layers
+    var facilityFiles = {
+      "Access CI": '{{ "assets/major-facilities/access-ci.geojson" | url }}',
+            "Internet2": '{{ "assets/major-facilities/internet2.geojson" | url }}',
+      "MF": '{{ "assets/major-facilities/mf.geojson" | url }}',
+      "OSG": '{{ "assets/major-facilities/osg.geojson" | url }}',
+      "Path": '{{ "assets/major-facilities/path.geojson" | url }}',
+      "Sites": '{{ "assets/major-facilities/sites.geojson" | url }}'
+    };
+
+function createCircleIcon(initials, color) {
+  return L.divIcon({
+    className: "custom-div-icon",
+    html: `<div style="background:${color};border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;">${initials}</div>`,
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+  });
+}
+
+var facilityStyles = {
+  "Access CI": { initials: "AC", color: "red" },
+    "Internet2": { initials: "I2", color: "orange" },
+  "MF": { initials: "MF", color: "purple" },
+  "OSG": { initials: "OS", color: "cadetblue" },
+  "Path": { initials: "PA", color: "darkred" },
+  "Sites": { initials: "SI", color: "darkgreen" }
+};
+
+Promise.all(
+  Object.entries(facilityFiles).map(function([name, url]) {
+    return fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        var layer = L.geoJSON(data, {
+          pointToLayer: function(feature, latlng) {
+            var style = facilityStyles[name] || { initials: "??", color: "gray" };
+            return L.marker(latlng, { icon: createCircleIcon(style.initials, style.color) });
+          },
+          onEachFeature: function(feature, layer) {
+            layer.bindPopup(buildPopup(feature.properties));
+          }
+        });
+        return { name: name, layer: layer };
+      });
+  })
+).then(function(results) {
+  var overlays = {};
+  results.forEach(function(entry) {
+    overlays[entry.name] = entry.layer;
+  });
+
+  // Add CyVerse Primary with SVG markers and legend
+  fetch('{{ "assets/major-facilities/cyverse_primary.geojson" | url }}')
+    .then(res => res.json())
+    .then(data => {
+      var cpIcon = L.icon({
+        iconUrl: '{{ "assets/major-facilities/cyverseci.svg" | url }}',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+      });
+
+      var cpLayer = L.geoJSON(data, {
+        pointToLayer: function(feature, latlng) {
+          return L.marker(latlng, { icon: cpIcon });
+        },
+        onEachFeature: function(feature, layer) {
+          layer.bindPopup(buildPopup(feature.properties));
+        }
+      }).addTo(map);
+
+      var legend = L.control({ position: 'bottomright' });
+      legend.onAdd = function() {
+        var div = L.DomUtil.create('div', 'legend');
+        data.features.forEach(f => {
+          div.innerHTML +=
+            `<div class="row">
+              <i><img src="${cpIcon.options.iconUrl}" width="30" height="30"></i>
+              ${f.properties.site_name}
+            </div>`;
+        });
+        return div;
+      };
+      legend.addTo(map);
+
+      L.control.layers(null, overlays, { collapsed: false }).addTo(map);
+    });
+});
+  }
+  // Run when L is available — covers full reload and Material's navigation.instant.
+  function tlsRunMap() {
+    if (typeof L === 'undefined' || !L.AwesomeMarkers) {
+      return setTimeout(tlsRunMap, 50);
+    }
+    if (document.getElementById('map')) tlsInitMap();
+  }
+  tlsRunMap();
+  </script>
+{% endblock %}

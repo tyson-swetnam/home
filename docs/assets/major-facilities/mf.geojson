@@ -1,0 +1,138 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Academic Research Fleet (ARF)",
+        "majorfacilitytype": "Geosciences",
+        "address": "875 N Randolph St, Arlington, VA 22217",
+        "coordinates": [-77.0363, 38.8972]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0363, 38.8972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antarctic Infrastructure Modernization for Science (AIMS)",
+        "majorfacilitytype": "Geosciences",
+        "address": "McMurdo Station, Antarctica",
+        "coordinates": [-166.676, -77.846]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-166.676, -77.846]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geodetic Facility for the Advancement of Geoscience (GAGE)",
+        "majorfacilitytype": "Geosciences",
+        "address": "6350 Nautilus Dr suite b/c, Boulder, CO 80301",
+        "coordinates": [-105.2706, 40.0150]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.2706, 40.0150]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IceCube Neutrino Observatory",
+        "majorfacilitytype": "Geosciences",
+        "address": "Amundsen-Scott South Pole Station, Antarctica",
+        "coordinates": [-90.0000, -139.2667]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0000, -139.2667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JOIDES Resolution Science Operator",
+        "majorfacilitytype": "Geosciences",
+        "address": "Port Fourchon, LA",
+        "coordinates": [-92.3756, 29.4334]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-92.3756, 29.4334]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "National Center for Atmospheric Research (NCAR)",
+        "majorfacilitytype": "Geosciences",
+        "address": "1850 Table Mesa Dr, Boulder, CO 80305",
+        "coordinates": [-105.2775729,39.9933294]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.2775729,39.9933294]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "National Ecological Observatory Network (NEON)",
+        "majorfacilitytype": "Geosciences",
+        "address": "1685 38th St #100, Boulder, CO 80301",
+        "coordinates": [-105.2486188,40.0159206]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.2486188,40.015]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leadership‐Class Computing Facility (LCCF)",
+        "majorfacilitytype": "Geosciences",
+        "address": "10100 Burnet Rd, Austin, TX 78758",
+        "coordinates": [-97.7394, 30.2861]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.7394, 30.2861]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Natural Hazards Engineering Research Infrastructure (NHERI)",
+        "majorfacilitytype": "Geosciences",
+        "address": "610 Purdue Mall, West Lafayette, IN 47907",
+        "coordinates": [-86.9202, 40.4240]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.9202, 40.4240]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ocean Observatories Initiative (OOI)",
+        "majorfacilitytype": "Geosciences",
+        "address": "Pacific Ocean",
+        "coordinates": [-124.47, 37.57]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-124.47, 37.57]
+      }
+    }
+  ]
+}
+
+
+

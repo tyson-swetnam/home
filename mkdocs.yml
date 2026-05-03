@@ -15,19 +15,20 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md
-  - Research: 
-    - Current: current_projects.md
-    - Previous: previous_projects.md
-    - Grants: awards.md
-    - Publications: publications.md
-    - ePublications: epubs.md
-    - Talks: talks.md
-    - Groups & Societies: groups.md
-  - Teaching: 
-    - Classes: teaching.md
+  - Teaching:
+    - Teaching: teaching.md
     - Advising & Mentoring: mentoring.md
-  - Opportunities: jobs.md
-  - Open Science: 
+    - Opportunities: jobs.md
+  - Resources:
+    - Projects & Awards:
+        - Current Projects: current_projects.md
+        - Previous Projects: previous_projects.md
+        - Grants & Awards: awards.md
+    - Groups & Societies: groups.md
+    - Publications & Talks:
+        - Publications: publications.md
+        - ePublications: epubs.md
+        - Talks: talks.md
     - Open Data Sets: data.md
     - Open Code: code.md
   - CV: cv.md
@@ -46,29 +47,22 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
+    # Light mode (default) — editorial paper/ink/ochre
     - media: "(prefers-color-scheme: light)"
-      scheme: home 
+      scheme: tls-light
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
-    # Palette toggle for dark mode
+    # Dark mode — same system, inverted
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: tls-dark
       toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
-  font:
-    text: Montserrat
-    code: Regular
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font: false  # fonts loaded via extra_css (EB Garamond / Inter Tight / JetBrains Mono)
   features:
-    - navigation.instant
+    - navigation.sections
+    - navigation.expand
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -78,7 +72,6 @@ theme:
     - search.share
     - search.suggest
   favicon: 'assets/ua.ico'
-  logo: 'assets/ua.png'
 
 # Options
 extra:
@@ -144,7 +137,16 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap
+  - https://unpkg.com/leaflet/dist/leaflet.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+  - https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.css
   - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js
+  - https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.min.js
  
 plugins:
     - blog:
@@ -159,4 +161,3 @@ plugins:
     - search
     - mkdocstrings
     - git-revision-date
-

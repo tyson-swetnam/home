@@ -1,0 +1,789 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "NYSERNet",
+          "majorfacilitytype": "internet2",
+          "address": "Buffalo, NY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-78.8074319, 42.8170769]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "NYSERNet",
+          "majorfacilitytype": "internet2",
+          "address": "New York City, NY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.0059722, 40.7127832]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "CEN",
+          "majorfacilitytype": "internet2",
+          "address": "Hartford, CT"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-72.6563, 41.7601]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "CEN",
+          "majorfacilitytype": "internet2",
+          "address": "New York City, NY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.0059722, 40.7127832]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "NoX",
+          "majorfacilitytype": "internet2",
+          "address": "Albany, NY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.7760902, 42.6526981]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "3ROX",
+          "majorfacilitytype": "internet2",
+          "address": "Pittsburgh, PA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.9958979, 40.4406249]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "KINBER",
+          "majorfacilitytype": "internet2",
+          "address": "Philadelphia, PA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.1364237, 39.9522342]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "DrexelUniversity",
+          "majorfacilitytype": "internet2",
+          "address": "Philadelphia, PA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.1364237, 39.9522342]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "NJEdge",
+          "majorfacilitytype": "internet2",
+          "address": "Philadelphia, PA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.1364237, 39.9522342]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "NJEdge",
+          "majorfacilitytype": "internet2",
+          "address": "New York City, NY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.0059722, 40.7127832]
+        }
+      },
+      { 
+          "type": "Feature",
+          "properties": {
+            "name": "OSHEAN",
+            "majorfacilitytype": "internet2",
+            "address": "New York City, NY"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-74.0059722, 40.7127832]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+            "name": "MAGPI",
+            "majorfacilitytype": "internet2",
+            "address": "Philadelphia, PA"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-75.1364237, 39.9522342]
+          }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "UniversityofPittsburgh",
+          "majorfacilitytype": "internet2",
+          "address": "Pittsburgh, PA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.9958979, 40.4406249]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "CAAREN",
+          "majorfacilitytype": "internet2",
+          "address": "Ashburn, VA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.4874998, 39.0444444]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MAX",
+          "majorfacilitytype": "internet2",
+          "address": "Ashburn, VA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.4874998, 39.0444444]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MAX",
+          "majorfacilitytype": "internet2",
+          "address": "Washington, DC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.0364497, 38.8950000]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MARIA",
+          "majorfacilitytype": "internet2",
+          "address": "Ashburn, VA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.4874998, 39.0444444]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "KyRON",
+          "majorfacilitytype": "internet2",
+          "address": "Louisville, KY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-85.7555556, 38.25]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MCNCC-Light",
+          "majorfacilitytype": "internet2",
+          "address": "Charlotte, NC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.8447222, 35.2277778]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MCNCC-Light",
+          "majorfacilitytype": "internet2",
+          "address": "Raleigh, NC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-78.6333333, 35.5]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "name": "SoX",
+            "majorfacilitytype": "internet2",
+            "address": "Atlanta, GA"
+          },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-84.3888889, 33.75]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+            "name": "SoX",
+            "majorfacilitytype": "internet2",
+            "address": "Nashville, TN"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-86.7833333, 36.1833333]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "FLR",
+            "majorfacilitytype": "internet2",
+            "address": "Jacksonville, FL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-81.6666667, 30.3333333]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "FLR",
+            "majorfacilitytype": "internet2",
+            "address": "Pensacola, FL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-87.2166667, 30.45]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "OARnet",
+            "majorfacilitytype": "internet2",
+            "address": "Cincinnati, OH"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-84.5, 39.1333333]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "OARnet",
+            "majorfacilitytype": "internet2",
+            "address": "Cleveland, OH"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-81.6666667, 41.4833333]
+          }
+          },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "MeritNetworkInc",
+            "majorfacilitytype": "internet2",
+            "address": "Toledo, OH"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-83.5666667, 41.6666667]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "MeritNetworkInc",
+            "majorfacilitytype": "internet2",
+            "address": "Chicago, IL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-87.625, 41.8833333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "NorthernLightsGigaPOP",
+            "majorfacilitytype": "internet2",
+            "address": "Minneapolis, MN"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-93.25, 44.9833333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "MREN",
+            "majorfacilitytype": "internet2",
+            "address": "Chicago, IL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-87.625, 41.8833333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "MREN",
+            "majorfacilitytype": "internet2",
+            "address": "Starlight, IL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-88.95, 40.0833333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "GPN",
+            "majorfacilitytype": "internet2",
+            "address": "Kansas City, MO"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-94.625, 39.1333333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "GPN",
+            "majorfacilitytype": "internet2",
+            "address": "Tulsa, OK"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-95.9333333, 36.1833333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "UniversityOfMemphis",
+            "majorfacilitytype": "internet2",
+            "address": "Memphis, TN"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-90.05, 35.1333333]
+          }  
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "UniversityofIllinois-Urbana-Champaign",
+            "majorfacilitytype": "internet2",
+            "address": "Urbana, IL"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-88.25, 40.1333333]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "NYSERNet",
+            "majorfacilitytype": "internet2",
+            "address": "Buffalo, NY"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-78.8074319, 42.8170769]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "NYSERNet",
+            "majorfacilitytype": "internet2",
+            "address": "New York City, NY"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-74.0059722, 40.7127832]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "CEN",
+            "majorfacilitytype": "internet2",
+            "address": "Hartford, CT"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.6563, 41.7601]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "CEN",
+            "majorfacilitytype": "internet2",
+            "address": "New York City, NY"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-74.0059722, 40.7127832]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "NoX",
+            "majorfacilitytype": "internet2",
+            "address": "Albany, NY"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-73.7760902, 42.6526981]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "3ROX",
+            "majorfacilitytype": "internet2",
+            "address": "Pittsburgh, PA"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-79.9958979, 40.4406249]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "KINBER",
+            "majorfacilitytype": "internet2",
+            "address": "Philadelphia, PA"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-75.1364237, 39.9522342]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "DrexelUniversity",
+            "majorfacilitytype": "internet2",
+            "address": "Philadelphia, PA"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-75.1364237, 39.9522342]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "NJEdge",
+            "majorfacilitytype": "internet2",
+            "address": "Philadelphia, PA"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-75.1364237, 39.9522342]
+          }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+              "name": "PNWGP",
+              "majorfacilitytype": "internet2",
+              "address": "Seattle, WA"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-122.335176, 47.606205]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "University of Montana",
+              "majorfacilitytype": "internet2",
+              "address": "Missoula, MT"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-113.578132, 47.029497]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Link Oregon",
+              "majorfacilitytype": "internet2",
+              "address": "Portland, OR"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-122.673339, 45.523333]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Link Oregon",
+              "majorfacilitytype": "internet2",
+              "address": "Boise, ID"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-116.247559, 43.618056]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "UETN",
+              "majorfacilitytype": "internet2",
+              "address": "Salt Lake City, UT"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-111.894838, 40.755556]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Nevada System of Higher Education, Reno, NV",
+              "majorfacilitytype": "internet2",
+              "address": "Reno, NV"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-119.893188, 39.529859]
+            }
+          },          
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "UETN",
+              "majorfacilitytype": "internet2",
+              "address": "Las Vegas, NV"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-115.153333, 36.173333]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Pacific Wave",
+              "majorfacilitytype": "internet2",
+              "address": "Denver, CO"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-104.993333, 39.736667]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "CENIC",
+              "majorfacilitytype": "internet2",
+              "address": "Los Angeles, CA"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-118.243333, 34.05]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "CENIC",
+              "majorfacilitytype": "internet2",
+              "address": "Sunnyvale, CA"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-122.083333, 37.325]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "CENIC",
+              "majorfacilitytype": "internet2",
+              "address": "Sacramento, CA"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-121.493333, 38.583333]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "San Diego Supercomputer Center",
+              "majorfacilitytype": "internet2",
+              "address": "San Diego, CA"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-117.217963, 32.721584]
+            }
+          },          
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "LEARN",
+              "majorfacilitytype": "internet2",
+              "address": "Houston, TX"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-95.366667, 29.75]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "LEARN",
+              "majorfacilitytype": "internet2",
+              "address": "Dallas, TX"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-96.803333, 32.783333]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "IndianaGigaPOP",
+              "majorfacilitytype": "internet2",
+              "address": "Chicago, IL"
+            },
+              "geometry": {
+              "type": "Point",
+              "coordinates": [-87.6231325, 41.8783644]
+            }
+            },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "IndianaGigaPOP",
+                  "majorfacilitytype": "internet2",
+                  "address": "Indianapolis, IN"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-86.153125, 39.7689444]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "MissiON",
+                  "majorfacilitytype": "internet2",
+                  "address": "Jackson, MS"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-90.1875, 32.3472222]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "MissiON",
+                  "majorfacilitytype": "internet2",
+                  "address": "Atlanta, GA"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-84.3888889, 33.7458333]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "SunCorridorNetwork",
+                  "majorfacilitytype": "internet2",
+                  "address": "Tucson, AZ"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-110.9375, 32.2222222]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "SunCorridorNetwork",
+                  "majorfacilitytype": "internet2",
+                  "address": "Phoenix, AZ"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-112.0625, 33.4583333]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "name": "LONI",
+                  "majorfacilitytype": "internet2",
+                  "address": "Baton Rouge, LA"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-91.1875, 29.9583333]
+                }
+              }
+            ]
+          }
+
+
+
+                 
