@@ -1,0 +1,492 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset Material's content constraints */
+    body.landing-page .md-container,
+    body.landing-page .md-main,
+    body.landing-page .md-main__inner,
+    body.landing-page .md-content,
+    body.landing-page .md-content__inner { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+    body.landing-page .md-content__inner::before { display: none !important; }
+    body.landing-page .md-grid { max-width: none !important; margin: 0 !important; }
+    body.landing-page .md-sidebar { display: none !important; }
+    body.landing-page .md-header { display: none !important; }
+    body.landing-page .md-tabs { display: none !important; }
+    body.landing-page .md-footer { display: none !important; }
+    body.landing-page #announcement { display: none !important; }
+    body.landing-page .md-typeset h1, body.landing-page .md-typeset h2, body.landing-page .md-typeset h3 { color: inherit; font-weight: inherit; margin: 0; }
+    body.landing-page .md-typeset a { color: inherit; }
+    body.landing-page .md-typeset p { color: inherit; max-width: none; }
+
+    /* Tokens */
+    body.landing-page {
+      --paper: oklch(0.97 0.008 80);
+      --paper-2: oklch(0.94 0.01 80);
+      --paper-3: oklch(0.90 0.012 78);
+      --rule: oklch(0.86 0.012 78);
+      --ink: oklch(0.18 0.012 60);
+      --ink-2: oklch(0.32 0.012 60);
+      --ink-3: oklch(0.50 0.012 60);
+      --ink-4: oklch(0.65 0.012 60);
+      --accent: oklch(0.55 0.12 50);
+      --accent-soft: oklch(0.55 0.12 50 / 0.12);
+      --serif: 'EB Garamond', Georgia, serif;
+      --sans: 'Inter Tight', system-ui, -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+      --maxw: 1280px;
+      --gutter: clamp(20px, 4vw, 56px);
+      background: var(--paper); color: var(--ink);
+      font-family: var(--sans); font-size: 16.5px; line-height: 1.55;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    body.landing-page[data-theme="dark"] {
+      --paper: oklch(0.16 0.012 60);
+      --paper-2: oklch(0.20 0.014 60);
+      --paper-3: oklch(0.24 0.014 60);
+      --rule: oklch(0.30 0.014 60);
+      --ink: oklch(0.95 0.008 80);
+      --ink-2: oklch(0.82 0.01 80);
+      --ink-3: oklch(0.62 0.012 80);
+      --ink-4: oklch(0.48 0.012 80);
+    }
+    body.landing-page a { color: inherit; text-decoration: none; }
+    body.landing-page button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+    body.landing-page h1, body.landing-page h2, body.landing-page h3, body.landing-page h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+    body.landing-page h1 { font-size: clamp(48px, 7vw, 96px); letter-spacing: -0.02em; line-height: 0.96; }
+    body.landing-page p { margin: 0 0 1em; }
+    body.landing-page .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+    body.landing-page .eyebrow .dot { color: var(--accent); }
+    body.landing-page .numeral { font-family: var(--mono); font-feature-settings: "tnum"; }
+    body.landing-page .shell { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter); }
+
+    /* Topbar (shared shape with home) */
+    body.landing-page .topbar {
+      position: sticky; top: 0; z-index: 30;
+      backdrop-filter: blur(10px) saturate(1.2);
+      background: color-mix(in oklab, var(--paper) 85%, transparent);
+      border-bottom: 1px solid var(--rule);
+    }
+    body.landing-page .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+    body.landing-page .brand { display: flex; align-items: baseline; gap: 10px; font-family: var(--serif); font-size: 20px; letter-spacing: -0.01em; white-space: nowrap; flex: 0 0 auto; }
+    body.landing-page .brand .initials { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--accent); border: 1px solid var(--accent); padding: 2px 5px; border-radius: 2px; }
+    body.landing-page nav.primary { display: flex; gap: 2px; align-items: center; flex-wrap: nowrap; }
+    body.landing-page nav.primary a {
+      font-family: var(--sans); font-size: 13.5px; font-weight: 500;
+      color: var(--ink-2); padding: 8px 12px; border-radius: 6px;
+      position: relative; white-space: nowrap; transition: color 0.2s, background 0.2s;
+    }
+    @media (max-width: 1100px) { body.landing-page nav.primary a { padding: 8px 9px; font-size: 13px; } }
+    @media (max-width: 980px)  { body.landing-page .brand .name { display: none; } body.landing-page nav.primary a { padding: 8px 8px; font-size: 12.5px; } }
+    @media (max-width: 760px)  { body.landing-page nav.primary { display: none; } }
+    body.landing-page nav.primary a:hover { color: var(--ink); background: var(--paper-2); }
+    body.landing-page nav.primary a.active { color: var(--ink); }
+    body.landing-page nav.primary a.active::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 1.5px; background: var(--accent); }
+    body.landing-page .topbar .tools { display: flex; gap: 8px; align-items: center; }
+    body.landing-page .icon-btn { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 6px; color: var(--ink-3); transition: color 0.2s, background 0.2s; }
+    body.landing-page .icon-btn:hover { color: var(--ink); background: var(--paper-2); }
+
+    /* Pubs hero */
+    body.landing-page .pubs-hero { padding: 96px 0 56px; border-bottom: 1px solid var(--rule); }
+    body.landing-page .pubs-hero .eyebrow { margin-bottom: 24px; }
+    body.landing-page .pubs-hero .lede {
+      font-family: var(--serif); font-style: italic;
+      font-size: clamp(20px, 1.8vw, 24px); color: var(--ink-2);
+      margin-top: 24px; max-width: 50ch;
+    }
+    body.landing-page .pubs-hero .stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      margin-top: 56px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    }
+    @media (max-width: 760px) { body.landing-page .pubs-hero .stats { grid-template-columns: repeat(2, 1fr); } }
+    body.landing-page .pubs-hero .stat { padding: 24px 0; padding-right: 24px; border-right: 1px solid var(--rule); }
+    body.landing-page .pubs-hero .stat:last-child { border-right: 0; }
+    body.landing-page .pubs-hero .stat .num { font-family: var(--serif); font-style: italic; font-size: 56px; line-height: 1; color: var(--accent); letter-spacing: -0.02em; }
+    body.landing-page .pubs-hero .stat .lab { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-top: 10px; }
+
+    /* Filter bar */
+    body.landing-page .pubs-controls { position: sticky; top: 64px; z-index: 20; background: color-mix(in oklab, var(--paper) 92%, transparent); backdrop-filter: blur(8px) saturate(1.2); border-bottom: 1px solid var(--rule); padding: 16px 0; }
+    body.landing-page .pubs-controls-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    body.landing-page .pubs-search { flex: 1 1 280px; display: flex; align-items: center; gap: 10px; border: 1px solid var(--rule); background: var(--paper-2); padding: 10px 14px; border-radius: 2px; }
+    body.landing-page .pubs-search input { flex: 1; border: 0; background: transparent; outline: 0; font: inherit; color: var(--ink); font-size: 14px; }
+    body.landing-page .pubs-search svg { color: var(--ink-3); flex-shrink: 0; }
+    body.landing-page .pubs-sort { display: flex; gap: 4px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+    body.landing-page .pubs-sort .opt { padding: 8px 12px; border: 1px solid var(--rule); cursor: pointer; color: var(--ink-3); transition: all 0.2s; }
+    body.landing-page .pubs-sort .opt:hover { color: var(--ink); }
+    body.landing-page .pubs-sort .opt.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    body.landing-page .pubs-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; font-family: var(--mono); font-size: 11px; }
+    body.landing-page .pubs-tags .chip { padding: 6px 10px; border: 1px solid var(--rule); border-radius: 2px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); cursor: pointer; transition: all 0.2s; }
+    body.landing-page .pubs-tags .chip:hover { color: var(--ink); }
+    body.landing-page .pubs-tags .chip.active { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+    body.landing-page .pubs-tags .count { color: var(--ink-4); margin-left: 6px; }
+    body.landing-page .pubs-tags .chip.active .count { color: color-mix(in oklab, var(--paper) 70%, transparent); }
+
+    /* Pub list */
+    body.landing-page .pubs-list { padding: 32px 0 96px; }
+    body.landing-page .pubs-year-group { margin-bottom: 56px; }
+    body.landing-page .pubs-year-head { display: grid; grid-template-columns: 200px 1fr; gap: 48px; align-items: baseline; margin-bottom: 24px; }
+    @media (max-width: 760px) { body.landing-page .pubs-year-head { grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px; } }
+    body.landing-page .pubs-year-head .y { font-family: var(--serif); font-style: italic; font-size: 80px; color: var(--accent); line-height: 0.9; letter-spacing: -0.02em; }
+    body.landing-page .pubs-year-head .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 16px; }
+    body.landing-page .empty { text-align: center; padding: 64px 0; color: var(--ink-3); font-style: italic; font-family: var(--serif); font-size: 22px; }
+
+    body.landing-page .pub-list { display: flex; flex-direction: column; }
+    body.landing-page .pub {
+      display: grid; grid-template-columns: 60px 1fr 200px;
+      gap: 32px; padding: 24px 0; border-top: 1px solid var(--rule);
+      align-items: baseline; transition: background 0.2s;
+    }
+    body.landing-page .pub:last-child { border-bottom: 1px solid var(--rule); }
+    body.landing-page .pub:hover { background: var(--paper-2); padding-left: 12px; padding-right: 12px; margin-left: -12px; margin-right: -12px; }
+    body.landing-page .pub .num { font-family: var(--mono); font-size: 11px; color: var(--ink-4); letter-spacing: 0.1em; }
+    body.landing-page .pub .title { font-family: var(--serif); font-size: 21px; font-weight: 500; letter-spacing: -0.005em; line-height: 1.25; color: var(--ink); }
+    body.landing-page .pub .meta { font-family: var(--sans); font-size: 13px; color: var(--ink-3); margin-top: 8px; }
+    body.landing-page .pub .meta em { font-family: var(--serif); font-style: italic; color: var(--ink-2); }
+    body.landing-page .pub .tags { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); margin-top: 6px; letter-spacing: 0.06em; }
+    body.landing-page .pub .year { text-align: right; font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+    body.landing-page .pub .year .doi { display: block; margin-top: 6px; color: var(--accent); }
+    body.landing-page .pub .featured-tag { margin-left: 10px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; vertical-align: middle; }
+    @media (max-width: 760px) { body.landing-page .pub { grid-template-columns: 1fr; gap: 6px; } body.landing-page .pub .year { text-align: left; } }
+
+    /* Footer */
+    body.landing-page .site-foot { padding: 80px 0 60px; background: var(--paper); color: var(--ink-2); }
+    body.landing-page .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 56px; }
+    @media (max-width: 760px) { body.landing-page .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
+    body.landing-page .footer-grid h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); font-weight: 400; margin-bottom: 16px; }
+    body.landing-page .footer-grid .colophon { font-family: var(--serif); font-size: 24px; line-height: 1.35; max-width: 32ch; }
+    body.landing-page .footer-grid ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px; }
+    body.landing-page .footer-grid a:hover { color: var(--accent); }
+    body.landing-page .footer-bottom { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; }
+  </style>
+{% endblock %}
+
+{% block announce %}{% endblock %}
+{% block header %}{% endblock %}
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block content %}
+<div class="tls-landing">
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">
+        <span class="initials">TLS</span>
+        <span class="name"><a href="{{ '' | url }}">T.L. Swetnam</a></span>
+      </div>
+      <nav class="primary">
+        <a href="{{ '' | url }}#hero">Home</a>
+        <a href="{{ '' | url }}#research">Research</a>
+        <a href="#" class="active">Publications</a>
+        <a href="{{ '' | url }}#teaching">Teaching</a>
+        <a href="{{ '' | url }}#os">Open Science</a>
+        <a href="{{ '' | url }}#notes">Field Notes</a>
+        <a href="{{ 'cv/' | url }}">CV</a>
+      </nav>
+      <div class="tools">
+        <button class="icon-btn" id="tls-theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path id="tls-icon-moon" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="pubs-hero">
+    <div class="shell">
+      <div class="eyebrow"><span class="dot">&#9679;</span>&nbsp;&nbsp;&sect; 02 / Selected Work &middot; The full list</div>
+      <h1>Publications.</h1>
+      <p class="lede">A complete portfolio of papers, reports, preprints, and book chapters &mdash; most peer-reviewed, all linked to a DOI or canonical URL where one exists.</p>
+
+      <div class="stats">
+        <div class="stat"><div class="num" id="tls-stat-total"></div><div class="lab">Total entries</div></div>
+        <div class="stat"><div class="num" id="tls-stat-firstauthor"></div><div class="lab">First-author</div></div>
+        <div class="stat"><div class="num" id="tls-stat-first"></div><div class="lab">First publication</div></div>
+        <div class="stat"><div class="num" id="tls-stat-last"></div><div class="lab">Most recent</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pubs-controls">
+    <div class="shell">
+      <div class="pubs-controls-inner">
+        <div class="pubs-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="tls-search" placeholder="Search title, author, venue, DOI&hellip;" />
+          <button class="icon-btn" id="tls-search-clear" style="width:24px; height:24px; display:none" title="Clear">&times;</button>
+        </div>
+        <div class="pubs-sort" id="tls-sort">
+          <div class="opt active" data-sort="newest">Newest</div>
+          <div class="opt" data-sort="oldest">Oldest</div>
+          <div class="opt" data-sort="featured">Featured</div>
+        </div>
+      </div>
+      <div class="pubs-tags" id="tls-tags"></div>
+    </div>
+  </div>
+
+  <section class="pubs-list">
+    <div class="shell" id="tls-results"></div>
+  </section>
+
+  <footer class="site-foot">
+    <div class="shell footer-grid">
+      <div>
+        <h4>Colophon</h4>
+        <div class="colophon"><em>Set in EB Garamond &amp; Inter Tight.</em> Citations sourced from the canonical record at tyson-swetnam/home and verified DOIs.</div>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="{{ '' | url }}#research">Research</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="{{ 'teaching/' | url }}">Teaching</a></li>
+          <li><a href="{{ 'data/' | url }}">Open Science</a></li>
+          <li><a href="{{ '' | url }}#notes">Field Notes</a></li>
+          <li><a href="{{ 'cv/' | url }}">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noreferrer">ORCID</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
+          <li><a href="https://github.com/tyson-swetnam" target="_blank" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>&copy; 2019&ndash;2026 Tyson Lee Swetnam</span>
+      <span><span id="tls-foot-count"></span> entries</span>
+    </div>
+  </footer>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+  (function() {
+    document.body.classList.add('landing-page');
+
+    var ALL_PUBS = [
+      { n: 41, year: 2025, title: "The ARID Scoping Study Final Report", authors: "Reed, S.C., A.F. Feldman, N.P. Hanan, … T. Swetnam, … B. Cook", venue: "ORNL DAAC", doi: "10.3334/ORNLDAAC/2408", tags: ["ecology","fire","remote","osci"] },
+      { n: 40, year: 2024, title: "MDRepo — an open environment for data warehousing and knowledge discovery from molecular dynamics simulations", authors: "Roy A., E. Ward, … T.L. Swetnam, … T.J. Wheeler", venue: "Nucleic Acids Research", doi: "10.1093/nar/gkae1109", tags: ["genomics","ci"] },
+      { n: 39, year: 2024, title: "Data Science for Biochemists: Integrating and Evaluating the Use of Interactive Digital Python Notebooks in a Large-Enrollment Undergraduate Biochemistry Course", authors: "Brunk R., K. Shukla, … T.L. Swetnam, & E. Brunk", venue: "Journal of Chemical Education", doi: "10.1021/acs.jchemed.4c00167", tags: ["genomics","osci"] },
+      { n: 38, year: 2024, title: "NSF Major Facilities Cloud Use Cases and Considerations", authors: "Berriman, G.B., B. Dobbins, … T.L. Swetnam, … C. Vardeman", venue: "NSF CI-Compass (peer-reviewed report)", doi: "10.5281/zenodo.10481410", tags: ["ci","osci"] },
+      { n: 37, year: 2023, title: "CyVerse: Cyberinfrastructure for Open Science", authors: "Swetnam T.L., P.B. Antin, … & E. Lyons", venue: "PLOS Computational Biology", doi: "10.1101/2023.06.16.545223", tags: ["ci","osci","genomics","ecology"], featured: true },
+      { n: 36, year: 2023, title: "Using knowledge graphs to infer gene expression in plants", authors: "Thessen, A., L. Cooper, T.L. Swetnam, et al.", venue: "Frontiers in Artificial Intelligence", doi: "10.3389/frai.2023.1201002", tags: ["genomics","agri","ai","ci"] },
+      { n: 35, year: 2023, title: "PhytoOracle: Scalable, modular phenomics data processing pipelines", authors: "Gonzalez, E.M., A. Zarei, N. Hendler, et al.", venue: "Frontiers in Plant Science", doi: "10.1002/essoar.10508789.1", tags: ["agri","genomics","ci"] },
+      { n: 34, year: 2022, title: "Reimagine fire science for the anthropocene", authors: "Shuman J.K., J.K. Balch, … T. Swetnam, … X. Zhang", venue: "PNAS Nexus", doi: "10.1093/pnasnexus/pgac115", tags: ["fire","ecology"], featured: true },
+      { n: 33, year: 2022, title: "Remote sensing from unoccupied aerial systems: Opportunities to enhance Arctic plant ecology in a changing climate", authors: "Yang, D., B.D. Morrison, … T.L. Swetnam, … S.P. Serbin", venue: "Journal of Ecology", doi: "10.1111/1365-2745.13976", tags: ["remote","ecology"] },
+      { n: 32, year: 2021, title: "Harnessing the NEON data revolution to advance open environmental science with a diverse and data-capable community", authors: "Nagy R.C., J.K. Balch, … T.L. Swetnam, … K. Zhu", venue: "Ecosphere", doi: "10.1002/ecs2.3833", tags: ["ecology","remote","osci"], featured: true },
+      { n: 31, year: 2021, title: "Movement of sediment through a burned landscape: Sediment volume observations and model comparisons in the San Gabriel Mountains, California, USA", authors: "Rengers F.K., L.A. McGuire, J.W. Kean, D.M. Staley, et al.", venue: "Journal of Geophysical Research: Earth Surface", doi: "10.1029/2020JF006053", tags: ["fire","geo","hydro"] },
+      { n: 30, year: 2021, title: "UAS-Based Plant Phenotyping for Research and Breeding Applications", authors: "Guo W., M.E. Carroll, A. Singh, T.L. Swetnam, et al.", venue: "Plant Phenomics", doi: "10.34133/2021/9840192", tags: ["agri","remote","genomics"] },
+      { n: 29, year: 2021, title: "Ten simple rules to cultivate transdisciplinary collaboration in data science", authors: "Sahneh F., M.A. Balk, M. Kisley, C. Chan, M. Fox, B. Nord, et al.", venue: "PLoS Computational Biology", doi: "10.1371/journal.pcbi.1008879", tags: ["osci","ci"], featured: true },
+      { n: 28, year: 2021, title: "On the Use of Standardized Multi-Temporal Indices for Monitoring Disturbance and Ecosystem Moisture Stress across Multiple Earth Observation Systems in the Google Earth Engine", authors: "Swetnam T.L., S.R. Yool, S. Roy, D.A. Falk", venue: "Remote Sensing", doi: "10.3390/rs13081448", tags: ["remote","ecology","ci"] },
+      { n: 27, year: 2021, title: "Innovations to expand drone data collection and analysis for rangeland monitoring", authors: "Gillan J.K., G.E. Ponce-Campos, T.L. Swetnam, A. Gorlier, P. Heilman, M.P. McClaran", venue: "Ecosphere", doi: "10.1002/ecs2.3649", tags: ["remote","agri","ecology"] },
+      { n: 26, year: 2021, title: "Rangewide habitat suitability analysis for the Mexican wolf (Canis lupus baileyi) to identify recovery areas in its historical distribution", authors: "Martínez-Meyer E., A. González-Bernal, J.A. Velasco, et al.", venue: "Diversity and Distributions", doi: "10.1111/ddi.13222", tags: ["ecology","remote"] },
+      { n: 25, year: 2020, title: "Ten simple rules for organizing a data science workshop", authors: "Ponsero A., R. Bartelme, … H. Ellingson, et al.", venue: "PLoS Computational Biology", doi: "10.1371/journal.pcbi.1008226", tags: ["osci","ci"] },
+      { n: 24, year: 2020, title: "Extreme drought and adaptive resource selection by a desert mammal", authors: "Gedir J.V., J.W. Cain III, T.L. Swetnam, P.R. Krausman, J.R. Morgart", venue: "Ecosphere", doi: "10.1002/ecs2.3175", tags: ["ecology"] },
+      { n: 23, year: 2020, title: "The Rockerverse: Packages and Applications for Containerisation with R", authors: "Nüst D., D. Eddelbuettel, … T.L. Swetnam, … N. Xiao", venue: "The R Journal", doi: "10.32614/rj-2020-007", tags: ["ci","osci"] },
+      { n: 22, year: 2019, title: "Allometric relationships between primary size measures and sapwood area for six common tree species in snow-dependent ecosystems in the Southwest United States", authors: "Mitra B., S.A. Papuga, M.R. Alexander, T.L. Swetnam, N. Abramson", venue: "Journal of Forest Research", doi: "10.1007/s11676-019-01048-y", tags: ["ecology","hydro"] },
+      { n: 21, year: 2019, title: "Estimating Forage Utilization with Drone-Based Photogrammetric Point Clouds", authors: "Gillan J.K., M.P. McClaran, T.L. Swetnam, P. Heilman", venue: "Rangeland Ecology & Management", doi: "10.1016/j.rama.2019.02.009", tags: ["remote","agri"] },
+      { n: 20, year: 2019, title: "Modeling Riparian Restoration Impacts on the Hydrologic Cycle at the Babacomari Ranch, SE Arizona, USA", authors: "Norman L.M., J.B. Callegary, L. Lacher, N.R. Wilson, C. Fandel, B.T. Forbes, T. Swetnam", venue: "Water", doi: "10.3390/w11020381", tags: ["hydro","ecology"] },
+      { n: 19, year: 2018, title: "Jetstream — Early operations performance, adoption, and impacts", authors: "Hancock D., C. Stewart, M. Vaughn, et al.", venue: "Concurrency and Computation: Practice and Experience", doi: "10.1002/cpe.4683", tags: ["ci","osci"] },
+      { n: 18, year: 2018, title: "A net ecosystem carbon budget for snow dominated forested headwater catchments: linking water and carbon fluxes to critical zone carbon storage", authors: "Perdrial J., P.D. Brooks, T. Swetnam, et al.", venue: "Biogeochemistry", doi: "10.1007/s10533-018-0440-3", tags: ["ecology","hydro","geo"] },
+      { n: 17, year: 2018, title: "Which way do you lean? Using slope aspect variations to understand Critical Zone processes and feedbacks", authors: "Pelletier J.D., G.A. Barron-Gafford, … T.L. Swetnam, G.E. Tucker", venue: "Earth Surface Processes & Landforms", doi: "10.1002/esp.4306", tags: ["geo","hydro","ecology"] },
+      { n: 16, year: 2018, title: "Considerations for achieving cross-platform point cloud data fusion across different dryland ecosystem structural states", authors: "Swetnam T.L., J.K. Gillan, T.T. Sankey, M.P. McClaran, M.H. Nichols, P. Heilman, J. McVay", venue: "Frontiers in Plant Sciences", doi: "10.3389/fpls.2017.02144", tags: ["remote","ecology","agri"] },
+      { n: 15, year: 2017, title: "Fusing tree-ring and forest inventory data to infer influences on tree growth", authors: "Evans M.E.K., D.A. Falk, A. Arizpe, T.L. Swetnam, F. Babst, K.E. Holsinger", venue: "Ecosphere", doi: "10.1002/ecs2.1889", tags: ["ecology"] },
+      { n: 14, year: 2017, title: "Topographically driven differences in energy and water constrain climatic control on forest carbon sequestration", authors: "Swetnam T.L., P.D. Brooks, H.R. Barnard, A.A. Harpold, E.L. Gallo", venue: "Ecosphere", doi: "10.1002/ecs2.1797", tags: ["ecology","hydro","geo","remote"], featured: true },
+      { n: 13, year: 2017, title: "Mexican wolf habitat suitability analysis in historical range in the Southwestern US and Mexico", authors: "Martínez-Meyer E., A. González-Bernal, … T.L. Swetnam, … J.K. Oakleaf", venue: "US Fish and Wildlife Service Draft Report", doi: null, url: "https://www.fws.gov/southwest/es/mexicanwolf/pdf/20170622_DftBioReport_Appendices.pdf", tags: ["ecology","remote"] },
+      { n: 12, year: 2017, title: "Asymmetry of weathering-limited hillslopes: the importance of diurnal covariation in solar insolation and temperature", authors: "Pelletier J.D., T.L. Swetnam", venue: "Earth Surface Processes & Landforms", doi: "10.1002/esp.4136", tags: ["geo","hydro"] },
+      { n: 11, year: 2017, title: "UAV hyperspectral and lidar data and their fusion for arid and semi-arid land vegetation monitoring", authors: "Sankey T.T., J. McVay, T.L. Swetnam, M.P. McClaran, P. Heilman, M. Nichols", venue: "Remote Sensing in Ecology and Conservation", doi: "10.1002/rse2.44", tags: ["remote","ecology"] },
+      { n: 10, year: 2016, title: "Scaling GIS analysis tasks from the desktop to the cloud utilizing contemporary distributed computing and data management approaches", authors: "Swetnam T.L., J.D. Pelletier, C. Rasmussen, N.R. Callahan, N. Merchant, E. Lyons, M. Rynge, Y. Liu, V. Nandigam, C. Crosby", venue: "XSEDE16 Proceedings (ACM)", doi: null, url: "http://dl.acm.org/citation.cfm?id=2949573", tags: ["ci","remote","osci"] },
+      { n: 9, year: 2016, title: "Tree morphologic plasticity explains deviation from metabolic scaling theory in semi-arid conifer forests, southwestern USA", authors: "Swetnam T.L., C.D. O'Connor, A.M. Lynch", venue: "PLOS One", doi: "10.1371/journal.pone.0157582", tags: ["ecology"] },
+      { n: 8, year: 2016, title: "Working Paper 35: Carbon Cycling in Southwestern Forests: Reservoirs, Fluxes, and the Effects of Fire and Management", authors: "Swetnam T.L., D.A. Falk", venue: "Ecological Restoration Institute / SW Fire Science Consortium", doi: null, url: "http://openknowledge.nau.edu/2293/", tags: ["fire","ecology"] },
+      { n: 7, year: 2015, title: "Discriminating disturbance from natural variation with LiDAR in semi-arid forests in the southwestern USA", authors: "Swetnam T.L., A.M. Lynch, D.A. Falk, S.R. Yool, D.P. Guertin", venue: "Ecosphere", doi: "10.1890/ES14-00384.1", tags: ["remote","ecology","fire"] },
+      { n: 6, year: 2015, title: "Laser vision: lidar as a transformative tool to advance critical zone science", authors: "Harpold A.A., et al.", venue: "Hydrology and Earth Systems Science", doi: "10.5194/hess-19-2881-2015", tags: ["remote","hydro","geo"] },
+      { n: 5, year: 2014, title: "Estimating individual tree mid- and understory rank-size distributions from airborne laser scanning in semi-arid forests", authors: "Swetnam T.L., D.A. Falk, A.M. Lynch, S.R. Yool", venue: "Forest Ecology and Management", doi: "10.1016/j.foreco.2014.07.011", tags: ["remote","ecology"] },
+      { n: 4, year: 2014, title: "Application of Metabolic Scaling Theory to reduce error in local maxima tree segmentation from aerial LiDAR", authors: "Swetnam T.L., D.A. Falk", venue: "Forest Ecology and Management", doi: "10.1016/j.foreco.2014.03.016", tags: ["remote","ecology"] },
+      { n: 3, year: 2013, title: "Coevolution of nonlinear trends in vegetation, soils, and topography with elevation and slope aspect: A case study in the sky islands of southern Arizona", authors: "Pelletier J.D., G.A. Barron-Gafford, … T.L. Swetnam, P.A. Troch", venue: "Journal of Geophysical Research: Earth Surface", doi: "10.1002/jgrf.20046", tags: ["geo","ecology","hydro"] },
+      { n: 2, year: 2010, title: "Reconstructing Landscape Pattern of Historical Fires and Fire Regimes", authors: "Swetnam T.L., D.A. Falk, A.E. Hessl, C. Farris", venue: "Book chapter — The Landscape Ecology of Fire", doi: "10.1007/978-94-007-0301-8_7", tags: ["fire","ecology"] },
+      { n: 1, year: 2010, title: "Comparing selected fire regime condition class (FRCC) and LANDFIRE vegetation model results with tree-ring data", authors: "Swetnam T.L., P.M. Brown", venue: "International Journal of Wildland Fire", doi: "10.1071/WF08001", tags: ["fire","ecology","remote"] }
+    ];
+
+    var TAG_LABELS = {
+      ci: "Cyberinfrastructure", osci: "Open Science", remote: "Remote Sensing",
+      ecology: "Ecology", fire: "Fire Science", hydro: "Hydrology",
+      geo: "Geomorphology", genomics: "Genomics", agri: "Agriculture",
+      astro: "Astronomy", ai: "AI / ML"
+    };
+
+    // Theme
+    var savedTheme = localStorage.getItem('tls-theme') || 'light';
+    document.body.dataset.theme = savedTheme;
+    document.body.dataset.accent = 'ochre';
+
+    function setThemeIcon(theme) {
+      var path = document.getElementById('tls-icon-moon');
+      if (!path) return;
+      if (theme === 'dark') {
+        path.parentNode.innerHTML = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>';
+      } else {
+        path.parentNode.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>';
+      }
+    }
+    setThemeIcon(savedTheme);
+
+    var themeBtn = document.getElementById('tls-theme-toggle');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function() {
+        var current = document.body.dataset.theme === 'dark' ? 'dark' : 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.body.dataset.theme = next;
+        localStorage.setItem('tls-theme', next);
+        setThemeIcon(next);
+      });
+    }
+
+    // Stats
+    var years = ALL_PUBS.map(function(p) { return p.year; });
+    var firstAuthor = ALL_PUBS.filter(function(p) { return p.authors.indexOf('Swetnam') === 0; }).length;
+    document.getElementById('tls-stat-total').textContent = ALL_PUBS.length;
+    document.getElementById('tls-stat-firstauthor').textContent = firstAuthor;
+    document.getElementById('tls-stat-first').textContent = Math.min.apply(null, years);
+    document.getElementById('tls-stat-last').textContent = Math.max.apply(null, years);
+    document.getElementById('tls-foot-count').textContent = ALL_PUBS.length;
+
+    // State
+    var state = { query: '', activeTags: [], sort: 'newest' };
+
+    var tagCounts = {};
+    ALL_PUBS.forEach(function(p) { p.tags.forEach(function(t) { tagCounts[t] = (tagCounts[t] || 0) + 1; }); });
+    var tagOrder = Object.keys(TAG_LABELS).filter(function(t) { return tagCounts[t] > 0; })
+                     .sort(function(a, b) { return tagCounts[b] - tagCounts[a]; });
+
+    function escapeHtml(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // Render tag chips
+    var tagsWrap = document.getElementById('tls-tags');
+    function renderTags() {
+      tagsWrap.innerHTML = '';
+      var allChip = document.createElement('div');
+      allChip.className = 'chip' + (state.activeTags.length === 0 ? ' active' : '');
+      allChip.innerHTML = 'All<span class="count">' + ALL_PUBS.length + '</span>';
+      allChip.addEventListener('click', function() { state.activeTags = []; renderTags(); render(); });
+      tagsWrap.appendChild(allChip);
+      tagOrder.forEach(function(t) {
+        var chip = document.createElement('div');
+        chip.className = 'chip' + (state.activeTags.indexOf(t) >= 0 ? ' active' : '');
+        chip.innerHTML = TAG_LABELS[t] + '<span class="count">' + tagCounts[t] + '</span>';
+        chip.addEventListener('click', function() {
+          var idx = state.activeTags.indexOf(t);
+          if (idx >= 0) state.activeTags.splice(idx, 1);
+          else state.activeTags.push(t);
+          renderTags(); render();
+        });
+        tagsWrap.appendChild(chip);
+      });
+    }
+
+    // Search
+    var searchInput = document.getElementById('tls-search');
+    var clearBtn = document.getElementById('tls-search-clear');
+    searchInput.addEventListener('input', function() {
+      state.query = searchInput.value;
+      clearBtn.style.display = state.query ? 'grid' : 'none';
+      render();
+    });
+    clearBtn.addEventListener('click', function() {
+      searchInput.value = ''; state.query = '';
+      clearBtn.style.display = 'none';
+      render();
+    });
+
+    // Sort
+    document.getElementById('tls-sort').addEventListener('click', function(e) {
+      var opt = e.target.closest('.opt');
+      if (!opt) return;
+      state.sort = opt.dataset.sort;
+      document.querySelectorAll('#tls-sort .opt').forEach(function(o) { o.classList.remove('active'); });
+      opt.classList.add('active');
+      render();
+    });
+
+    function pubItemHtml(p) {
+      var href = p.doi ? ('https://doi.org/' + p.doi) : (p.url || '#');
+      var num = '№ ' + (p.n < 10 ? '0' + p.n : p.n);
+      var tags = p.tags.map(function(t) { return '· ' + (TAG_LABELS[t] || t); }).join(' ');
+      var featured = p.featured ? '<span class="featured-tag">★ featured</span>' : '';
+      var doiLabel = p.doi ? 'doi ↗' : (p.url ? 'link ↗' : '');
+      return '<a class="pub" href="' + href + '" target="_blank" rel="noreferrer">' +
+        '<div class="num">' + num + '</div>' +
+        '<div>' +
+          '<div class="title">' + escapeHtml(p.title) + featured + '</div>' +
+          '<div class="meta">' + escapeHtml(p.authors) + ' · in <em>' + escapeHtml(p.venue) + '</em></div>' +
+          '<div class="tags">' + tags + '</div>' +
+        '</div>' +
+        '<div class="year">' +
+          '<div class="numeral">' + p.year + '</div>' +
+          '<span class="doi">' + doiLabel + '</span>' +
+        '</div>' +
+      '</a>';
+    }
+
+    function render() {
+      var list = ALL_PUBS.slice();
+      if (state.activeTags.length) {
+        list = list.filter(function(p) { return state.activeTags.every(function(t) { return p.tags.indexOf(t) >= 0; }); });
+      }
+      if (state.query.trim()) {
+        var q = state.query.toLowerCase();
+        list = list.filter(function(p) {
+          return p.title.toLowerCase().indexOf(q) >= 0 ||
+                 p.authors.toLowerCase().indexOf(q) >= 0 ||
+                 p.venue.toLowerCase().indexOf(q) >= 0 ||
+                 (p.doi || '').toLowerCase().indexOf(q) >= 0;
+        });
+      }
+      if (state.sort === 'newest') list.sort(function(a, b) { return (b.year - a.year) || (b.n - a.n); });
+      else if (state.sort === 'oldest') list.sort(function(a, b) { return (a.year - b.year) || (a.n - b.n); });
+      else if (state.sort === 'featured') list.sort(function(a, b) { return ((b.featured?1:0) - (a.featured?1:0)) || (b.year - a.year); });
+
+      var results = document.getElementById('tls-results');
+      if (list.length === 0) {
+        results.innerHTML = '<div class="empty">No publications match those filters.</div>';
+        return;
+      }
+
+      if (state.sort === 'featured') {
+        results.innerHTML = '<div class="pub-list">' + list.map(pubItemHtml).join('') + '</div>';
+      } else {
+        var groups = {};
+        list.forEach(function(p) { (groups[p.year] = groups[p.year] || []).push(p); });
+        var yearKeys = Object.keys(groups).map(Number).sort(function(a, b) {
+          return state.sort === 'oldest' ? a - b : b - a;
+        });
+        var html = yearKeys.map(function(y) {
+          var items = groups[y];
+          return '<div class="pubs-year-group">' +
+            '<div class="pubs-year-head"><div class="y">' + y + '</div>' +
+            '<div class="lab">' + items.length + ' ' + (items.length === 1 ? 'entry' : 'entries') + '</div></div>' +
+            '<div class="pub-list">' + items.map(pubItemHtml).join('') + '</div>' +
+          '</div>';
+        }).join('');
+        results.innerHTML = html;
+      }
+    }
+
+    renderTags();
+    render();
+  })();
+  </script>
+{% endblock %}
