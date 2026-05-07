@@ -66,10 +66,10 @@ features = [
   "search.suggest"
 ]
 
-# Font configuration
+# Font configuration — actual fonts loaded via extra_css from Google Fonts
 [project.theme.font]
-text = "Montserrat"
-code = "Regular"
+text = "Inter Tight"
+code = "JetBrains Mono"
 
 # Color palette configuration
 [[project.theme.palette]]
@@ -121,7 +121,10 @@ provider = "google"
 property = "G-NYETZFD8DN"
 
 # Custom CSS and JavaScript
-extra_css = ["stylesheets/extra.css"]
+extra_css = [
+  "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap",
+  "stylesheets/extra.css"
+]
 
 # Markdown extensions
 markdown_extensions = [
