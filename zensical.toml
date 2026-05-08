@@ -60,7 +60,10 @@ features = [
   "navigation.tabs",
   "navigation.tabs.sticky",
   "navigation.indexes",
+  "navigation.path",
   "navigation.top",
+  "navigation.footer",
+  "toc.follow",
   "search.highlight",
   "search.share",
   "search.suggest"
