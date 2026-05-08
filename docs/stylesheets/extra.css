@@ -661,25 +661,3 @@ body.landing-page .topbar-drawer { display: none !important; }
   .md-typeset h2 { font-size: clamp(24px, 5vw, 32px); padding-top: 1em; }
 }
 
-/* ---------- Site-specific: announcement bar ---------- */
-.announcement {
-  position: relative;
-  padding: 15px;
-  background-color: var(--paper-2);
-  border-bottom: 1px solid var(--rule);
-  font-family: var(--sans);
-  font-size: 13.5px;
-  color: var(--ink-2);
-}
-.announcement a { color: var(--accent); }
-.close-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: var(--ink-3);
-}
-.close-button:hover { color: var(--ink); }
