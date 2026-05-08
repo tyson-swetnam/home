@@ -21,29 +21,6 @@
 {% block scripts %}
   {{ super() }}
   <script>
-    // Toggle landing-page body class based on URL so navigation.instant
-    // doesn't carry the class from / onto inner pages (which would hide
-    // their .md-header / .md-tabs / etc.).
-    (function() {
-      function isLandingPath(p) {
-        return p === '/' || p === '' || p === '/index.html' ||
-               /\/publications\/?$/.test(p) || /\/publications\/index\.html$/.test(p);
-      }
-      function update() {
-        document.body.classList.toggle('landing-page', isLandingPath(location.pathname));
-      }
-      update();
-      if (typeof document$ !== 'undefined' && document$.subscribe) {
-        document$.subscribe(update);
-      }
-      if (typeof location$ !== 'undefined' && location$.subscribe) {
-        location$.subscribe(function(u) {
-          document.body.classList.toggle('landing-page', isLandingPath(u.pathname));
-        });
-      }
-    })();
-  </script>
-  <script>
     document.addEventListener('DOMContentLoaded', function() {
       var announcement = document.getElementById('announcement');
       // Hide if previously closed
@@ -59,6 +36,7 @@
       }
     });
   </script>
+  <script src="{{ 'javascripts/landing.js' | url }}"></script>
   <!-- LLM Widget -->
   <link rel="stylesheet" href="{{ 'assets/react/llm-widget.css' | url }}">
   <script type="module" src="{{ 'assets/react/llm-widget.js' | url }}"></script>
