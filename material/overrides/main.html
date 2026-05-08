@@ -6,6 +6,36 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="{{ 'stylesheets/extra.css' | url }}">
 {% endblock %}
+{% block header %}
+  {{ super() }}
+  <header class="topbar" id="tls-topbar">
+    <div class="shell topbar-inner">
+      <label class="topbar-drawer" for="__drawer" aria-label="Open navigation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </label>
+      <a class="brand" href="{{ '' | url }}">
+        <span class="initials">TLS</span>
+        <span class="name">T.L. Swetnam</span>
+      </a>
+      <nav class="primary" id="tls-nav">
+        <a href="{{ '' | url }}" data-tls-key="home">Home</a>
+        <a href="{{ 'current_projects/' | url }}" data-tls-key="research">Research</a>
+        <a href="{{ 'publications/' | url }}" data-tls-key="publications">Publications</a>
+        <a href="{{ 'teaching/' | url }}" data-tls-key="teaching">Teaching</a>
+        <a href="{{ 'data/' | url }}" data-tls-key="os">Open Science</a>
+        <a href="{{ 'blog/' | url }}" data-tls-key="notes">Field Notes</a>
+        <a href="{{ 'cv/' | url }}" data-tls-key="cv">CV</a>
+      </nav>
+      <div class="tools">
+        <button class="icon-btn" id="tls-theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path id="tls-icon-moon" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+{% endblock %}
 {% block announce %}
   <div id="announcement" class="announcement">
     For updates connect with <strong>tyson-tswetnam</strong> on

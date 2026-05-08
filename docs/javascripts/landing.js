@@ -186,39 +186,6 @@
     if (document.body.dataset.tlsLandingInit === '1') return;
     document.body.dataset.tlsLandingInit = '1';
 
-    applyTheme(localStorage.getItem('tls-theme') || 'light');
-    bindThemeToggle();
-
-    // Smooth scroll on top-bar nav
-    var nav = document.getElementById('tls-nav');
-    if (nav && nav.dataset.tlsBound !== '1') {
-      nav.dataset.tlsBound = '1';
-      nav.addEventListener('click', function(e) {
-        var a = e.target.closest('a[data-anchor]');
-        if (!a) return;
-        e.preventDefault();
-        var id = a.getAttribute('data-anchor');
-        var el = document.getElementById(id);
-        if (el) window.scrollTo({ top: el.offsetTop - 64, behavior: 'smooth' });
-      });
-    }
-
-    // Scroll-spy
-    var ids = ['hero','research','publications','teaching','os','notes','cv'];
-    if ('IntersectionObserver' in window) {
-      var spy = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) {
-          if (e.isIntersecting) {
-            var id = e.target.id;
-            document.querySelectorAll('#tls-nav a').forEach(function(a) { a.classList.remove('active'); });
-            var active = document.querySelector('#tls-nav a[data-anchor="' + id + '"]');
-            if (active) active.classList.add('active');
-          }
-        });
-      }, { threshold: [0.3], rootMargin: '-20% 0px -50% 0px' });
-      ids.forEach(function(id) { var el = document.getElementById(id); if (el) spy.observe(el); });
-    }
-
     // Reveal-on-scroll
     if ('IntersectionObserver' in window) {
       var rev = new IntersectionObserver(function(entries) {
@@ -461,9 +428,6 @@
     if (document.body.dataset.tlsPubsInit === '1') return;
     document.body.dataset.tlsPubsInit = '1';
 
-    applyTheme(localStorage.getItem('tls-theme') || 'light');
-    bindThemeToggle();
-
     var years = ALL_PUBS.map(function(p) { return p.year; });
     var firstAuthor = ALL_PUBS.filter(function(p) { return p.authors.indexOf('Swetnam') === 0; }).length;
     var setText = function(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
@@ -606,9 +570,35 @@
     render();
   }
 
+  // ===== Global topbar (rendered on every page from main.html) =====
+  // Map each topbar nav key to the URL path segments that should highlight it.
+  var SECTION_MATCHERS = {
+    home:         /^(\/|\/index\.html)?$/,
+    research:     /\/(current_projects|previous_projects|awards|epubs|talks|groups)(\/|$)/,
+    publications: /\/publications(\/|$)/,
+    teaching:     /\/(teaching|mentoring)(\/|$)/,
+    os:           /\/(data|code)(\/|$)/,
+    notes:        /\/blog(\/|$)/,
+    cv:           /\/cv(\/|$)/
+  };
+
+  function tlsTopbarInit() {
+    applyTheme(localStorage.getItem('tls-theme') || 'light');
+    bindThemeToggle();
+    var path = location.pathname;
+    var matchedKey = null;
+    for (var key in SECTION_MATCHERS) {
+      if (SECTION_MATCHERS[key].test(path)) { matchedKey = key; break; }
+    }
+    document.querySelectorAll('#tls-nav a').forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('data-tls-key') === matchedKey);
+    });
+  }
+
   // ===== Single dispatcher =====
   function runAll() {
     updateLandingClass();
+    tlsTopbarInit();
     // Reset sentinel markers so re-init runs on each navigation event
     delete document.body.dataset.tlsLandingInit;
     delete document.body.dataset.tlsPubsInit;
