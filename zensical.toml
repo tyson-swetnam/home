@@ -64,6 +64,7 @@ features = [
   "navigation.top",
   "navigation.footer",
   "toc.follow",
+  "toc.integrate",
   "search.highlight",
   "search.share",
   "search.suggest"

@@ -265,7 +265,10 @@
 {% block scripts %}
   {{ super() }}
   <script>
-  (function() {
+  function tlsPubsInit() {
+    if (!document.getElementById('tls-results')) return;
+    if (document.body.dataset.tlsPubsInit === '1') return;
+    document.body.dataset.tlsPubsInit = '1';
     document.body.classList.add('landing-page');
 
     var ALL_PUBS = [
@@ -480,6 +483,14 @@
 
     renderTags();
     render();
-  })();
+  }
+  if (typeof document$ !== 'undefined' && document$.subscribe) {
+    document$.subscribe(function() {
+      delete document.body.dataset.tlsPubsInit;
+      tlsPubsInit();
+    });
+  } else {
+    tlsPubsInit();
+  }
   </script>
 {% endblock %}

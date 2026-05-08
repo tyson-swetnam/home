@@ -185,7 +185,17 @@
     body.landing-page .constellation-wrap {
       position: relative; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
       background: radial-gradient(ellipse 80% 60% at 50% 50%, var(--paper) 30%, var(--paper-2) 100%);
-      aspect-ratio: 16 / 10; min-height: 480px;
+      aspect-ratio: 16 / 10;
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (min-width: 760px) {
+      body.landing-page .constellation-wrap { min-height: 480px; }
+    }
+    @media (max-width: 760px) {
+      body.landing-page .constellation-wrap { aspect-ratio: 4 / 5; }
+      body.landing-page .constellation-wrap .corner { font-size: 9px; }
+      body.landing-page .constellation-wrap .legend { font-size: 10px; padding: 6px 8px; gap: 10px; }
     }
     body.landing-page .constellation-wrap .legend {
       position: absolute; left: 16px; bottom: 16px;
@@ -639,7 +649,10 @@
 {% block scripts %}
   {{ super() }}
   <script>
-  (function() {
+  function tlsLandingInit() {
+    if (!document.getElementById('tls-constellation')) return;
+    if (document.body.dataset.tlsLandingInit === '1') return;
+    document.body.dataset.tlsLandingInit = '1';
     document.body.classList.add('landing-page');
 
     // ===== Site data =====
@@ -1023,6 +1036,14 @@
       renderDomainFilters();
       refresh();
     }
-  })();
+  }
+  if (typeof document$ !== 'undefined' && document$.subscribe) {
+    document$.subscribe(function() {
+      delete document.body.dataset.tlsLandingInit;
+      tlsLandingInit();
+    });
+  } else {
+    tlsLandingInit();
+  }
   </script>
 {% endblock %}
