@@ -19,6 +19,7 @@ export default defineConfig({
     }
   },
   define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
     'process.env.VITE_CYVERSE_API_KEY': JSON.stringify(process.env.VITE_CYVERSE_API_KEY)
   }
 })

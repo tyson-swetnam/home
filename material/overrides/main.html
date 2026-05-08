@@ -20,7 +20,29 @@
 {% endblock %}
 {% block scripts %}
   {{ super() }}
-  <script src="{{ 'assets/javascripts/custom.4e50d00f.min.js' | url }}"></script>
+  <script>
+    // Toggle landing-page body class based on URL so navigation.instant
+    // doesn't carry the class from / onto inner pages (which would hide
+    // their .md-header / .md-tabs / etc.).
+    (function() {
+      function isLandingPath(p) {
+        return p === '/' || p === '' || p === '/index.html' ||
+               /\/publications\/?$/.test(p) || /\/publications\/index\.html$/.test(p);
+      }
+      function update() {
+        document.body.classList.toggle('landing-page', isLandingPath(location.pathname));
+      }
+      update();
+      if (typeof document$ !== 'undefined' && document$.subscribe) {
+        document$.subscribe(update);
+      }
+      if (typeof location$ !== 'undefined' && location$.subscribe) {
+        location$.subscribe(function(u) {
+          document.body.classList.toggle('landing-page', isLandingPath(u.pathname));
+        });
+      }
+    })();
+  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var announcement = document.getElementById('announcement');
