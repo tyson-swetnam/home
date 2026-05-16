@@ -169,6 +169,7 @@
   }
   function applyTheme(theme) {
     var scheme = theme === 'dark' ? 'slate' : 'home';
+    document.documentElement.setAttribute('data-md-color-scheme', scheme);
     document.body.setAttribute('data-md-color-scheme', scheme);
     document.body.setAttribute('data-md-color-primary', 'indigo');
     document.body.setAttribute('data-md-color-accent', 'indigo');
