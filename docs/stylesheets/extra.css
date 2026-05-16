@@ -118,9 +118,17 @@ body, .md-typeset {
 
 .md-typeset { font-size: 0.85rem; }
 
-/* ---------- Material header / tabs hidden in favor of editorial topbar ---------- */
+/* ---------- Material header / tabs / sidebars / footer hidden in favor of editorial topbar ---------- */
 .md-header { display: none !important; }
 .md-tabs { display: none !important; }
+.md-sidebar { display: none !important; }
+.md-footer { display: none !important; }
+
+/* Content gets the full width when there are no sidebars */
+.md-main__inner { margin: 0 auto; max-width: 1280px; }
+.md-content { max-width: none; }
+.md-content__inner { margin: 0 auto; padding: 1.2rem clamp(20px, 4vw, 56px); max-width: 56rem; }
+.md-content__inner::before { display: none; }
 
 /* ---------- Editorial topbar (rendered in main.html on every page) ---------- */
 .topbar {
@@ -197,24 +205,6 @@ body, .md-typeset {
   content: ""; position: absolute; left: 12px; right: 12px; bottom: 2px;
   height: 1.5px; background: var(--accent);
 }
-
-/* Mobile drawer toggle inside topbar — opens Material's left sidebar via __drawer checkbox */
-.topbar-drawer {
-  display: none;
-  width: 36px; height: 36px;
-  align-items: center; justify-content: center;
-  border-radius: 6px;
-  color: var(--ink-2);
-  cursor: pointer;
-  flex: 0 0 auto;
-  margin-right: 4px;
-}
-.topbar-drawer:hover { color: var(--ink); background: var(--paper-2); }
-@media (max-width: 76.1875em) {
-  .topbar-drawer { display: inline-flex; }
-}
-/* Landing & publications hide Material sidebars, so the drawer toggle is meaningless there */
-body.landing-page .topbar-drawer { display: none !important; }
 
 .topbar .tools { display: flex; gap: 8px; align-items: center; flex: 0 0 auto; }
 .topbar .icon-btn {
