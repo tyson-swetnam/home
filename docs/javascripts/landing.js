@@ -155,10 +155,37 @@
     astro: "Astronomy", ai: "AI / ML"
   };
 
-  // ===== Theme toggle (shared between landing + publications) =====
+  // ===== Theme toggle (single source of truth: data-md-color-scheme) =====
+  // 'light' → scheme 'home', 'dark' → scheme 'slate'. We persist in our own
+  // localStorage key (tls-theme) and write to Material's __palette key too so
+  // the two systems stay in sync.
+  function currentTheme() {
+    var saved = localStorage.getItem('tls-theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+    var scheme = document.body.getAttribute('data-md-color-scheme');
+    if (scheme === 'slate' || scheme === 'tls-dark') return 'dark';
+    if (scheme === 'home' || scheme === 'default' || scheme === 'tls-light') return 'light';
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
   function applyTheme(theme) {
+    var scheme = theme === 'dark' ? 'slate' : 'home';
+    document.body.setAttribute('data-md-color-scheme', scheme);
+    document.body.setAttribute('data-md-color-primary', 'indigo');
+    document.body.setAttribute('data-md-color-accent', 'indigo');
     document.body.dataset.theme = theme;
     document.body.dataset.accent = 'ochre';
+    // Persist to Material's palette key so its own init agrees with ours
+    try {
+      localStorage.setItem('__palette', JSON.stringify({
+        index: theme === 'dark' ? 2 : 1,
+        color: {
+          media: theme === 'dark' ? '(prefers-color-scheme: dark)' : '(prefers-color-scheme: light)',
+          scheme: scheme,
+          primary: 'indigo',
+          accent: 'indigo'
+        }
+      }));
+    } catch (e) {}
     var path = document.getElementById('tls-icon-moon');
     if (path) {
       if (theme === 'dark') {
@@ -173,8 +200,7 @@
     if (!btn || btn.dataset.tlsBound === '1') return;
     btn.dataset.tlsBound = '1';
     btn.addEventListener('click', function() {
-      var current = document.body.dataset.theme === 'dark' ? 'dark' : 'light';
-      var next = current === 'dark' ? 'light' : 'dark';
+      var next = currentTheme() === 'dark' ? 'light' : 'dark';
       localStorage.setItem('tls-theme', next);
       applyTheme(next);
     });
@@ -583,7 +609,7 @@
   };
 
   function tlsTopbarInit() {
-    applyTheme(localStorage.getItem('tls-theme') || 'light');
+    applyTheme(currentTheme());
     bindThemeToggle();
     var path = location.pathname;
     var matchedKey = null;
