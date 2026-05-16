@@ -12,8 +12,14 @@
    experience is unaffected by anything below.
    ============================================================ */
 
-/* ---------- Tokens ---------- */
+/* ---------- Tokens ----------
+   Scoped to :root so the inline pre-paint script in main.html (which
+   sets data-md-color-scheme on <html>) drives the cascade. Body-level
+   attributes (which Material's bundle sets) don't affect tokens. */
 :root,
+:root[data-md-color-scheme="tls-light"],
+:root[data-md-color-scheme="default"],
+:root[data-md-color-scheme="home"],
 [data-md-color-scheme="tls-light"],
 [data-md-color-scheme="default"],
 [data-md-color-scheme="home"] {
@@ -72,6 +78,8 @@
   --md-footer-fg-color--lighter: color-mix(in oklab, var(--paper) 50%, transparent);
 }
 
+:root[data-md-color-scheme="tls-dark"],
+:root[data-md-color-scheme="slate"],
 [data-md-color-scheme="tls-dark"],
 [data-md-color-scheme="slate"] {
   --paper:   oklch(0.16 0.012 60);
