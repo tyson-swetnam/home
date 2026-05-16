@@ -4,78 +4,47 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website for T.L. Swetnam (tysonswetnam.com) - a hybrid Zensical + React application deployed to GitHub Pages.
+Personal website for T.L. Swetnam (tysonswetnam.com) - a Zensical static site deployed to GitHub Pages.
 
 ## Architecture
 
-**Dual Build System**: The site combines Zensical (modern static site generator by Material for MkDocs team) for content with a standalone React widget for LLM chat functionality.
-
-- **Zensical Layer**:
-  - Content in `docs/` (markdown files, assets)
-  - Custom theme overrides in `material/overrides/` extend the base theme
-  - Configuration in `zensical.toml` defines navigation, theme palette, markdown extensions, and features
-  - **Note**: Blog functionality is not yet available in Zensical (as of January 2026), so blog posts in `docs/blog/` are served as static pages without blog features
-
-- **React Widget Layer**:
-  - Source in `src/` (React components with `main.jsx` entry point)
-  - Built as ES module via Vite to `docs/assets/react/`
-  - Vite config (`vite.config.js`) builds as library with external dependencies bundled
-  - Injected into Zensical via `material/overrides/main.html` template
-  - Connects to CyVerse Verde API (`https://llm-api.cyverse.ai/v1`) using `gemma-3-12b-it` model
-
-**Integration Point**: The `main.html` override loads the compiled React widget (`llm-widget.js` and `llm-widget.css`) as a module script, allowing the React component to mount within the Zensical-rendered pages.
+- Content in `docs/` (markdown files, assets, blog posts)
+- Custom theme overrides in `material/overrides/` extend the base theme — `main.html` renders the global editorial topbar, `home.html` is the landing page, `publications.html` is the publication portfolio page
+- Configuration in `zensical.toml` defines navigation, theme palette, markdown extensions, and features
+- Global JS in `docs/javascripts/landing.js` (loaded once from `main.html`, subscribes to Material's `document$` so it runs on every instant-nav event; dispatches into per-page inits gated by sentinel DOM elements)
+- Editorial design tokens + Material chrome overrides in `docs/stylesheets/extra.css`
+- **Note**: Blog functionality is not yet available in Zensical (as of May 2026), so the `/blog/` index is a hand-written listing in `docs/blog/index.md` and posts in `docs/blog/posts/` are served as plain markdown pages without blog-specific features (pagination, archives, post metadata)
 
 ## Development Commands
 
-### Full Site Development
 ```bash
-# Install all dependencies
+# Install Python deps
 pip install -r requirements.txt
-npm install
 
-# Build React widget first, then serve Zensical with hot reload
-npm run build
-zensical serve
-```
-
-### React Widget Only
-```bash
-# Development server for React widget (no Zensical)
-npm run dev
-
-# Production build (outputs to docs/assets/react/)
-npm run build
-```
-
-### Zensical Only
-```bash
-# Serve site locally with hot reload
+# Serve locally with hot reload
 zensical serve
 
-# Build static site
-zensical build --output-dir site
-
-# Preview production build
-zensical serve --output-dir site
+# Build static site (output to ./site)
+zensical build
 ```
 
 ## Deployment
 
 GitHub Actions workflow (`.github/workflows/publish-docs.yml`) runs on push to `main`:
 
-1. Builds React widget with `npm run build` (Node.js 18)
-2. Builds Zensical site with compiled React assets (Python 3.12)
-3. Deploys combined output to GitHub Pages
+1. Builds the Zensical site with Python 3.12
+2. Uploads `site/` as the Pages artifact and deploys it
 
-**Critical Environment Variable**: `VITE_CYVERSE_API_KEY` (secret) must be set in GitHub Actions for React widget API authentication.
+GitHub Pages is configured to use **GitHub Actions** as the source (not "Deploy from a branch").
 
 ## Configuration Notes
 
 - **Python Version**: CI uses Python 3.12; local development should match
-- **Configuration File**: `zensical.toml` uses TOML format (not YAML) - structured under `[project]` scope
-- **Theme Variant**: Using `modern` variant (default); `classic` variant available to match original Material for MkDocs appearance
-- **Theme Customization**: Theme palette supports light/dark/auto modes with custom `home` scheme for light mode
+- **Configuration File**: `zensical.toml` uses TOML format (not YAML) — structured under `[project]` scope
+- **Theme Variant**: Using `modern` variant (default)
+- **Palette**: Light/dark schemes with custom token bridges in `extra.css` — `tls-light` / `default` / `home` light, `tls-dark` / `slate` dark
+- **Editorial topbar**: rendered globally from `material/overrides/main.html` via `{% block header %}` (after Material's `md-header` via `super()`); Material's `md-header` and `md-tabs` are hidden by CSS so only the custom topbar shows
 - **Markdown Extensions**: Includes PyMdown extensions for admonitions, code highlighting, emoji, tabs, and Mermaid diagrams
-- **Navigation Features**: Instant loading, tabs (sticky), tracking, search (with suggestions/highlighting)
-- **Custom Styling**: `docs/stylesheets/extra.css` for additional CSS
-- **Blog Limitation**: Zensical does not yet support blog functionality (as of January 2026). Blog posts exist in `docs/blog/` but are served as regular markdown pages without blog-specific features (pagination, archives, post metadata)
+- **Navigation Features**: Instant loading, tabs (sticky), tracking, breadcrumbs (`navigation.path`), prev/next (`navigation.footer`), `toc.follow`, `toc.integrate`, search (with suggestions/highlighting)
+- **Custom Styling**: `docs/stylesheets/extra.css` for site-wide tokens, typography, and Material chrome overrides
+- **Custom JS**: `docs/javascripts/landing.js` loaded via `<script src=>` from `main.html` (Zensical's `extra_javascript` directive doesn't reach the rendered output in this version, same as `extra_css` — both are linked directly from the template)
