@@ -104,6 +104,10 @@
        far too narrow for the 60px heading — which forced one big word per line. */
     body.landing-page .section-title { max-width: none; }
     body.landing-page .section-title h2 { max-width: 17ch; text-wrap: balance; }
+    /* The CV/Path heading is a full sentence (much longer than the other section
+       titles). Let it fill the column and cap the size a touch smaller so it
+       balances onto 4 even lines instead of 6. */
+    body.landing-page #cv .section-title h2 { max-width: 100%; font-size: clamp(30px, 4.4vw, 52px); }
     body.landing-page .section-title .desc { margin-top: 14px; font-size: 16px; color: var(--ink-2); max-width: 48ch; text-wrap: pretty; }
 
     /* ===== Constellation ===== */
@@ -276,8 +280,9 @@
             <span class="dot">&#9679;</span>&nbsp;&nbsp;Research Associate Professor &middot; Geoinformatics
           </div>
           <h1>
-            <span class="word" style="animation-delay: 0.05s">Open&nbsp;</span><span class="word" style="animation-delay: 0.13s">science,&nbsp;</span><span class="word" style="animation-delay: 0.21s">across&nbsp;</span><br/>
-            <span class="word" style="animation-delay: 0.30s">the&nbsp;</span><span class="word italic" style="animation-delay: 0.38s">natural&nbsp;</span><span class="word" style="animation-delay: 0.46s">world.&nbsp;</span>
+            <span class="word" style="animation-delay: 0.05s">Open&nbsp;</span><span class="word" style="animation-delay: 0.13s">science,&nbsp;</span><br/>
+            <span class="word" style="animation-delay: 0.21s">across&nbsp;</span><span class="word" style="animation-delay: 0.30s">the&nbsp;</span><br/>
+            <span class="word italic" style="animation-delay: 0.38s">natural&nbsp;</span><span class="word" style="animation-delay: 0.46s">world.&nbsp;</span>
           </h1>
           <p class="lede fade-in" style="animation-delay: 0.7s">
             Building cyberinfrastructure tools for biology, ecology, agriculture, and earth science &mdash; with collaborators across dozens of institutions.

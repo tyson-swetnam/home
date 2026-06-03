@@ -50,8 +50,8 @@ nav = [
 variant = "modern"
 custom_dir = "material/overrides"
 language = "en"
-favicon = "assets/ua.ico"
-logo = "assets/ua.png"
+favicon = "assets/unm.ico"
+logo = "assets/unm.png"
 
 # Theme features
 features = [
