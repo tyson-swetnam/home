@@ -2,6 +2,14 @@ I have served as Principal Investigator (PI) and co-Principal Investigator (co-P
 
 [:material-map-legend: emoji key](#emoji-key)
 
+### [MESA: Multidisciplinary Environment for Scientific Advancement](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2608717)
+
+[![NSF-2608717](https://img.shields.io/badge/NSF-2608717-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2608717)
+
+:material-robot: :material-graph: :material-file-tree: :material-database: :material-cloud: :material-server: :material-github: :material-docker: :material-language-python: :material-open-source-initiative:
+
+I am PI on MESA, a two-year NSF [NAIRR](https://nairrpilot.org/) Research Infrastructure project building a shared, open-source platform where scientific data across many fields are automatically described, organized, and connected by metadata-aware AI agents. It is developed and tested with the [ESIIL](https://esiil.org), [NCEMS](https://ncems.psu.edu), and [AIIRA](https://aiira.iastate.edu) synthesis centers and the international Event Horizon Telescope Collaboration, running on ACCESS-CI resources and iRODS at [RENCI](https://renci.org).
+
 ### [DUST Superfund Research Center (Data Management Core)](https://superfund.arizona.edu/cores/data-management-and-analysis-core)
 
 :material-biohazard: :material-quadcopter: :material-leaf: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r: :material-cloud:
