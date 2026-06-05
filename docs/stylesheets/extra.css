@@ -671,3 +671,98 @@ body, .md-typeset {
   .md-typeset h2 { font-size: clamp(24px, 5vw, 32px); padding-top: 1em; }
 }
 
+/* ============================================================
+   Current Projects — two-column layout with a sticky emoji legend.
+   Scoped to this page only via :has(.cp-layout). Widens the page to
+   ~1500px on HD/4K; collapses to a single column (legend on top,
+   collapsible) on tablet & mobile.
+   ============================================================ */
+
+/* Let just this page use the wider frame (default pages stay ~56rem) */
+.md-main__inner:has(.cp-layout) { max-width: 1500px; }
+.md-content__inner:has(.cp-layout) { max-width: 1500px; margin: 0 auto; }
+
+.cp-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: clamp(32px, 4vw, 64px);
+  align-items: start;
+  margin-top: 1.5rem;
+}
+.cp-layout .cp-projects { grid-column: 1; grid-row: 1; min-width: 0; }
+.cp-layout .cp-legend  { grid-column: 2; grid-row: 1; }
+
+/* keep project prose at a comfortable measure even on a wide page */
+.cp-projects .md-typeset p,
+.cp-projects > p { max-width: 70ch; }
+.cp-projects > h2:first-child,
+.cp-projects > h3:first-child { margin-top: 0; }
+
+/* ----- Legend (sticky right rail on desktop) ----- */
+.md-typeset details.cp-legend,
+.cp-legend {
+  position: sticky;
+  top: 84px;                 /* clear the 64px sticky topbar */
+  align-self: start;
+  font-family: var(--sans);
+  border: 1px solid var(--rule);   /* override Material's accent left border */
+  border-radius: 8px;
+  box-shadow: none;
+  background: color-mix(in oklab, var(--paper) 96%, var(--ink) 4%);
+  padding: 6px 14px 14px;
+  max-height: calc(100vh - 104px);
+  overflow: auto;
+}
+.cp-legend > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-4);
+  padding: 8px 0;
+  position: sticky; top: 0;
+  background: inherit;
+}
+.cp-legend > summary::-webkit-details-marker { display: none; }
+.cp-legend > summary::marker { content: ""; }
+/* hide Material's default details/admonition summary icon + its indent */
+.md-typeset .cp-legend > summary { padding-left: 0; }
+.md-typeset .cp-legend > summary::before { display: none; content: none; }
+.cp-legend > summary::after {
+  content: "\203A";          /* › chevron */
+  margin-left: auto; font-size: 15px; line-height: 1;
+  transition: transform 0.2s ease;
+}
+.cp-legend[open] > summary::after { transform: rotate(90deg); }
+
+.cp-legend table { width: 100%; margin: 8px 0 0; border: 0; font-size: 12.5px; }
+.cp-legend thead { display: none; }     /* "Icon / Domain" header is self-evident */
+.cp-legend tr { border: 0; }
+.cp-legend td {
+  border: 0; padding: 3px 4px;
+  color: var(--ink-2); vertical-align: middle;
+}
+.cp-legend td:first-child {
+  width: 1.7em; text-align: center; font-size: 15px; color: var(--ink);
+}
+/* size the legend icons; max-width:none defeats Material's `max-width:100%`,
+   which would otherwise collapse to 0 against a shrink-wrapped wrapper */
+.cp-legend td:first-child svg {
+  width: 1.05em; height: 1.05em; max-width: none; vertical-align: middle;
+}
+
+/* ----- Tablet & mobile: single column, legend collapsible on top ----- */
+@media screen and (max-width: 60em) {
+  .md-main__inner:has(.cp-layout),
+  .md-content__inner:has(.cp-layout) { max-width: none; }
+  .cp-layout { display: block; }
+  .cp-layout .cp-legend {
+    position: static;
+    max-height: none;
+    margin: 0 0 28px;
+  }
+  .cp-projects .md-typeset p,
+  .cp-projects > p { max-width: none; }
+}
+

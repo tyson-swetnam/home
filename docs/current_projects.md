@@ -1,6 +1,55 @@
 I have served as Principal Investigator (PI) and co-Principal Investigator (co-PI) for a dozen funded projects in the last 15 years.
 
-[:material-map-legend: emoji key](#emoji-key)
+<div class="cp-layout" markdown>
+
+<details class="cp-legend" markdown>
+<summary>Emoji key</summary>
+
+| Icon | Domain |
+|------|--------|
+| :octicons-container-24: | containers |
+| :material-github: | version control |
+| :material-docker: | docker |
+| :material-linux: | linux |
+| :material-language-python: | Python |
+| :material-language-r: | R |
+| :material-language-go: | Go language |
+| :material-numeric-10-circle-outline: | ten rules |
+| :material-handshake: | collaborative research |
+| :material-open-source-initiative: | open source initiative |
+| :material-chart-timeline: | temporal |
+| :material-graph: | knowledge graphs |
+| :material-file-tree: | ontology |
+| :material-math-compass: | measurement |
+| :material-map: | raster mapping |
+| :material-map-marker-path: | vector mapping |
+| :material-map-clock: | temporal mapping |
+| :material-compass-rose: | habitat mapping |
+| :material-google-earth: | Google Earth Engine |
+| :material-satellite-variant: | earth observation systems |
+| :material-airplane: | airborne remote sensing |
+| :material-quadcopter: | small uncrewed aerial systems |
+| :material-tower-fire: | eddy covariance tower |
+| :material-weather-snowy-rainy: | snow hydrology |
+| :material-weather-partly-rainy: | semi-arid hydrology |
+| :material-weather-lightning-rainy: | hydrology |
+| :fontawesome-solid-wind: | atmospheric science |
+| :fontawesome-solid-mountain: | geomorphology |
+| :material-pine-tree-fire: | wildland forest fire |
+| :material-dna: | genetics |
+| :material-family-tree: | genomics |
+| :material-leaf: | plant science |
+| :material-forest: | forest ecology |
+| :material-cactus: | desert ecology |
+| :material-grass: | grassland ecology |
+| :material-cow: | cattle management |
+| :material-horse: | range management |
+| :material-bug: | entomology |
+| :material-biohazard: | superfund |
+
+</details>
+
+<div class="cp-projects" markdown>
 
 ### [MESA: Multidisciplinary Environment for Scientific Advancement](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2608717)
 
@@ -84,46 +133,6 @@ I am co-PI on the NSF CPS Frontier collaborative research project led by Iowa St
 
 I am co-PI at the [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University, developing AI-driven digital twins for modeling plants and deploying them to increase the resiliency of agricultural systems
 
-### :material-map-legend: Emoji Key
+</div>
 
-| Icon | Domain |
-|------|--------|
-| :octicons-container-24: | containers |
-| :material-github: | version control |
-| :material-docker: | docker | 
-| :material-linux: | linux |
-| :material-language-python: | Python |
-| :material-language-r: | R |
-| :material-language-go: | Go language |
-| :material-numeric-10-circle-outline: | ten rules |
-| :material-handshake: | collaborative research |
-| :material-open-source-initiative: | open source initiative |
-| :material-chart-timeline: | temporal |
-| :material-graph: | knowledge graphs |
-|  :material-file-tree: | ontology |
-| :material-math-compass: | measurement |
-| :material-map: | raster mapping | 
-| :material-map-marker-path: | vector mapping |
-| :material-map-clock: | temporal mapping |
-| :material-compass-rose: | habitat mapping |
-| :material-google-earth: | Google Earth Engine |
-| :material-satellite-variant: | earth observation systems |
-| :material-airplane: | airborne remote sensing | 
-| :material-quadcopter: | small uncrewed aerial systems |
-| :material-tower-fire: | eddy covariance tower |
-| :material-weather-snowy-rainy: | snow hydrology |
-| :material-weather-partly-rainy: | semi-arid hydrology |
-| :material-weather-lightning-rainy: | hydrology |
-| :fontawesome-solid-wind: | atmospheric science |
-| :fontawesome-solid-mountain: | geomorphology |
-| :material-pine-tree-fire: | wildland forest fire | 
-| :material-dna: | genetics | 
-| :material-family-tree: | genomics |
-| :material-leaf: | plant science |
-| :material-forest: | forest ecology |
-| :material-cactus: | desert ecology |
-| :material-grass: | grassland ecology |
-| :material-cow: | cattle management |
-| :material-horse: | range management |
-| :material-bug: | entomology |
-| :material-biohazard: | superfund |
+</div>

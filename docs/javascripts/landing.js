@@ -627,6 +627,25 @@
     });
   }
 
+  // ===== Current Projects: legend open as a sidebar on desktop,
+  //       collapsed by default (and user-toggleable) on tablet/mobile =====
+  var tlsProjectsMql = null;
+  var tlsProjectsBound = false;
+  function tlsProjectsSync() {
+    if (!tlsProjectsMql) return;
+    var l = document.querySelector('details.cp-legend');
+    if (l) l.open = tlsProjectsMql.matches;
+  }
+  function tlsProjectsInit() {
+    if (!document.querySelector('details.cp-legend')) return;
+    if (!tlsProjectsMql) tlsProjectsMql = window.matchMedia('(min-width: 60.0625em)');
+    tlsProjectsSync();
+    if (!tlsProjectsBound) {
+      tlsProjectsBound = true;
+      tlsProjectsMql.addEventListener('change', tlsProjectsSync);
+    }
+  }
+
   // ===== Single dispatcher =====
   function runAll() {
     updateLandingClass();
@@ -636,6 +655,7 @@
     delete document.body.dataset.tlsPubsInit;
     tlsLandingInit();
     tlsPubsInit();
+    tlsProjectsInit();
   }
 
   if (typeof document$ !== 'undefined' && document$.subscribe) {
