@@ -37,7 +37,7 @@ nav = [
     {"Classes" = "teaching.md"},
     {"Advising & Mentoring" = "mentoring.md"}
   ]},
-  {"Opportunities" = "jobs.md"},
+  # {"Opportunities" = "jobs.md"},  # hidden until CARC/UNM hiring is live
   {"Open Science" = [
     {"Open Data Sets" = "data.md"},
     {"Open Code" = "code.md"}
