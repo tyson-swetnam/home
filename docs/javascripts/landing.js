@@ -469,6 +469,28 @@
     setText('tls-stat-last', Math.max.apply(null, years));
     setText('tls-foot-count', ALL_PUBS.length);
 
+    // Google Scholar metrics (refreshed weekly by a scheduled Action that
+    // rewrites scholar-metrics.json — see .github/workflows/scholar-metrics.yml)
+    if (document.getElementById('tls-stat-citations')) {
+      var sEl = document.querySelector('script[src*="landing.js"]');
+      var sUrl = sEl ? sEl.src.replace(/landing\.js.*$/, 'scholar-metrics.json')
+                     : 'javascripts/scholar-metrics.json';
+      fetch(sUrl, { cache: 'no-cache' })
+        .then(function(r) { return r.json(); })
+        .then(function(m) {
+          if (m.citations != null) setText('tls-stat-citations', Number(m.citations).toLocaleString());
+          if (m.hIndex != null) setText('tls-stat-hindex', m.hIndex);
+          if (m.i10Index != null) setText('tls-stat-i10', m.i10Index);
+          var u = document.getElementById('tls-scholar-updated');
+          if (u && m.updated) {
+            var d = new Date(m.updated + 'T00:00:00');
+            u.textContent = isNaN(d) ? m.updated
+              : d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+          }
+        })
+        .catch(function() { /* leave the em-dash placeholders in place */ });
+    }
+
     var state = { query: '', activeTags: [], sort: 'newest' };
 
     var tagCounts = {};

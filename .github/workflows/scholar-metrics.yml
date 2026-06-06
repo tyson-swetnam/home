@@ -1,0 +1,46 @@
+name: Update Google Scholar metrics
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"   # Mondays 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write           # needed to dispatch the deploy workflow
+
+concurrency:
+  group: "scholar-metrics"
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Scrape Scholar metrics
+        run: python scripts/update_scholar_metrics.py
+
+      - name: Commit & redeploy if metrics changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- docs/javascripts/scholar-metrics.json; then
+            echo "No change in Scholar metrics; nothing to do."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/javascripts/scholar-metrics.json
+          git commit -m "Update Google Scholar metrics [skip ci]"
+          git push
+          # A push authenticated with GITHUB_TOKEN does not trigger other
+          # workflows, so dispatch the Pages deploy explicitly.
+          gh workflow run publish-docs.yml

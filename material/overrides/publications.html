@@ -45,6 +45,18 @@
     @media (max-width: 760px) { body.landing-page .pubs-hero .stats { grid-template-columns: repeat(2, 1fr); } }
     body.landing-page .pubs-hero .stat { padding: 24px 0; padding-right: 24px; border-right: 1px solid var(--rule); }
     body.landing-page .pubs-hero .stat:last-child { border-right: 0; }
+    /* no border on the right-most column of each row (7 cards -> 4 + 3) */
+    body.landing-page .pubs-hero .stat:nth-child(4n) { border-right: 0; }
+    @media (max-width: 760px) {
+      body.landing-page .pubs-hero .stat:nth-child(4n) { border-right: 1px solid var(--rule); }
+      body.landing-page .pubs-hero .stat:nth-child(2n) { border-right: 0; }
+    }
+    body.landing-page .pubs-hero .stats-note {
+      font-family: var(--mono); font-size: 11px; color: var(--ink-3);
+      margin-top: 16px; letter-spacing: 0.04em;
+    }
+    body.landing-page .pubs-hero .stats-note a { color: var(--ink-2); border-bottom: 1px solid var(--rule); }
+    body.landing-page .pubs-hero .stats-note a:hover { color: var(--accent); border-color: var(--accent); }
     body.landing-page .pubs-hero .stat .num { font-family: var(--serif); font-style: italic; font-size: 56px; line-height: 1; color: var(--accent); letter-spacing: -0.02em; }
     body.landing-page .pubs-hero .stat .lab { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-top: 10px; }
 
@@ -116,11 +128,15 @@
       <p class="lede">A complete portfolio of papers, reports, preprints, and book chapters &mdash; most peer-reviewed, all linked to a DOI or canonical URL where one exists.</p>
 
       <div class="stats">
+        <div class="stat"><div class="num" id="tls-stat-citations">&mdash;</div><div class="lab">Citations</div></div>
+        <div class="stat"><div class="num" id="tls-stat-hindex">&mdash;</div><div class="lab">h-index</div></div>
+        <div class="stat"><div class="num" id="tls-stat-i10">&mdash;</div><div class="lab">i10-index</div></div>
         <div class="stat"><div class="num" id="tls-stat-total"></div><div class="lab">Total entries</div></div>
         <div class="stat"><div class="num" id="tls-stat-firstauthor"></div><div class="lab">First-author</div></div>
         <div class="stat"><div class="num" id="tls-stat-first"></div><div class="lab">First publication</div></div>
         <div class="stat"><div class="num" id="tls-stat-last"></div><div class="lab">Most recent</div></div>
       </div>
+      <div class="stats-note">Citations, h-index &amp; i10-index from <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a> &middot; updated <span id="tls-scholar-updated">&mdash;</span></div>
     </div>
   </section>
 
