@@ -14,6 +14,11 @@ I have served as Principal Investigator (PI) and co-Principal Investigator (co-P
 | :material-language-python: | Python |
 | :material-language-r: | R |
 | :material-language-go: | Go language |
+| :material-cloud: | cloud computing |
+| :material-server: | compute / HPC |
+| :material-kubernetes: | container orchestration |
+| :material-database: | data storage & warehousing |
+| :material-robot: | artificial intelligence agents |
 | :material-numeric-10-circle-outline: | ten rules |
 | :material-handshake: | collaborative research |
 | :material-open-source-initiative: | open source initiative |
