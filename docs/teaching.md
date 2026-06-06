@@ -4,7 +4,7 @@
 
 ### TBD Spring 2027
 
-I am available for guest lecturing on remote sensing with sUAS, lidar, structure from motion, GIS, geionformatics, and cyberinfrastructure
+I am available for guest lecturing on Applied Artificial Intelligence (Machine Learning, Generative AI, Prompt Engineering), Remote Sensing with sUAS, Lidar, Structure-from-Motion Photogrammetry, CyberGIS, Geoinformatics, and Applied Cyberinfrastructure
 
 ### Professional Training
 
