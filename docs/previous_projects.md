@@ -1,4 +1,62 @@
-[:material-map-legend: emoji key](#emoji-key)
+Completed and prior funded research &mdash; earlier projects where I served as PI, co-PI, or senior personnel.
+
+<div class="cp-layout" markdown>
+
+<details class="cp-legend" markdown>
+<summary>Emoji key</summary>
+
+| Icon | Domain |
+|------|--------|
+| :octicons-container-24: | containers |
+| :material-github: | version control |
+| :material-docker: | docker |
+| :material-linux: | linux |
+| :material-language-python: | Python |
+| :material-language-r: | R |
+| :material-language-go: | Go language |
+| :material-cloud: | cloud computing |
+| :material-server: | compute / HPC |
+| :material-kubernetes: | container orchestration |
+| :material-database: | data storage & warehousing |
+| :material-robot: | artificial intelligence agents |
+| :material-numeric-10-circle-outline: | ten rules |
+| :material-handshake: | collaborative research |
+| :material-open-source-initiative: | open source initiative |
+| :material-chart-timeline: | temporal |
+| :material-graph: | knowledge graphs |
+| :material-file-tree: | ontology |
+| :material-math-compass: | measurement |
+| :material-map: | raster mapping |
+| :material-map-marker-path: | vector mapping |
+| :material-map-clock: | temporal mapping |
+| :material-compass-rose: | habitat mapping |
+| :material-google-earth: | Google Earth Engine |
+| :material-satellite-variant: | earth observation systems |
+| :material-airplane: | airborne remote sensing |
+| :material-quadcopter: | small uncrewed aerial systems |
+| :material-tower-fire: | eddy covariance tower |
+| :material-weather-snowy-rainy: | snow hydrology |
+| :material-weather-partly-rainy: | semi-arid hydrology |
+| :material-weather-lightning-rainy: | hydrology |
+| :fontawesome-solid-wind: | atmospheric science |
+| :fontawesome-solid-mountain: | geomorphology |
+| :material-pine-tree-fire: | wildland forest fire |
+| :material-home-group: | wildland&ndash;urban interface |
+| :material-dna: | genetics |
+| :material-family-tree: | genomics |
+| :material-leaf: | plant science |
+| :material-tree: | woodland |
+| :material-forest: | forest ecology |
+| :material-cactus: | desert ecology |
+| :material-grass: | grassland ecology |
+| :material-cow: | cattle management |
+| :material-horse: | range management |
+| :material-bug: | entomology |
+| :material-biohazard: | superfund |
+
+</details>
+
+<div class="cp-projects" markdown>
 
 ### [NIFA FACTS](https://portal.nifa.usda.gov/web/crisprojectpages/1019752-facts-a-scalable-cyber-ecosystem-for-acquisition-curation-and-analysis-of-multispectral-uav-image-data.html)
 
@@ -46,7 +104,6 @@ I was senior personnel, assisting on a community conversation about collaboratio
 
 I was senior personnel on [Genome 2 Fields: High Intensity Phenotyping at Scale (HIPS)](https://www.genomes2fields.org/funded-projects/#high-intensity-phenotyping-sites) project with Dr. Eric Lyons at Arizona, in collaboration with Iowa State University.
 
-
 ### Towards Distributed and Scalable Personalized Cyber-Training
 
 :material-handshake: :material-github: :material-docker: :material-language-python:
@@ -61,7 +118,7 @@ This project is addressing the challenge of providing distributed, scalable, and
 
 :material-leaf: :material-dna: :material-graph: :material-github: :material-docker: :material-language-python: :material-language-r:
 
-I am co-PI on a NSF Harnessing the Data Revolution collaborative research project using Genomics, Phenomics, and Environmental data with machine learning.
+I was co-PI on a NSF Harnessing the Data Revolution collaborative research project using Genomics, Phenomics, and Environmental data with machine learning.
 
 ### [Jemez Mountains Pilot Fuels Mapping](https://promethean-gift.github.io)
 
@@ -101,45 +158,8 @@ My post-doctoral research was supported by the NSF Critical Zone Observatories N
 
 My Ph.D. was supported by the USDA Forest Service as a Student Temporary Employment Program (STEP). This work was documented in my dissertation, and resulted in five peer-reviewed manuscripts and one working paper. 
 
-### :material-map-legend: Emoji Key
+[&larr; Back to current projects](current_projects.md)
 
-| Icon | Domain |
-|------|--------|
-| :octicons-container-24: | containers |
-| :material-github: | version control |
-| :material-docker: | docker | 
-| :material-linux: | linux |
-| :material-language-python: | Python |
-| :material-language-r: | R |
-| :material-language-go: | Go language |
-| :material-numeric-10-circle-outline: | ten rules |
-| :material-handshake: | collaborative research |
-| :material-open-source-initiative: | open source initiative |
-| :material-chart-timeline: | temporal |
-| :material-graph: | knowledge graphs |
-|  :material-file-tree: | ontology |
-| :material-math-compass: | measurement |
-| :material-map: | raster mapping | 
-| :material-map-marker-path: | vector mapping |
-| :material-map-clock: | temporal mapping |
-| :material-compass-rose: | habitat mapping |
-| :material-google-earth: | Google Earth Engine |
-| :material-satellite-variant: | earth observation systems |
-| :material-airplane: | airborne remote sensing | 
-| :material-quadcopter: | small uncrewed aerial systems |
-| :material-tower-fire: | eddy covariance tower |
-| :material-weather-snowy-rainy: | snow hydrology |
-| :material-weather-partly-rainy: | semi-arid hydrology |
-| :material-weather-lightning-rainy: | hydrology |
-| :fontawesome-solid-wind: | atmospheric science |
-| :fontawesome-solid-mountain: | geomorphology |
-| :material-pine-tree-fire: | wildland forest fire | 
-| :material-dna: | genetics | 
-| :material-family-tree: | genomics |
-| :material-leaf: | plant science |
-| :material-forest: | forest ecology |
-| :material-cactus: | desert ecology |
-| :material-grass: | grassland ecology |
-| :material-cow: | cattle management |
-| :material-horse: | range management |
-| :material-bug: | entomology |
+</div>
+
+</div>

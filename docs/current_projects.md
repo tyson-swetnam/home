@@ -138,6 +138,8 @@ I am co-PI on the NSF CPS Frontier collaborative research project led by Iowa St
 
 I am co-PI at the [AI Institute for Agricultural Resilience (AIIRA)](https://aiira.iastate.edu/) at Iowa State University, developing AI-driven digital twins for modeling plants and deploying them to increase the resiliency of agricultural systems
 
+[Previous research projects &rarr;](previous_projects.md)
+
 </div>
 
 </div>

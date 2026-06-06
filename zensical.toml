@@ -26,7 +26,6 @@ nav = [
   ]},
   {"Research" = [
     {"Current" = "current_projects.md"},
-    {"Previous" = "previous_projects.md"},
     {"Grants" = "awards.md"},
     {"Publications" = "publications.md"},
     {"ePublications" = "epubs.md"},
