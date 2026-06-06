@@ -2,7 +2,7 @@
 
 ## Credit courses
 
-### University of Arizona
+### TBD Spring 2027
 
 I am available for guest lecturing on remote sensing with sUAS, lidar, structure from motion, GIS, geionformatics, and cyberinfrastructure
 
