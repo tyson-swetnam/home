@@ -101,10 +101,10 @@
   ];
 
   var COLLABORATORS = [
-    { n: '01', name: 'CyVerse', role: 'Host institution · public cyberinfrastructure for science' },
-    { n: '02', name: 'BIO5 Institute', role: 'Host institution · interdisciplinary research' },
-    { n: '03', name: 'College of Information Science', role: 'Joint appointment' },
-    { n: '04', name: 'School of Natural Resources & Environment', role: 'Joint appointment' },
+    { n: '01', name: 'Center for Advanced Research Computing', role: 'Director · University of New Mexico' },
+    { n: '02', name: 'Computer Science', role: 'Associate Professor · University of New Mexico' },
+    { n: '03', name: 'Geography & Environmental Studies', role: 'Affiliated Faculty · University of New Mexico' },
+    { n: '04', name: 'CyVerse', role: 'Project affiliate · national open-source cyberinfrastructure' },
     { n: '05', name: 'The Carpentries', role: 'Member · open instruction' },
     { n: '06', name: 'Research Bazaar', role: 'Community organizer' }
   ];
