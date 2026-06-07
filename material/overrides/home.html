@@ -30,14 +30,14 @@
     body.landing-page button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
 
     body.landing-page .eyebrow {
-      font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+      font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
       text-transform: uppercase; color: var(--ink-3);
     }
     body.landing-page .eyebrow .dot { color: var(--accent); }
     body.landing-page .numeral { font-family: var(--mono); font-feature-settings: "tnum"; }
 
     body.landing-page h1, body.landing-page h2, body.landing-page h3, body.landing-page h4 {
-      font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; margin: 0;
+      font-family: var(--sans); font-weight: 700; letter-spacing: -0.02em; margin: 0;
       text-wrap: pretty;
     }
     body.landing-page h1 { font-size: clamp(48px, 7vw, 104px); line-height: 0.96; letter-spacing: -0.02em; text-wrap: balance; }
@@ -54,7 +54,7 @@
 
     body.landing-page .hero h1 .word { display: inline-block; opacity: 0; transform: translateY(0.4em);
       animation: tls-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
-    body.landing-page .hero h1 .word.italic { font-style: italic; color: var(--accent); }
+    body.landing-page .hero h1 .word.italic { font-style: normal; color: var(--accent); }
     @keyframes tls-rise { to { opacity: 1; transform: translateY(0); } }
     body.landing-page .fade-in { opacity: 0; animation: tls-fade 0.9s 0.1s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
     @keyframes tls-fade { to { opacity: 1; } }
@@ -69,17 +69,18 @@
     body.landing-page .hero-meta a:hover { border-color: var(--accent); }
 
     body.landing-page .lede {
-      font-family: var(--serif); font-size: clamp(20px, 2vw, 26px);
-      line-height: 1.45; font-style: italic; color: var(--ink-2);
-      max-width: 28ch; margin-top: 24px;
+      font-family: var(--sans); font-size: clamp(19px, 2vw, 24px);
+      line-height: 1.4; font-style: normal; color: var(--ink-2);
+      max-width: 34ch; margin-top: 24px;
     }
     body.landing-page .quicklinks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
     body.landing-page .quicklinks a {
-      font-family: var(--sans); font-size: 13px; font-weight: 500;
-      padding: 8px 14px; border: 1px solid var(--rule); border-radius: 999px;
-      display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;
+      font-family: var(--sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 10px 16px; border: 1px solid var(--ink); border-radius: 0;
+      display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s;
     }
-    body.landing-page .quicklinks a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+    body.landing-page .quicklinks a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
     body.landing-page .quicklinks a .arrow { transition: transform 0.2s; }
     body.landing-page .quicklinks a:hover .arrow { transform: translate(2px, -2px); }
 
@@ -89,13 +90,13 @@
     @media (max-width: 960px) { body.landing-page .section-head { grid-template-columns: 200px 1fr; gap: 32px; } }
     @media (max-width: 760px) { body.landing-page .section-head { grid-template-columns: 1fr; gap: 16px; } }
     body.landing-page .section-num {
-      font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--ink-4);
+      font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
       display: flex; flex-direction: column; gap: 6px;
     }
     body.landing-page .section-num .big {
-      font-family: var(--serif); font-style: italic; font-size: clamp(36px, 3.4vw, 46px);
-      font-weight: 400; letter-spacing: -0.01em; color: var(--accent);
+      font-family: var(--sans); font-style: normal; font-size: clamp(32px, 3.4vw, 44px);
+      font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
       line-height: 1; margin-top: 4px; white-space: nowrap;
     }
     @media (max-width: 960px) { body.landing-page .section-num .big { font-size: clamp(28px, 3.2vw, 36px); } }
@@ -112,8 +113,8 @@
 
     /* ===== Constellation ===== */
     body.landing-page .constellation-wrap {
-      position: relative; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
-      background: radial-gradient(ellipse 80% 60% at 50% 50%, var(--paper) 30%, var(--paper-2) 100%);
+      position: relative; border: 1px solid var(--rule); border-radius: 0; overflow: hidden;
+      background: var(--paper);
       aspect-ratio: 16 / 10;
       width: 100%;
       max-width: 100%;
@@ -131,9 +132,9 @@
       font-family: var(--mono); font-size: 11px; color: var(--ink-3);
       display: flex; gap: 16px; align-items: center;
       background: color-mix(in oklab, var(--paper) 85%, transparent);
-      padding: 8px 12px; border: 1px solid var(--rule); border-radius: 2px;
+      padding: 8px 12px; border: 1px solid var(--rule); border-radius: 0;
     }
-    body.landing-page .constellation-wrap .legend .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; margin-right: 5px; }
+    body.landing-page .constellation-wrap .legend .dot { width: 8px; height: 8px; border-radius: 0; background: var(--accent); display: inline-block; margin-right: 5px; }
     body.landing-page .constellation-wrap .legend .dot.role { background: var(--ink-2); }
     body.landing-page .constellation-wrap .corner {
       position: absolute; font-family: var(--mono); font-size: 10px;
@@ -161,7 +162,7 @@
 
     body.landing-page .domain-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; font-family: var(--mono); font-size: 11px; }
     body.landing-page .domain-filters .chip {
-      padding: 6px 10px; border: 1px solid var(--rule); border-radius: 2px;
+      padding: 6px 10px; border: 1px solid var(--rule); border-radius: 0;
       text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3);
       cursor: pointer; transition: all 0.2s;
     }
@@ -183,7 +184,7 @@
     body.landing-page .project-card p { font-size: 14.5px; color: var(--ink-2); margin: 8px 0 0; max-width: 60ch; }
     body.landing-page .project-card .visit {
       font-family: var(--sans); font-size: 13px; font-weight: 500;
-      border: 1px solid var(--rule); padding: 8px 14px; border-radius: 999px;
+      border: 1px solid var(--rule); padding: 8px 14px; border-radius: 0;
       display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;
     }
     body.landing-page .project-card .visit:hover { border-color: var(--accent); color: var(--accent); }
@@ -232,7 +233,7 @@
     body.landing-page .os-card .label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
     body.landing-page .os-card h3 { font-size: 24px; }
     body.landing-page .os-card p { font-size: 14.5px; color: var(--ink-2); margin: 0; }
-    body.landing-page .os-card .stat { font-family: var(--serif); font-style: italic; font-size: 36px; color: var(--ink); line-height: 1; margin-top: auto; }
+    body.landing-page .os-card .stat { font-family: var(--sans); font-style: normal; font-weight: 700; font-size: 40px; letter-spacing: -0.03em; color: var(--ink); line-height: 1; margin-top: auto; }
     body.landing-page .os-card .stat span { font-family: var(--mono); font-size: 11px; font-style: normal; color: var(--ink-3); margin-left: 8px; letter-spacing: 0.12em; text-transform: uppercase; }
 
     /* ===== Teaching ===== */
@@ -285,7 +286,7 @@
             <span class="word italic" style="animation-delay: 0.38s">natural&nbsp;</span><span class="word" style="animation-delay: 0.46s">world.&nbsp;</span>
           </h1>
           <p class="lede fade-in" style="animation-delay: 0.7s">
-            Building cyberinfrastructure tools for biology, ecology, agriculture, and earth science &mdash; with collaborators across dozens of institutions.
+            Building cyberinfrastructure tools for biology, ecology, agriculture, and earth science &mdash; participating in Team Science across dozens of institutions.
           </p>
           <div class="quicklinks fade-in" style="animation-delay: 0.9s">
             <a href="{{ 'cv/' | url }}">Curriculum Vitae <span class="arrow">&#8599;</span></a>
@@ -325,7 +326,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 01 / Research</span>
+            <span>01 / Research</span>
             <span class="big">Network</span>
           </div>
           <div class="section-title">
@@ -346,10 +347,10 @@
 
         <div class="domain-filters" id="tls-domain-filters"></div>
 
-        <div class="project-card" id="tls-project-card"></div>
+        <div class="project-cards" id="tls-project-card"></div>
 
         <div style="margin-top: 32px">
-          <a class="quicklinks" href="{{ 'current_projects/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 999px; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">View all current projects <span class="arrow">&#8599;</span></a>
+          <a class="quicklinks" href="{{ 'current_projects/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 0; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">View all current projects <span class="arrow">&#8599;</span></a>
         </div>
       </div>
     </section>
@@ -359,7 +360,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 02 / Selected Work</span>
+            <span>02 / Selected Work</span>
             <span class="big">Papers</span>
           </div>
           <div class="section-title">
@@ -369,7 +370,7 @@
         </div>
         <div class="pub-list" id="tls-pub-list"></div>
         <div style="margin-top: 32px">
-          <a class="quicklinks" href="{{ 'publications/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 999px; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">View full publication list <span class="arrow">&#8599;</span></a>
+          <a class="quicklinks" href="{{ 'publications/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 0; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">View full publication list <span class="arrow">&#8599;</span></a>
         </div>
       </div>
     </section>
@@ -379,7 +380,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 03 / Teaching</span>
+            <span>03 / Teaching</span>
             <span class="big">Mentoring</span>
           </div>
           <div class="section-title">
@@ -390,13 +391,13 @@
 
         <div class="teaching-grid">
           <div class="two-col body" style="grid-template-columns:1fr">
-            <p class="lead" style="font-size:19px; font-family:var(--serif); font-style:italic; color:var(--ink)">
+            <p class="lead" style="font-size:19px; font-family:var(--sans); color:var(--ink)">
               "Foundational Open Science Skills" &mdash; a multi-week cohort for early-career scientists, run each spring since 2018.
             </p>
             <p>Co-developed with The Carpentries and Research Bazaar Arizona, the program emphasizes reproducible research, version control, containerization, and the ethics of open data.</p>
             <p>I'm also a member of <a href="https://carpentries.org" target="_blank" rel="noreferrer" style="border-bottom:1px solid var(--rule)">The Carpentries</a> instructor community and a regular collaborator with NSF's Data Science Fellows network.</p>
             <div style="margin-top: 16px">
-              <a class="quicklinks" href="{{ 'teaching/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 999px; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">All teaching &amp; mentoring <span class="arrow">&#8599;</span></a>
+              <a class="quicklinks" href="{{ 'teaching/' | url }}" style="display:inline-flex; padding: 8px 14px; border:1px solid var(--rule); border-radius: 0; font-family: var(--sans); font-size: 13px; font-weight: 500; gap: 6px;">All teaching &amp; mentoring <span class="arrow">&#8599;</span></a>
             </div>
           </div>
 
@@ -413,7 +414,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 04 / Open Science</span>
+            <span>04 / Open Science</span>
             <span class="big">Code &amp; Data</span>
           </div>
           <div class="section-title">
@@ -450,7 +451,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 05 / Field Notes</span>
+            <span>05 / Field Notes</span>
             <span class="big">Blog</span>
           </div>
           <div class="section-title">
@@ -467,7 +468,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-num">
-            <span>&sect; 06 / CV</span>
+            <span>06 / CV</span>
             <span class="big">Path</span>
           </div>
           <div class="section-title">
@@ -483,7 +484,7 @@
             <p>During my PhD I worked for the U.S. Department of Agriculture in the Coronado National Forest Supervisor's Office (2008&ndash;2012) as a Fire Management Specialist, while researching restoration ecology, GIS, and remote sensing in watershed management.</p>
             <p>Working with large remotely-sensed datasets is what carried me, eventually, into geoinformatics and cyberinfrastructure for the life and earth sciences.</p>
             <div style="display:flex; gap:12px; margin-top:32px; flex-wrap:wrap">
-              <a class="visit" href="{{ 'cv/' | url }}" style="padding:10px 18px; border:1px solid var(--ink); border-radius:999px; font-size:13px; font-family:var(--sans); font-weight:500; display:inline-flex; align-items:center; gap:8px">View CV <span>&#8599;</span></a>
+              <a class="visit" href="{{ 'cv/' | url }}" style="padding:10px 18px; border:1px solid var(--ink); border-radius:0; font-size:13px; font-family:var(--sans); font-weight:500; display:inline-flex; align-items:center; gap:8px">View CV <span>&#8599;</span></a>
             </div>
           </div>
         </div>

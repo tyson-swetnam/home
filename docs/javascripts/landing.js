@@ -32,7 +32,7 @@
   var PROJECTS = [
     { id: 'cyverse', name: 'CyVerse', role: 'Co-PI · Science Lead',
       funder: ['NSF 0735191', 'NSF 1265383', 'NSF 1743442'],
-      summary: 'Public cyberinfrastructure for the life sciences — the largest NSF investment of its kind. I lead the science team.',
+      summary: 'Public cyberinfrastructure for the life sciences — the largest NSF investment of its kind. I led the science team.',
       href: 'https://cyverse.org', domains: ['ci','genomics','ecology','osci','agri','astro'],
       x: 0.50, y: 0.42, size: 22, anchor: true },
     { id: 'mesa', name: 'MESA', role: 'PI',
@@ -431,13 +431,9 @@
       }
 
       var cardWrap = document.getElementById('tls-project-card');
-      function renderProjectCard() {
-        if (!cardWrap) return;
-        var pid = state.activeProject || 'cyverse';
-        var p = PROJECTS.find(function(x) { return x.id === pid; });
-        if (!p) return;
+      function cardHTML(p) {
         var fundChips = p.funder.map(function(f) { return '<span>' + f + '</span>'; }).join('');
-        cardWrap.innerHTML =
+        return '<div class="project-card">' +
           '<div>' +
             '<div class="role">' + p.role + '</div>' +
             '<h3>' + p.name + '</h3>' +
@@ -446,7 +442,17 @@
           '<div>' +
             '<p>' + p.summary + '</p>' +
           '</div>' +
-          '<a class="visit" href="' + (p.href || '#') + '" target="_blank" rel="noreferrer">Visit <span>↗</span></a>';
+          '<a class="visit" href="' + (p.href || '#') + '" target="_blank" rel="noreferrer">Visit <span>↗</span></a>' +
+        '</div>';
+      }
+      function renderProjectCard() {
+        if (!cardWrap) return;
+        // Default view features MESA above CyVerse; hovering a node shows that one.
+        var ids = state.activeProject ? [state.activeProject] : ['mesa', 'cyverse'];
+        cardWrap.innerHTML = ids.map(function(id) {
+          var p = PROJECTS.find(function(x) { return x.id === id; });
+          return p ? cardHTML(p) : '';
+        }).join('');
       }
 
       renderDomainFilters();
