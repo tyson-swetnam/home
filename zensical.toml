@@ -31,8 +31,7 @@ nav = [
     {"Publications" = "publications.md"},
     {"ePublications" = "epubs.md"},
     {"Talks" = "talks.md"},
-    {"Groups & Societies" = "groups.md"},
-    {"CARC History" = "carc_history.md"}
+    {"Groups & Societies" = "groups.md"}
   ]},
   {"Teaching" = [
     {"Classes" = "teaching.md"},

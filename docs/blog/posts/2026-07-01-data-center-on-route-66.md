@@ -22,7 +22,7 @@ Walk in through the same doors today and you find a warren of early 2000s cubicl
 
 ## A home for Art, Science, and Engineering 
 
-UNM has been building its supercomputers in [an old car dealership](../../carc_history.md) for thirty-plus years. The Center started life in 1994 as the Albuquerque Resource Center, then the Albuquerque High Performance Computing Center, and finally took its present name in 2009. The machines have cycled in and out, just like the cars did; but the address has not.
+UNM has been building its supercomputers in an old car dealership for thirty-plus years. The Center started life in 1994 as the Albuquerque Resource Center, then the Albuquerque High Performance Computing Center, and finally took its present name in 2009. The machines have cycled in and out, just like the cars did; but the address has not.
 
 There is something beautiful about how the space evolved, but its not the architecture, its the people who fill it. When the center renovated in the mid-2000s, it didn't wall the engineers off from everyone else — it made room for the [ARTS Lab](https://artslab.unm.edu){target=_blank} (Art, Research, Technology, and Science), and in 2011 it opened the CARC Gallery, where student, faculty, and alumni work hangs a few steps from the machine room. Computation and culture live together under one mid-century roof. For a field that loves to talk about interdisciplinarity and rarely puts a printmaker down the hall from a compute cluster, that arrangement is quietly radical, and I intend to protect it.
 
