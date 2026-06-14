@@ -4,6 +4,14 @@
 
 ## Posts
 
+### [A Data Center on Route 66](posts/2026-07-01-data-center-on-route-66.md)
+
+*July 1, 2026*
+
+A former Cadillac showroom on the Mother Road, the supercomputers in its old service bays, and where I want to take CARC as its new director.
+
+---
+
 ### [GPT-101, Revisited](posts/2025-01-14-gpt101.md)
 
 *January 14, 2025*

@@ -18,6 +18,7 @@ edit_uri = "edit/main/docs/"
 nav = [
   {"Home" = "index.md"},
   {"Blog" = [
+    {"A Data Center on Route 66 (2026-07-01)" = "blog/posts/2026-07-01-data-center-on-route-66.md"},
     {"GPT-101 Revisited (2025-01-14)" = "blog/posts/2025-01-14-gpt101.md"},
     {"A Year in Review (2024-10-14)" = "blog/posts/2024-10-14-year-in-review.md"},
     {"AI for Agriculture (2023-04-17)" = "blog/posts/2023-04-17-ai4ag.md"},
@@ -30,7 +31,8 @@ nav = [
     {"Publications" = "publications.md"},
     {"ePublications" = "epubs.md"},
     {"Talks" = "talks.md"},
-    {"Groups & Societies" = "groups.md"}
+    {"Groups & Societies" = "groups.md"},
+    {"CARC History" = "carc_history.md"}
   ]},
   {"Teaching" = [
     {"Classes" = "teaching.md"},

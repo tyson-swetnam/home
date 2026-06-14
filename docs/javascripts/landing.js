@@ -94,10 +94,10 @@
   ];
 
   var NOTES = [
+    { date: '2026-07-01', title: 'A Data Center on Route 66', excerpt: 'A former Cadillac showroom on the Mother Road, the supercomputers in its old service bays, and where I want to take CARC as its new director.', href: 'blog/posts/2026-07-01-data-center-on-route-66/' },
     { date: '2025-01-14', title: 'GPT-101, Revisited', excerpt: 'A year after my first run at teaching large language models to research scientists, what changed — and what stayed the same.', href: 'blog/posts/2025-01-14-gpt101/' },
     { date: '2024-10-14', title: 'A Year in Review', excerpt: 'Twelve months across CyVerse, ESIIL, OFO, and the people who made the work possible.', href: 'blog/posts/2024-10-14-year-in-review/' },
-    { date: '2023-04-17', title: 'AI for Agriculture', excerpt: 'Notes from the field on agentic systems, plant phenotyping, and a quiet revolution in farms.', href: 'blog/posts/2023-04-17-ai4ag/' },
-    { date: '2023-04-10', title: 'Meet the AI Assistant', excerpt: 'On embedding a research-grade chat into a faculty homepage, and what it has to learn first.', href: 'blog/posts/2023-04-10-ai/' }
+    { date: '2023-04-17', title: 'AI for Agriculture', excerpt: 'Notes from the field on agentic systems, plant phenotyping, and a quiet revolution in farms.', href: 'blog/posts/2023-04-17-ai4ag/' }
   ];
 
   var COLLABORATORS = [
