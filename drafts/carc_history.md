@@ -25,4 +25,4 @@ For where I hope to take the center next, see my essay [*A Data Center on Route 
 - [CARC's official history](https://carc.unm.edu/about-carc/history.html){target=_blank} — University of New Mexico
 - [Galles Motor Company](https://albuquerquemodernism.unm.edu/posts/cs10_galles_motor_company.html){target=_blank} — Albuquerque Modernism, UNM
 - [Plans unveiled for a Route 66 Research Center at UNM](https://www.route66news.com/2025/02/27/plans-unveiled-for-route-66-research-center-at-unm-in-albuquerque/){target=_blank} — Route 66 News
-- [*The Mother Road*](https://unmpress.unm.edu/978-0-8263-5224-5/the-mother-road/){target=_blank} — University of New Mexico Press
+- [Galles Chevrolet — serving New Mexico since 1908](https://www.galleschevy.net/aboutus.aspx){target=_blank} — the dealership's living descendant
