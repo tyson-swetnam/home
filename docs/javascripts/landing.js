@@ -5,6 +5,16 @@
 
 (function() {
 
+  // ===== Embed handshake =====
+  // The UNM CS faculty page (repo: unm-cs/index.html) embeds this site in a
+  // full-viewport iframe. Browsers fire the iframe load event even for their
+  // own error pages, so the wrapper can't tell a real load from a failure —
+  // this beacon is the positive confirmation. The payload is a constant
+  // string, so a wildcard target origin leaks nothing.
+  if (window.self !== window.top) {
+    try { window.parent.postMessage('tls:alive', '*'); } catch (e) {}
+  }
+
   // ===== Body class management based on URL =====
   function isLandingPath(p) {
     return p === '/' || p === '' || p === '/index.html' ||
