@@ -5,6 +5,38 @@
 
 (function() {
 
+  // ===== Embed handshake =====
+  // The UNM CS faculty page (repo: unm-cs/index.html) embeds this site in a
+  // full-viewport iframe. Browsers fire the iframe load event even for their
+  // own error pages, so the wrapper can't tell a real load from a failure —
+  // this beacon is the positive confirmation. The payload is a constant
+  // string, so a wildcard target origin leaks nothing.
+  if (window.self !== window.top) {
+    try { window.parent.postMessage('tls:alive', '*'); } catch (e) {}
+
+    // When framed, external links must escape the frame: most third-party
+    // sites send X-Frame-Options / frame-ancestors and show "refused to
+    // connect" if navigated inside it. Delegated so it survives instant-nav
+    // DOM swaps; capture phase so it runs before Material's link handling.
+    document.addEventListener('click', function (ev) {
+      if (ev.defaultPrevented || ev.button !== 0 ||
+          ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a || a.hasAttribute('download')) return;
+      if (a.target && a.target !== '_self') return; // already escapes the frame
+      var url;
+      try { url = new URL(a.href, window.location.href); } catch (e) { return; }
+      if (url.origin === window.location.origin || !/^https?:$/.test(url.protocol)) return;
+      ev.preventDefault();
+      ev.stopPropagation();
+      var w = window.open(url.href, '_blank');
+      if (w) { try { w.opener = null; } catch (e) {} }
+      // Popup blocked: the click's user activation still permits navigating
+      // the top window, so leave the frame entirely rather than doing nothing.
+      else { window.top.location.href = url.href; }
+    }, true);
+  }
+
   // ===== Body class management based on URL =====
   function isLandingPath(p) {
     return p === '/' || p === '' || p === '/index.html' ||
