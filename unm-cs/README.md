@@ -73,3 +73,9 @@ Redirect 302 / https://tysonswetnam.com/
   showing the cs.unm.edu URL), which is the intended "seamless" behavior —
   but it also means individual pages aren't directly bookmarkable except via
   the `#/path/` deep-link form above.
+- **External links** (nairrpilot.org, cyverse.org, …) cannot render inside the
+  frame — most sites send `X-Frame-Options`/`frame-ancestors` and show
+  "refused to connect". `landing.js` handles this: when the site detects it is
+  framed, every external link opens in a new tab instead (direct visitors to
+  tysonswetnam.com are unaffected). Like the beacon, this ships with the site
+  itself, so it takes effect once the main site redeploys.
