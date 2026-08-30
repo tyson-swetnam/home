@@ -34,6 +34,12 @@ jobs:
       - name: Build Zensical site
         run: zensical build
 
+      # OKF bundle must be copied in post-build: it lives outside docs/
+      # because the site build would convert its .md files to HTML and
+      # strip the YAML frontmatter, breaking OKF conformance
+      - name: Add OKF bundle to site
+        run: cp -r okf site/okf
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

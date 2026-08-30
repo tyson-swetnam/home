@@ -37,6 +37,11 @@ GitHub Actions workflow (`.github/workflows/publish-docs.yml`) runs on push to `
 
 GitHub Pages is configured to use **GitHub Actions** as the source (not "Deploy from a branch").
 
+## Crawler policy and OKF bundle
+
+- `docs/robots.txt` — fully permissive crawl policy for tysonswetnam.com, explicitly welcoming AI/agentic crawlers; copied verbatim to the site root by the build. Keep it permissive.
+- `okf/` (repo root, NOT in `docs/`) — an Open Knowledge Format (OKF) v0.2 bundle (spec: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md): `okf/index.md` is the bundle root, `okf/pages/*.md` hold one concept document per site section, `okf/log.md` records changes. It lives outside `docs/` because Zensical would convert the `.md` files to HTML and strip their YAML frontmatter; instead the publish workflow copies `okf/` into `site/okf` after the build so raw markdown is served at tysonswetnam.com/okf/. When adding or removing a nav section, update the bundle (index, pages, log) to match.
+
 ## Configuration Notes
 
 - **Python Version**: CI uses Python 3.12; local development should match

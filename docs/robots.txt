@@ -1,0 +1,65 @@
+# robots.txt for tysonswetnam.com
+#
+# Policy: fully permissive. All crawlers — including AI and agentic
+# crawlers — are welcome to read all content on this site.
+#
+# Agents: a machine-readable index of this site is published as an
+# Open Knowledge Format (OKF v0.2) bundle at /okf/index.md
+# (spec: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+
+User-agent: *
+Allow: /
+
+# --- Explicitly welcome AI / agentic crawlers ---
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI training (distinct from Googlebot search)
+User-agent: Google-Extended
+Allow: /
+
+# Apple AI training
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Common Crawl (feeds many AI training corpora)
+User-agent: CCBot
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+Sitemap: https://tysonswetnam.com/sitemap.xml
