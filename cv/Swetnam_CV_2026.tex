@@ -1,0 +1,624 @@
+%! TEX program = pdflatex
+% =====================================================================
+%  Curriculum Vitae -- Tyson Lee Swetnam, Ph.D.
+%  Updated September 2026
+%
+%  Overleaf: New Project > Upload Project > this .tex file.
+%  Compiler: pdfLaTeX (Menu > Compiler), TeX Live 2022 or newer.
+%  Single file, no custom class. All packages ship with Overleaf.
+% =====================================================================
+\documentclass[11pt,letterpaper]{article}
+
+% ---------- Page & fonts ---------------------------------------------
+\usepackage[letterpaper,top=0.8in,bottom=0.85in,left=0.9in,right=0.9in,
+            headheight=14pt,footskip=0.4in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}                         % Computer Modern (Latin Modern)
+\usepackage{microtype}
+\usepackage{fontawesome5}
+
+% ---------- Colour: black only ---------------------------------------
+\usepackage{xcolor}
+\colorlet{cherry}{black}
+\colorlet{turq}{black}
+\colorlet{ink}{black}
+\colorlet{muted}{black}
+\colorlet{rulegray}{black}
+
+% ---------- Utilities -------------------------------------------------
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true, linkcolor=turq, urlcolor=turq, citecolor=turq,
+  pdftitle={Curriculum Vitae -- Tyson L. Swetnam},
+  pdfauthor={Tyson L. Swetnam},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={cyberinfrastructure, geoinformatics, research computing, artificial intelligence, open science}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.06}
+\frenchspacing
+\raggedbottom
+
+% ---------- Header / footer -------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Tyson L. Swetnam \,\textbar\, Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage\ of \pageref{LastPage}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize\color{muted}\thepage\ of \pageref{LastPage}}}
+
+% ---------- Section styles --------------------------------------------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0pt}{\MakeUppercase}[\vspace{-2pt}{\color{rulegray}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{14pt}{7pt}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{ink}}
+  {}{0pt}{}
+\titlespacing*{\subsection}{0pt}{9pt}{4pt}
+
+% ---------- CV macros -------------------------------------------------
+% \role{Position}{Dates}{Organization}{Location}
+\newcommand{\role}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\small #2}\\
+    \textit{#3} & {\small\color{muted}#4}
+  \end{tabularx}\par\vspace{4pt}}
+
+% compact role (single line: title -- org, dates)
+\newcommand{\roleline}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1}, \textit{#2} & {\small #3}
+  \end{tabularx}\par\vspace{2pt}}
+
+% \dated{Item}{Date}  -- item with right-aligned date
+\newcommand{\dated}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    #1 & {\small #2}
+  \end{tabularx}\par\vspace{2pt}}
+
+% \grant{Title}{Amount}{Funder \& award}{Role and dates}
+\newcommand{\grant}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\small\bfseries #2}
+  \end{tabularx}\par
+  {\small\color{muted}#3\par #4\par}\vspace{5pt}}
+
+\newcommand{\me}{\textbf{Swetnam, T.L.}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\nolinkurl{doi:#1}}}
+\usepackage{pifont}
+\newcommand{\inv}{\textsuperscript{\color{cherry}\,\ding{72}}}
+\newcommand{\grad}{\textsuperscript{\color{muted}\,\dag}}
+\newcommand{\yearhead}[1]{\par\vspace{5pt}{\small\bfseries\color{cherry}#1}\par\vspace{2pt}}
+\newcommand{\note}[1]{{\small\color{muted}#1}}
+
+% Reverse-numbered publication list
+\newcounter{revno}
+\newenvironment{revlist}[1]
+  {\setcounter{revno}{#1}\stepcounter{revno}%
+   \begin{list}{}{\setlength{\leftmargin}{2.1em}\setlength{\labelwidth}{1.7em}%
+     \setlength{\labelsep}{0.4em}\setlength{\itemsep}{3.5pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}}
+  {\end{list}}
+\newcommand{\pub}{\addtocounter{revno}{-1}\item[{\small\color{muted}\arabic{revno}.}]}
+
+% Hanging-indent bibliography-style list (reports, talks)
+\newenvironment{hanglist}
+  {\begin{list}{}{\setlength{\leftmargin}{1.4em}\setlength{\itemindent}{-1.4em}%
+     \setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}\setlength{\topsep}{1pt}}}
+  {\end{list}}
+
+\setlist[itemize]{leftmargin=1.2em,itemsep=0pt,parsep=0pt,topsep=2pt,label={\color{muted}\small\textbullet}}
+
+% =====================================================================
+\begin{document}
+
+% ---------- Name block ------------------------------------------------
+\begin{center}
+  {\fontsize{22}{26}\selectfont\bfseries Tyson Lee Swetnam, \textmd{Ph.D.}}\par\vspace{5pt}
+  {\normalsize\color{cherry}Director, Center for Advanced Research Computing \,\textbar\, Associate Professor, Computer Science}\par\vspace{2pt}
+  {\small\color{muted}The University of New Mexico}\par\vspace{7pt}
+  {\small
+   \faMapMarker*\,1601 Central Ave NE, Albuquerque, NM 87106 \quad
+   \faEnvelope[regular]\,\href{mailto:tswetnam@unm.edu}{tswetnam@unm.edu} \quad
+   \faGlobe\,\href{https://tysonswetnam.com}{tysonswetnam.com}\par\vspace{2pt}
+   \faOrcid\,\href{https://orcid.org/0000-0002-6639-7181}{0000-0002-6639-7181} \quad
+   \faGithub\,\href{https://github.com/tyson-swetnam}{tyson-swetnam} \quad
+   \faGraduationCap\,\href{https://scholar.google.com/citations?user=HeftZR8AAAAJ}{Google Scholar} \quad
+   \faLinkedin\,\href{https://www.linkedin.com/in/tyson-swetnam}{tyson-swetnam}}
+\end{center}
+\vspace{2pt}
+
+% ---------- Profile ---------------------------------------------------
+\section{Profile}
+Geoinformatics and cyberinfrastructure scientist leading the University of New Mexico's Center for Advanced Research Computing (CARC). My work builds open, cloud-native research computing and data systems for the life, environmental, and earth sciences: federated data platforms, metadata-aware AI agents, and scalable workflows on national cyberinfrastructure. For a decade I helped lead CyVerse, the NSF life-science cyberinfrastructure, and I have served as PI, co-PI, or sub-award lead on more than two dozen federally funded projects, including NSF synthesis centers (ESIIL, NCEMS) and the USDA--NSF AI Institute for Resilient Agriculture (AIIRA). Before academia I worked as a wildland firefighter and fire management specialist with the U.S.\ Departments of the Interior and Agriculture.
+
+\smallskip
+{\small\color{muted}\textbf{Areas:} research cyberinfrastructure \textbullet{} applied AI \& agentic systems \textbullet{} open science \& FAIR data \textbullet{} remote sensing, lidar \& sUAS \textbullet{} forest \& fire ecology \textbullet{} ecohydrology}
+
+% ---------- Appointments ----------------------------------------------
+\section{Academic \& Professional Appointments}
+
+\subsection{University of New Mexico \hfill{\normalfont\small\color{muted}Albuquerque, NM}}
+\role{Director}{7/2026 -- Present}{Center for Advanced Research Computing (CARC)}{}
+\role{Associate Professor}{7/2026 -- Present}{Department of Computer Science, School of Engineering}{}
+
+\subsection{University of Arizona \hfill{\normalfont\small\color{muted}Tucson, AZ}}
+\role{Research Associate Professor}{7/2023 -- 6/2026}{Arizona Institute for Artificial Intelligence \& Society (AI2S)}{}
+\vspace{-3pt}
+\begin{itemize}
+  \item Joint appointment, School of Natural Resources \& the Environment, College of Agriculture, Life \& Environmental Sciences
+  \item Joint appointment, College of Information Science
+\end{itemize}
+\vspace{4pt}
+\roleline{Research Assistant Professor}{BIO5 Institute}{1/2019 -- 6/2023}
+\roleline{Data Scientist III}{BIO5 Institute (CyVerse)}{9/2016 -- 12/2018}
+\roleline{Associate Research Scientist}{School of Natural Resources \& the Environment}{7/2015 -- 8/2016}
+\roleline{Postdoctoral Researcher}{Department of Geosciences}{1/2014 -- 12/2014}
+\roleline{Graduate Research Assistant}{School of Natural Resources \& the Environment}{6/2012 -- 12/2013}
+
+\subsection{Other Positions}
+\roleline{Research Associate}{Dept.\ of Geology \& Geophysics, University of Utah}{1/2015 -- 7/2015}
+\roleline{Fire Management Specialist}{Coronado National Forest, USDA Forest Service}{6/2008 -- 5/2012}
+\roleline{Forestry Technician (Wildland Fire)}{Saguaro National Park, U.S.\ Dept.\ of the Interior}{2002 -- 2005}
+
+% ---------- Education -------------------------------------------------
+\section{Education}
+\role{Ph.D., Natural Resources (Watershed Management \& Ecohydrology)}{2013}{University of Arizona, School of Natural Resources \& the Environment}{Tucson, AZ}
+\vspace{-3pt}
+\begin{itemize}
+  \item Minor: Remote Sensing \& Spatial Analysis
+  \item Dissertation: \emph{Cordilleran forest scaling dynamics \& disturbance regimes quantified by aerial lidar}
+\end{itemize}\vspace{4pt}
+\role{M.S., Natural Resources}{2006}{University of Arizona, School of Natural Resources \& the Environment}{Tucson, AZ}
+\vspace{-3pt}
+\begin{itemize}
+  \item GIS Technical Certificate
+  \item Thesis: \emph{Fire Regime Condition Class accuracy: A comparison to tree-ring fire histories}
+\end{itemize}\vspace{4pt}
+\role{B.S., Ecology \& Evolutionary Biology}{2002}{University of Arizona}{Tucson, AZ}
+
+% ---------- Funding ---------------------------------------------------
+\section{Research Funding}
+\note{Amounts are total award; the University of Arizona scope is shown where it differs.}
+
+\subsection{Active}
+\grant{Research Infrastructure: Category II: MESA -- Multidisciplinary Environment for Scientific Advancement}{\$4,617,408}
+  {NSF \href{https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2632685}{2632685} (NAIRR Research Infrastructure)}
+  {\textbf{PI}: T.L. Swetnam \textbullet{} 6/1/2026 -- 5/31/2029}
+\grant{DUST Center: Superfund Research Program}{\$14,800,000}
+  {NIH NIEHS P42ES004940 \textbullet{} PI: X. Ding}
+  {\textbf{Senior Personnel}, Data Management \& Analysis Core (with N. Merchant) \textbullet{} through 1/31/2030}
+\grant{Center: National Synthesis Center for Emergence in the Molecular \& Cellular Sciences (NCEMS)}{\$1,930,000}
+  {NSF DBI-2335029 \textbullet{} Penn State University prime, PI: E. O'Brien \textbullet{} UA scope shown}
+  {\textbf{Sub-award Lead} \textbullet{} 5/1/2024 -- 4/30/2029}
+\grant{Environmental Data Science Innovation \& Inclusion Lab (ESIIL): Accelerating Discovery by Fostering an Open \& Diverse Earth Data Revolution}{\$19,999,990}
+  {NSF DBI-2153040 \textbullet{} University of Colorado Boulder prime, PI: J. Balch \textbullet{} UA scope: \$1,457,000}
+  {\textbf{Sub-award Lead} \textbullet{} 8/1/2022 -- 7/31/2027}
+\grant{AIIRA: AI Institute for Resilient Agriculture}{\$20,000,000}
+  {USDA NIFA 2021-67021-35329 \textbullet{} Iowa State University prime, PI: B. Ganapathysubramanian \textbullet{} UA scope: \$1,300,222}
+  {\textbf{Senior Personnel} (UA PI: N. Merchant) \textbullet{} 9/1/2021 -- 8/31/2028}
+\grant{Collaborative Research: High-Resolution Aerial Forest Mapping Infrastructure \& Database to Support Forest \& Disturbance Ecology Research}{\$1,005,364}
+  {NSF DBI-2152673 \textbullet{} with UC Davis (PI: D. Young) \& CU Boulder (PI: M. Koontz) \textbullet{} UA scope: \$45,844}
+  {\textbf{PI} (UA) \textbullet{} 9/1/2022 -- 8/31/2027}
+
+\subsection{Completed}
+\grant{Wildland Urban Interface (WUI): Fire Fuel Mitigation}{\$900,000}
+  {ABOR TRIF, sub-award of Northern Arizona University (PIs: A. S\'anchez Meador, A. Thode) \textbullet{} UA scope: \$122,228}
+  {\textbf{PI} (Co-PIs: L. McGuire, A. Youberg) \textbullet{} 11/18/2022 -- 1/31/2026}
+\grant{CyVerse: Cyberinfrastructure for the Life Sciences}{\$15,199,324}
+  {NSF DBI-1743442 \textbullet{} PI: N. Merchant}
+  {\textbf{Co-PI} (with D. Micklos, J. Fonner) \textbullet{} 8/1/2018 -- 7/31/2025}
+\grant{Collaborative Research: OpenDendro -- Advanced Open-source Tools for Paleoenvironmental Reconstruction}{\$143,148}
+  {NSF AGS-2054516 \textbullet{} PI: A. Bunn}
+  {\textbf{Co-PI} (with K. Anchukaitis, E. Cook) \textbullet{} 6/1/2021 -- 5/31/2024}
+\grant{Track D: Hidden Water \& Extreme Events: HydroGEN, A Physically Rigorous Machine Learning Platform for Hydrologic Scenario Generation}{\$5,000,000}
+  {NSF ITE-2134892 \textbullet{} PI: L. Condon; Co-PIs: N. Merchant, R. Maxwell, P. Melchior}
+  {\textbf{Senior Personnel} \textbullet{} 10/1/2021 -- 9/30/2023}
+\grant{CyberTraining: CIU: Towards Distributed and Scalable Personalized Cyber-Training}{\$60,631}
+  {NSF OAC-1829701}
+  {\textbf{PI} \textbullet{} 9/1/2018 -- 8/31/2023}
+\grant{High Intensity Phenotyping Sites: A Multi-Scale, Multi-Modal Sensing \& Sense-Making Cyber-Ecosystem for Genomes to Fields}{\$497,481}
+  {USDA NIFA 2020-68013-30934 \textbullet{} PI: A. Singh}
+  {\textbf{Senior Personnel} \textbullet{} 6/1/2020 -- 5/31/2023}
+\grant{FACTS: A Scalable Cyber Ecosystem for Acquisition, Curation, \& Analysis of Multispectral UAV Image Data}{\$499,927}
+  {USDA NIFA 2019-67021-29938}
+  {\textbf{Senior Personnel} \textbullet{} 9/1/2019 -- 8/31/2022}
+\grant{Assessing the Climate Change Mitigation Potential of Diverse Vegetation Types in the Pinale\~no Mountains, Arizona}{\$72,000}
+  {ABOR TRIF AIR \textbullet{} PI: F. Babst}
+  {\textbf{Co-PI} \textbullet{} 11/1/2021 -- 8/31/2022}
+\grant{TRIPODS+X:VIS: Data Science Pathways for a Vibrant TRIPODS Commons at Scale}{\$199,859}
+  {NSF DMS-1839307 \textbullet{} PI: N. Merchant; Co-PIs: F. Sahneh, S. Kobourov, M. Papes}
+  {\textbf{Senior Personnel} \textbullet{} 10/1/2018 -- 7/31/2022}
+\grant{Collaborative Research: Converging Genomics, Phenomics, \& Environments Using Interpretable Machine Learning Models}{\$483,022}
+  {NSF DBI-1940062 \textbullet{} PI: B. Heidorn}
+  {\textbf{Co-PI} \textbullet{} 10/1/2019 -- 7/31/2022}
+\grant{NSF Convergence Accelerator Track D: A Groundwater Data Platform for Machine Learning \& Water Management}{\$1,000,000}
+  {NSF ITE-2040542 \textbullet{} PI: L. Condon; Co-PI: N. Merchant}
+  {\textbf{Senior Personnel} \textbullet{} 9/1/2020 -- 8/31/2022}
+\grant{Jemez River Corridor Forest Inventory}{\$19,500}
+  {The Nature Conservancy (New Mexico)}
+  {\textbf{PI} \textbullet{} 7/30/2019 -- 12/31/2020}
+\grant{LTAR--NEON Collaboration to Quantify Rangeland Vegetation Production}{\$449,025}
+  {USDA NIFA 2022-13610-012-07S \textbullet{} PI: M. McClaran}
+  {\textbf{Senior Personnel} \textbullet{} 1/1/2015 -- 12/31/2020}
+\grant{CESU Lower Gila River Vegetation Mapping}{\$250,000}
+  {Bureau of Land Management \textbullet{} PI: W. van Leeuwen}
+  {\textbf{Senior Personnel} \textbullet{} 7/7/2016 -- 3/26/2020}
+\grant{Remote Sensing Support \& Consultation for Evaluation of Wolf Habitat Suitability in Mexico \& the Southwestern United States}{\$10,000}
+  {Arizona Game \& Fish Department}
+  {\textbf{PI} \textbullet{} 8/1/2016 -- 8/31/2017}
+\grant{Analysis of Aerial Lidar in the Santa Cruz River \& Ci\'enega Creek}{\$2,500}
+  {Pima County Ecological Monitoring Program}
+  {\textbf{PI} \textbullet{} 1/1/2013 -- 9/30/2013}
+\grant{Sediment Transport Analysis \& Assessment of Vegetation Characteristics in the Santa Cruz River}{\$17,186}
+  {Pima County Regional Flood Control District \textbullet{} PI: D.P. Guertin}
+  {\textbf{Co-PI} \textbullet{} 9/1/2012 -- 8/31/2013}
+\grant{Multi-scale Controls on Wildland Fire in Mountains of Western North America}{}
+  {USDA NIFA ARZT-1392420-M12-183 \textbullet{} PI: D. Falk}
+  {\textbf{Graduate Researcher} \textbullet{} 7/1/2008 -- 12/31/2012}
+\grant{Reference Conditions for Fire Regime Condition Class}{\$81,000}
+  {BLM National Interagency Fuels Team \textbullet{} PI: P.M. Brown}
+  {\textbf{Co-PI} \textbullet{} 8/31/2004 -- 7/30/2006}
+
+\subsection{Equipment \& Innovation Awards}
+\grant{Eighteenth Mile Award: AEOLUS -- Airborne Environmental Observations Laboratory for Unoccupied Systems}{\$141,214}
+  {ABOR TRIF Innovative Technologies for the 4th Industrial Revolution}{\textbf{PI} \textbullet{} 11/2023}
+\grant{MILaGRO: Multi-Instance Learning and GPU Resources Online}{\$78,000}
+  {ABOR TRIF Research Advancement / Equipment Improvement}{\textbf{PI} \textbullet{} 1/2022}
+\grant{CEREUS: Cyberinfrastructure for Environmental Research \& Education in Unoccupied Systems}{\$53,000}
+  {ABOR TRIF Water, Environmental, \& Energy Solutions (WEES) Equipment Improvement}{\textbf{PI} \textbullet{} 7/2019}
+
+\subsection{Computational Allocations}
+\begin{itemize}
+  \item TACC Frontera (33,000 node-hrs) \& Longhorn GPU (16,000 node-hrs), MCB20043, PI, 2020--2021
+  \item XSEDE/ACCESS Jetstream, NEON Ecological Forecasting Challenge (250,000 CPU-hrs), TG-BIO200064, Co-PI, 2019--2022
+  \item XSEDE Jetstream, distributed geospatial processing (554,000 CPU-hrs), TG-EAR160036, PI, 2016--2019
+  \item XSEDE Extended Collaborative Support Services (1.0 FTE), TG-EAR160016, PI, 2017
+  \item XSEDE Stampede2 \& Jetstream, CyVerse Container Camp, TG-ASC180016/17, Co-PI, 2018--2019
+\end{itemize}
+
+% ---------- Honors ----------------------------------------------------
+\section{Honors \& Awards}
+\dated{\textbf{Best Short Paper: Workforce Development} \,\textendash\, \textit{PEARC '23, Portland, OR}}{7/2023}
+\dated{\textbf{Outstanding Scholarly Achievement by Research Staff} \,\textendash\, \textit{School of Natural Resources \& the Environment, UA}}{5/2023}
+\dated{\textbf{NSF EarthCube Travel Award} (\$1,500) \,\textendash\, \textit{Arizona Geological Society, NSF ICER-1340233}}{7/2014}
+\dated{\textbf{Scholarly Achievement Award} \,\textendash\, \textit{School of Natural Resources \& the Environment, UA}}{5/2014}
+\dated{\textbf{Kel M. Fox Award, Outstanding Graduate in Watershed Management} (\$500) \,\textendash\, \textit{SNRE, UA}}{9/2012}
+\dated{\textbf{President's Award: Best Graduate Exhibit} \,\textendash\, \textit{UA Graduate \& Professional Student Council}}{12/2009}
+\dated{\textbf{Graduate Teaching Assistant of the Year} \,\textendash\, \textit{School of Natural Resources \& the Environment, UA}}{5/2009}
+
+% ---------- Publications ----------------------------------------------
+\section{Publications}
+\note{Swetnam in bold. \grad\,Graduate work.}
+
+\subsection{Peer-Reviewed Journal Articles \& Book Chapters}
+\begin{revlist}{40}
+\pub Feldman, A.F., S.C. Reed, K. Wessels, D. Ojima, D.J.P. Moore, W.K. Smith, et al.\ (2026) Adaptation and Response in Drylands: A dryland research agenda and campaign strategy. \textit{Global Change Biology} 32(7):e70975.
+\pub Feldman, A.F., S.C. Reed, K. Wessels, D. Ojima, D.J.P. Moore, W.K. Smith, et al.\ (2026) An overview of the NASA Adaptation and Response in Drylands field experiment scoping study. \textit{Cambridge Prisms: Drylands} 3:e22.
+\pub Roy, A., E. Ward, I. Choi, et al.\ (2025) MDRepo -- an open data warehouse for community-contributed molecular dynamics simulations of proteins. \textit{Nucleic Acids Research}. \doi{10.1093/nar/gkae1109}
+\pub Brunk, R., K. Shukla, B.L. Hutson, et al.\ (2024) Data science for biochemists: Integrating and evaluating the use of interactive digital Python notebooks in a large-enrollment undergraduate biochemistry course. \textit{Journal of Chemical Education}. \doi{10.1021/acs.jchemed.4c00167}
+\pub \me, P.B. Antin, R. Bartelme, et al.\ (2024) CyVerse: Cyberinfrastructure for open science. \textit{PLOS Computational Biology}. \doi{10.1371/journal.pcbi.1011270}
+\pub Thessen, A., L. Cooper, \me, et al.\ (2023) Using knowledge graphs to infer gene expression in plants. \textit{Frontiers in Artificial Intelligence} 6:92. \doi{10.3389/frai.2023.1201002}
+\pub Gonzalez, E.M., A. Zarei, N. Hendler, et al.\ (2023) PhytoOracle: Scalable, modular phenomics data processing pipelines. \textit{Frontiers in Plant Science} 14:1112973. \doi{10.1002/essoar.10508789.1}
+\pub Yang, D., B.D. Morrison, K.J. Davidson, et al.\ (2022) Remote sensing from unoccupied aerial systems: Opportunities to enhance Arctic plant ecology in a changing climate. \textit{Journal of Ecology} 00:1--24. \doi{10.1111/1365-2745.13976}
+\pub Shuman, J.K., J.K. Balch, R.T. Barnes, et al.\ (2022) Reimagine fire science for the Anthropocene. \textit{PNAS Nexus} 1(3):pgac115. \doi{10.1093/pnasnexus/pgac115}
+\pub Nagy, R.C., J.K. Balch, E.K. Bissell, et al.\ (2021) Harnessing the NEON data revolution to advance open environmental science with a diverse and data-capable community. \textit{Ecosphere} 12(12):e03833. \doi{10.1002/ecs2.3833}
+\pub Rengers, F.K., L.A. McGuire, J.W. Kean, et al.\ (2021) Movement of sediment through a burned landscape: Sediment volume observations and model comparisons in the San Gabriel Mountains, California, USA. \textit{Journal of Geophysical Research: Earth Surface}. \doi{10.1029/2020JF006053}
+\pub Guo, W., M.E. Carroll, A. Singh, et al.\ (2021) UAS-based plant phenotyping for research and breeding applications. \textit{Plant Phenomics} 2021:9840192. \doi{10.34133/2021/9840192}
+\pub Sahneh, F., M.A. Balk, M. Kisley, et al.\ (2021) Ten simple rules to cultivate transdisciplinary collaboration in data science. \textit{PLOS Computational Biology} 17(5):e1008879. \doi{10.1371/journal.pcbi.1008879}
+\pub \me, S.R. Yool, S. Roy \& D.A. Falk (2021) On the use of standardized multi-temporal indices for monitoring disturbance and ecosystem moisture stress across multiple Earth observation systems in the Google Earth Engine. \textit{Remote Sensing} 13:1448. \doi{10.3390/rs13081448}
+\pub Gillan, J.K., G.E. Ponce-Campos, \me, et al.\ (2021) Innovations to expand drone data collection and analysis for rangeland monitoring. \textit{Ecosphere} 12(7). \doi{10.1002/ecs2.3649}
+\pub Mart\'inez-Meyer, E., A. Gonz\'alez-Bernal, J.A. Velasco, et al.\ (2020) Rangewide habitat suitability analysis for the Mexican wolf (\textit{Canis lupus baileyi}) to identify recovery areas in its historical distribution. \textit{Diversity and Distributions}. \doi{10.1111/ddi.13222}
+\pub N\"ust, D., D. Eddelbuettel, D. Bennett, et al.\ (2020) The Rockerverse: Packages and applications for containerisation with R. \textit{The R Journal}. \doi{10.32614/RJ-2020-007}
+\pub Ponsero, A., R. Bartelme, G. de Oliveira Almeida, et al.\ (2020) Ten simple rules for organizing a data science workshop. \textit{PLOS Computational Biology} 16(10):e1008226. \doi{10.1371/journal.pcbi.1008226}
+\pub Gedir, J.V., J.W. Cain, \me, P.R. Krausman \& J.R. Morgart (2020) Extreme drought and adaptive resource selection by a desert mammal. \textit{Ecosphere}. \doi{10.1002/ecs2.3175}
+\pub Mitra, B., S.A. Papuga, M.R. Alexander, \me\ \& N. Abramson (2019) Allometric relationships between primary size measures and sapwood area for six common tree species in snow-dependent ecosystems in the Southwest United States. \textit{Journal of Forestry Research} 1--10. \doi{10.1007/s11676-019-01048-y}
+\pub Gillan, J., M.P. McClaran, \me\ \& P. Heilman (2019) Estimating forage utilization with drone-based photogrammetric point clouds. \textit{Rangeland Ecology \& Management}. \doi{10.1016/j.rama.2019.02.009}
+\pub Norman, L.M., J.B. Callegary, L. Lacher, et al.\ (2019) Modeling riparian restoration impacts on the hydrologic cycle at the Babacomari Ranch, SE Arizona, USA. \textit{Water} 11:381. \doi{10.3390/w11020381}
+\pub Hancock, D., C. Stewart, M. Vaughn, et al.\ (2018) Jetstream -- Early operations performance, adoption, and impacts. \textit{Concurrency and Computation: Practice and Experience}. \doi{10.1002/cpe.4683}
+\pub Perdrial, J., P.D. Brooks, \me, et al.\ (2018) A net ecosystem carbon budget for snow dominated forested headwater catchments: Linking water and carbon fluxes to critical zone carbon storage. \textit{Biogeochemistry} 138:225. \doi{10.1007/s10533-018-0440-3}
+\pub \me, J.K. Gillan, T.T. Sankey, et al.\ (2018) Considerations for achieving cross-platform point cloud data fusion across different dryland ecosystem structural states. \textit{Frontiers in Plant Science} 8:2144. \doi{10.3389/fpls.2017.02144}
+\pub Pelletier, J.D., G.A. Barron-Gafford, et al.\ (2018) Which way do you lean? Using slope aspect variations to understand Critical Zone processes and feedbacks. \textit{Earth Surface Processes and Landforms}. \doi{10.1002/esp.4306}
+\pub Evans, M.E.K., D.A. Falk, A. Arizpe, et al.\ (2017) Fusing tree-ring and forest inventory data to infer influences on tree growth. \textit{Ecosphere} 8(7):e01889. \doi{10.1002/ecs2.1889}
+\pub \me, P.D. Brooks, H.R. Barnard, A.A. Harpold \& E.L. Gallo (2017) Topographically driven differences in energy and water constrain climatic control on forest carbon sequestration. \textit{Ecosphere} 8(4):e01797. \doi{10.1002/ecs2.1797}
+\pub Pelletier, J.D.\ \& \me\ (2017) Asymmetry of weathering-limited hillslopes: The importance of diurnal covariation in solar insolation and temperature. \textit{Earth Surface Processes and Landforms} 42:1408--1418. \doi{10.1002/esp.4136}
+\pub Sankey, T.T., J. McVay, \me, M.P. McClaran, P. Heilman \& M. Nichols (2017) UAV hyperspectral and lidar data and their fusion for arid and semi-arid land vegetation monitoring. \textit{Remote Sensing in Ecology and Conservation}. \doi{10.1002/rse2.44}
+\pub \me, C.D. O'Connor \& A.M. Lynch (2016) Tree morphologic plasticity explains deviation from metabolic scaling theory in semi-arid conifer forests, southwestern USA. \textit{PLOS ONE} 11(7):e0157582. \doi{10.1371/journal.pone.0157582}\grad
+\pub \me, A.M. Lynch, D.A. Falk, D.P. Guertin \& S.R. Yool (2015) Discriminating disturbance from natural variation with LiDAR in semi-arid forests, southwestern USA. \textit{Ecosphere} 6(6):97. \doi{10.1890/ES14-00384.1}\grad
+\pub Harpold, A.A., J.A. Marshall, S.W. Lyon, et al.\ (2015) Laser vision: Lidar as a transformative tool to advance critical zone science. \textit{Hydrology and Earth System Sciences} 19:2881--2897. \doi{10.5194/hess-19-2881-2015}
+\pub Rasmussen, C., J.D. Pelletier, P.A. Troch, \me\ \& J. Chorover (2015) Quantifying topographic, vegetation, and disturbance effects on the transfer of energy and mass to the critical zone. \textit{Vadose Zone Journal}. \doi{10.2136/vzj2014.07.0102}
+\pub \me, D.A. Falk, A.M. Lynch \& S.R. Yool (2014) Estimating individual tree mid- and understory rank-size distributions from airborne laser scanning in semi-arid forests. \textit{Forest Ecology and Management} 330:271--282. \doi{10.1016/j.foreco.2014.07.011}\grad
+\pub \me\ \& D.A. Falk (2014) Allometric scaling rules to limit commission error in aerial LiDAR forest inventories. \textit{Forest Ecology and Management} 323:158--167. \doi{10.1016/j.foreco.2014.03.016}\grad
+\pub Harpold, A.A., Q. Guo, N. Molotch, et al.\ (2014) LiDAR-derived snowpack datasets from mixed conifer forests across the western US. \textit{Water Resources Research} 50(3):2749--2755. \doi{10.1002/2013WR013935}\grad
+\pub Pelletier, J.D., G.A. Barron-Gafford, D.D. Breshears, et al.\ (2013) Coevolution of nonlinear trends in vegetation, soils, and topography with elevation and slope aspect: A case study in the sky islands of southern Arizona. \textit{Journal of Geophysical Research: Earth Surface} 1--18. \doi{10.1002/jgrf.20046}\grad
+\pub \me, D.A. Falk, A. Hessl \& C. Farris (2011) Reconstructing landscape pattern of historic fires and fire regimes. In D. McKenzie, D.A. Falk \& C. Miller (eds.), \textit{The Landscape Ecology of Fire}, pp.\ 165--192. Springer. \doi{10.1007/978-94-007-0301-8_7}\grad
+\pub \me\ \& P.M. Brown (2010) Comparing Fire Regime Condition Class (FRCC) vegetation models to tree-ring data. \textit{International Journal of Wildland Fire} 19:1--13. \doi{10.1071/WF08001}\grad
+\end{revlist}
+
+\subsection{Conference Proceedings}
+\begin{hanglist}
+\item Jung, J., et al.\ (2024) Data to Science: An open-source online platform for managing, visualizing, and publishing UAS data. \textit{Proc.\ SPIE 13053, Autonomous Air and Ground Sensing Systems for Agricultural Optimization and Phenotyping IX}, 1305303. \doi{10.1117/12.3021199}
+\item McIntosh, T.L., E. Verleye, J.K. Balch, et al.\ (2023) Cyberinfrastructure deployments on public research clouds enable accessible environmental data science education. \textit{Practice and Experience in Advanced Research Computing (PEARC '23)}, Portland, OR. ACM. \doi{10.1145/3569951.3597606} \note{(Best Short Paper, Workforce Development)}
+\item Skidmore, E., M. Cosi, \me, et al.\ (2023) Cloud computing for research and education gets a sweet upgrade with CACAO. \textit{PEARC '23}, Portland, OR. ACM. \doi{10.1145/3569951.3597555}
+\item \me, J.D. Pelletier, C. Rasmussen, et al.\ (2016) Scaling GIS analysis tasks from the desktop to the cloud utilizing contemporary distributed computing and data management approaches: A case study of project-based learning and cyberinfrastructure concepts. \textit{Proceedings of XSEDE16}, p.\ 21. ACM. \doi{10.1145/2949550.2949573}
+\end{hanglist}
+
+\subsection{Preprints}
+\begin{hanglist}
+\item Roy, S., S. Majumdar \& \me\ (2026) A community data commons for equitable Earth science. \textit{EarthArXiv} preprint.
+\item Bartelme, R.P., et al.\ (2020) Do androids dream of electric sorghum? Predicting phenotypes from multi-scale genomic and environmental data using neural networks and knowledge graphs. \textit{OSF Preprints}. \doi{10.31219/osf.io/yx7t9}
+\end{hanglist}
+
+\subsection{Conference Abstracts}
+\begin{hanglist}
+\item Kushwaha, P., Y. Chen, J. Chorover, X. Ding, J. Hoover, B. Lemos, C.C. Lim, et al.\ (2026) Mapping Valley Fever incidence in relation to soil metal contamination, climate, and environment across the southwestern United States. \textit{CANVAS 2026}.
+\item Karns, T., C. Hagen, K. Deshpande, M. SanClements, C. Laney, B. Ruddell, et al.\ (2026) Using artificial intelligence to automate and expedite the harmonization of environmental data. \textit{EGU General Assembly 2026}.
+\item Hagen, C., A. Post, K. Jay, M. SanClements, J.K. Back, T.G. Bornman, et al.\ (2025) Spatio-temporal trends and environmental drivers of plant phenology across the PhenoCam Network. \textit{AGU Fall Meeting Abstracts}, B12F-07.
+\item Hagen, C., M. SanClements, J.K. Back, T.G. Bornman, G.T. Feig, et al.\ (2025) Research infrastructures as engines of international collaboration and comprehensive skill development. \textit{AGU Fall Meeting Abstracts}, ED33A-04.
+\item Deshpande, K., B.L. Ruddell, C. Hagen, H.W. Loescher, M. SanClements, et al.\ (2025) Towards globally harmonized environmental data: Data harmonization methodology and lessons from GERI. \textit{AGU Fall Meeting Abstracts}, IN21C-0347.
+\item Loescher, H.W., M. SanClements, C. Laney, K. Deshpande, B.L. Ruddell, et al.\ (2025) A use case approach to integrate ecological research networks and infrastructures to advance macrosystem science. \textit{ARPHA Conference Abstracts} 8:e158965. \doi{10.3897/aca.8.e158965}
+\end{hanglist}
+
+\subsection{Technical Reports, Perspectives \& Datasets}
+\begin{hanglist}
+\item Reed, S.C., A.F. Feldman, N.P. Hanan, D.J.P. Moore, D.S. Ojima, W.K. Smith, et al.\ (2025) \textit{The ARID Scoping Study Final Report} and vegetation collection dataset. ORNL DAAC, Oak Ridge, TN. \doi{10.3334/ORNLDAAC/2408}
+\item Berriman, B., B. Flynn, R. Mayani, B. Reidel, M. Rynge, \me, A. Tan, et al.\ (2025) \textit{Cloud Adoption Survey in Major Facilities and Mid-Scale Institutes} (v1.0). Zenodo. \doi{10.5281/zenodo.15192261}
+\item Roy, S., \me\ \& A. Saah (2024) \textit{awesome-gee-community-datasets: Community Catalog} (v3.1.0). Zenodo. \doi{10.5281/zenodo.14042069}
+\item Berriman, G.B., et al.\ (2024) \textit{NSF Major Facilities Cloud Use Cases and Considerations}. Zenodo. \doi{10.5281/zenodo.10481410}
+\item \me\ (2023) Separating the wheat from the chaff: Identifying the benefits of artificial intelligence. \textit{CSA News} 68(6):22--25. \doi{10.1002/csan.21045}
+\item Almarzouq, B., et al.\ (2023) \textit{Opensciency -- A core open science curriculum by and for the research community}. Zenodo. \doi{10.5281/zenodo.7662732}
+\item Mart\'inez-Meyer, E., A. Gonz\'alez-Bernal, J.A. Velasco, et al.\ (2017) \textit{Mexican wolf habitat suitability analysis in historical range in the Southwestern US and Mexico}. U.S.\ Fish and Wildlife Service, Region 2, Albuquerque, NM.
+\item \me\ \& D.A. Falk (2015) \textit{Carbon Cycling in Southwestern Forests: Reservoirs, Fluxes, and the Effects of Fire and Management}. ERI Working Paper 35. Ecological Restoration Institute and Southwest Fire Science Consortium, Northern Arizona University. 15 p.
+\item \me\ (2013) \textit{Cordilleran forest scaling dynamics and disturbance regimes quantified by aerial LiDAR}. Ph.D.\ Dissertation, University of Arizona. 277 p. \url{https://www.fs.usda.gov/treesearch/pubs/48047}\grad
+\item \me, D.P. Guertin, E. Canfield \& A. Kimoto (2013) Riparian vegetation characterization of the Lower Santa Cruz River and Ci\'enega Creek through remotely sensed multi-sensor data fusion. Addendum to \textit{Historical Conditions of the Effluent-Dependent Santa Cruz River}, Pima County.\grad
+\item O'Connor, C.D., D.A. Falk, A.M. Lynch, C.P. Wilcox, T.W. Swetnam \& \me\ (2013) \textit{Growth and Demography of Pinale\~no High Elevation Forests}. RJVA 07-JV-11221615317. USDA Forest Service Rocky Mountain Research Station. \url{https://www.fs.usda.gov/treesearch/pubs/41787}\grad
+\item \me\ \& B. Powell (2010) Example of the use of LiDAR for monitoring vegetation characteristics: Ci\'enega Creek Nature Preserve. Supplement to the \textit{Pima County Ecological Monitoring Program: Phase II Monitoring Plan Summary}.\grad
+\item \me\ (2006) \textit{Fire Regime Condition Class accuracy: A comparison to tree-ring fire histories}. M.S.\ Thesis, University of Arizona. 111 p.\grad
+\end{hanglist}
+
+% ---------- Presentations ---------------------------------------------
+\section{Invited Talks \& Presentations}
+\note{\inv\,Invited.}
+
+\yearhead{2025}
+\begin{hanglist}
+\item \me\inv\ ``The pillars of open science \& artificial intelligence.'' Global Ecosystem Research Infrastructure (GERI) Early Career Researcher Scholar Exchange, Boulder, CO, Jul 21--25.
+\item \me\ ``Prompt engineering, vibe coding \& agentic AI.'' Public Health \& AI Summer School, Tucson, AZ, Jun 6--12.
+\item \me, et al.\inv\ ``Building an agricultural AI workbench \& toolbox in the cloud.'' Agri-Food Robotics Online Conference, University of Cambridge, UK, May 15--16.
+\item \me\inv\ ``Metadata: Why metadata matters.'' NSF ESIIL Monthly Colloquium, Boulder, CO, May 6.
+\item \me\inv\ ``NSF grant proposal success.'' NSF CISE Early Career Investigator Workshop, Fairbanks, AK, Mar 16--21.
+\item \me\inv\ ``Seeing the forest \& the trees: Bringing AI into the US's largest national forest.'' Juneau Economic Development Council Alaska Innovation Summit, Juneau, AK, Feb 25--28.
+\item \me\inv\ ``Fire technology applications.'' M-580 Fire in Ecosystem Management, National Advanced Fire \& Resource Institute, Tucson, AZ, Jan 28.
+\item Merchant, N., E. Skidmore \& \me\ ``Building your AI workbench \& toolbox in the cloud with Jetstream2.'' NSF Jetstream2 NAIRR Fellows Program, Tucson, AZ, Jan 16.
+\end{hanglist}
+
+\yearhead{2024}
+\begin{hanglist}
+\item Amaral, C., et al.\ ``Hyperspectral and Thermal Remote Sensing for Environmental Justice (HYR-SENSE) workshop: Program and lessons learned.'' AGU Fall Meeting, Washington, DC, Dec 9--13 (SY12A-05).
+\item \me\inv\ ``The pillars of open science \& artificial intelligence in research.'' ASCEND Fellows, Texas A\&M University, College Station, TX, Oct 22.
+\item \me\inv\ ``The pillars of open science.'' Machine Ground Interaction Consortium (MaGIC) Annual Meeting, Madison, WI, Sep 11.
+\item \me\inv\ Cybersecurity/Cyberinfrastructure Panel. Global Autonomous Systems Conference (GASC), Anchorage, AK, Aug 13.
+\item \me\inv\ ``Big data for spatial datasets.'' Long-Term Agroecosystem Research (LTAR) All-Scientists Meeting, Tucson, AZ, May 23.
+\item \me\inv\ ``Lessons learned: Open science, cyberinfrastructure, \& artificial intelligence.'' NSF-SCIPE Chishiki AI, Texas Advanced Computing Center, Austin, TX, Apr 5.
+\item \me\inv\ ``Open science \& becoming cloud native.'' NSF--CNPq Sinbiose, Bras\'ilia, Brazil, Feb 27.
+\item \me\ \& J. Gillan\inv\ ``Open science, artificial intelligence \& flying robots.'' University of Alaska, Fairbanks, AK, Jan 26.
+\item \me\inv\ ``Building private GPTs and LLMs for research and daily productivity.'' NSF CI Compass, Long Beach, CA, Jan 17.
+\item \me\inv\ ``Building your own GPTs and LLMs for research and daily productivity.'' Plant and Animal Genome (PAG) 31, San Diego, CA, Jan 13.
+\end{hanglist}
+
+\yearhead{2023}
+\begin{hanglist}
+\item Sanovia, J., C.H. Amaral, N. Quarderer, T. Tuff, \me, J. Balch, R.C. Nagy \& J. Rattling Leaf. ``Data access to data sovereignty: Overcoming infrastructure challenges in Indian Country.'' AGU Fall Meeting, Washington, DC, Dec 12.
+\item \me\inv\ ``Open science \& the age of artificial intelligence.'' Texas A\&M ASCEND Fellows, College Station, TX, Sep 22.
+\item \me\inv\ ``Cyber cowboys: Wrangling big data on the open science frontier.'' Texas A\&M Institute for Data Science Spring Seminar, College Station, TX, Apr 3.
+\item \me\inv\ ``Working with cloud-optimized and analysis-ready data formats on the cloud.'' Planet Labs--University of Arizona Kick-Off, Tucson, AZ, Feb 14.
+\item \me\inv\ ``A not-so-gentle introduction to cloud computing for forest resiliency science.'' NSF Macrosystems Forest Resiliency Working Group, University of Colorado, Boulder, CO, Feb 13.
+\item \me\inv\ ``Foundational open science skills.'' Plant and Animal Genome (PAG) 30, San Diego, CA, Jan 14.
+\end{hanglist}
+
+\yearhead{2022}
+\begin{hanglist}
+\item Balch, J., et al.\ ``The Environmental Data Science Innovation \& Inclusion Lab (ESIIL): A next-generation NSF data synthesis center.'' AGU Fall Meeting, Chicago, IL, Dec 12--16 (ED12C-0371).
+\item \me\ \& C. Lizarraga\inv\ ``Introduction to cloud native \& analysis ready data formats.'' Arizona Geospatial Information Council, Prescott, AZ, Sep 2.
+\item \me\inv\ ``Cloud native science.'' Arizona Society for Range Management, V-V Ranch, AZ, Aug 4.
+\item \me\inv\ ``CyVerse DataCite overview.'' DataCite User Group, virtual, May 4.
+\item \me\ \& E. Skidmore\inv\ ``CyVerse: Cyberinfrastructure for data driven discovery.'' Open Source Science for ESO Mission Processing Study, NASA Jet Propulsion Laboratory, virtual, Mar 4.
+\item \me\inv\ ``CyVerse: Cyberinfrastructure for data driven discovery.'' Cyberinfrastructure for Major Facilities (CI4MF) Workshop, Redondo Beach, CA, Mar 1.
+\end{hanglist}
+
+\yearhead{2021}
+\begin{hanglist}
+\item Condon, L., et al.\ ``Lessons learned designing the HydroGEN machine learning platform for hydrologic exploration.'' AGU Fall Meeting, New Orleans, LA, Dec 13--17.
+\item Webley, P.W., D.V. Sullivan, D. Durden \& \me\ ``TH45E: Autonomous scientific observations: Building reproducible research today \& into the future.'' AGU Town Hall, Dec 8.
+\item \me\inv\ ``The Airborne Environmental Observations Laboratory for Unoccupied Systems (AEOLUS).'' Research Insights in Semi-Arid Ecosystems (RISE), Tucson, AZ, Oct 17.
+\item \me\inv\ ``Developing foundational open science skills.'' Northern Arizona University School of Informatics, Computing, \& Cyber Systems, virtual, Apr 5.
+\end{hanglist}
+
+\yearhead{2020}
+\begin{hanglist}
+\item Webley, P.W., R.P. Dahlgren, \me\ \& D. Durden. ``TH058: Methods \& processes using small unmanned aircraft systems: Sharing \& reusing lessons learned across scientific disciplines.'' AGU Fall Meeting Town Hall.
+\item \me, D. LeBauer, C.F. Vardeman \& D. Durden. ``NH028-0007: Wrestling the four V's of small unoccupied aerial systems data in the cloud \& on national cyberinfrastructure.'' AGU Fall Meeting.
+\item \me\inv\ Panel: ``Simplifying HPC workflows with containers.'' NVIDIA GPU Cloud, virtual, Dec 3.
+\item Thessen, A.E., R. Bartelme, M. Behrisch, et al.\ ``Predicting phenotype from multi-scale genomic \& environment data using neural networks \& knowledge graphs.'' ESA Annual Meeting, Aug 3--6.
+\item \me\inv\ ``CyVerse Learning Institute's foundational open science skills workshop.'' Bioinformatics Open Source Conference (BOSC), virtual, Jul 20.
+\item Skidmore, E., R. Walls, \me, N. Merchant \& E. Lyons. ``CyVerse: Informatics cyberinfrastructure for the earth sciences.'' ESIP Summer Meeting, virtual, Jul 2.
+\item Thessen, A.E., M. Behrisch, E.J. Cain, et al.\ ``An introduction to the NSF GenoPhenoEnvo project.'' Plant \& Animal Genome XXVIII, San Diego, CA, Jan 11--15.
+\item \me\ ``The Airborne Environmental Observations Laboratory for Unoccupied Systems (AEOLUS).'' Plant \& Animal Genome XXVIII, San Diego, CA, Jan 11--15.
+\end{hanglist}
+
+\yearhead{2019}
+\begin{hanglist}
+\item Holifield-Collins, C., S.M. Skirvin, G. Armendariz, et al.\ ``GC23G-1430: Is a picture worth a thousand measurements? A comparison of drone systems \& data processing methods for rangeland vegetation monitoring.'' AGU Fall Meeting.
+\item \me\ ``All the things: Capitalizing on big data from devices, drones, \& cubesats.'' Arizona Geospatial Information Council Symposium, Prescott, AZ, Oct 1.
+\item \me, D.S. LeBauer \& N. Merchant. ``Looking toward an institute to support both users \& creators of geospatial software.'' Geospatial Software Institute Workshop 3, Jul 15.
+\item \me\inv\ ``The ability \& audacity to scale your science with free \& open cyberinfrastructure.'' Santa Fe Institute, Santa Fe, NM, Jul 5.
+\item Devisetty, U.K., \me, I. McEwen, J. Wregglesworth \& N. Merchant. ``Get a grip on your data science tools with CyVerse VICE.'' Plant \& Animal Genome XXVII, San Diego, CA, Jan 12--16.
+\end{hanglist}
+
+\yearhead{2018}
+\begin{hanglist}
+\item Brooks, P.D., H.R. Barnard, J.A. Biederman, et al.\ ``H21A-06: Multi-disciplinary insights into the effects of vegetation change on hydrologic partitioning.'' AGU Fall Meeting, Washington, DC, Dec 11.
+\item \me\inv\ ``The problem of pattern \& scale in semi-arid ecosystem ecology: Does big data help or hurt?'' Research Insights in Semi-Arid Ecosystems (RISE), Tucson, AZ, Oct 10.
+\item \me, B. Hickson, B. Joyce \& R. Walls. ``Ensuring best practices for reproducibility of long tail data in intensive geospatial scientific research.'' Geospatial Software Institute Workshop 2, Jul 17.
+\item \me\inv\ ``Vertical scaling of remote sensing.'' Battelle NEON, Boulder, CO, Jul 12.
+\item \me\ ``The ecosystem moisture stress index.'' Madrean Conference, Tucson, AZ, May 17.
+\item \me\ ``Unleashing your inner data scientist: The ability \& audacity to scale your science with free \& open cyberinfrastructure.'' TRIPODS-X Workshop, Tucson, AZ, Feb 26.
+\item \me\ ``Portable, scalable, high throughput geospatial analyses with Singularity containers on cloud \& high performance computing.'' Phenome, Tucson, AZ, Feb 15.
+\item \me\ ``Cyberinfrastructure for scientific reproducibility in data-intensive geospatial research \& education.'' Geospatial Software Institute Workshop 1, Jan 29.
+\end{hanglist}
+
+\yearhead{2017}
+\begin{hanglist}
+\item \me, R. Walls, U.K. Devisetty \& N.C. Merchant. ``CyVerse: A ten-year perspective on cyberinfrastructure development, collaboration, and community building.'' AGU Fall Meeting, New Orleans, LA, Dec 11. \url{https://par.nsf.gov/biblio/10108389}
+\item Walls, R., B. Joyce, \me\ \& U.K. Devisetty. ``Analyzing \& managing ecological data with CyVerse.'' Ecological Society of America Annual Meeting, Portland, OR, Aug 10.
+\item \me\ ``A gentle introduction to forestry science workflows in the era of cloud computing.'' Society of American Foresters Southwestern Section, Flagstaff, AZ, Apr 27--29.
+\item \me\inv\ ``CyVerse: Transforming science through data driven discovery.'' Northern Arizona University School of Forestry, Flagstaff, AZ, Apr 5.
+\item \me\inv\ ``Cyber-cowboys on the range.'' Santa Rita Experimental Range, Green Valley, AZ, Mar 18.
+\end{hanglist}
+
+% ---------- Teaching --------------------------------------------------
+\section{Teaching}
+
+\subsection{University Courses}
+\dated{\textbf{Introduction to Wildland Fire} (RNR 355/455) \,\textendash\, \textit{University of Arizona}, Graduate Teaching Assistant}{Fall 2006 -- 2008}
+\dated{\textbf{Introductory Biology Laboratory} (ECOL 181L/182L) \,\textendash\, \textit{University of Arizona}, Graduate Teaching Assistant}{2005 -- 2006}
+
+\subsection{Course \& Curriculum Development}
+\dated{\textbf{AI Automation \& Agents} \,\textendash\, open course materials, \href{https://tyson-swetnam.github.io/AI-Automation-and-Agents/}{tyson-swetnam.github.io/AI-Automation-and-Agents}}{2025 -- Present}
+\dated{\textbf{DUST 2026: Open Science, Data Management \& AI Ethics} \,\textendash\, NIEHS Superfund trainees, \href{https://unm-carc.github.io/dust-2026/}{unm-carc.github.io/dust-2026}}{2026}
+\dated{\textbf{GPT-101: Introduction to Large Language Models} \,\textendash\, \href{https://tyson-swetnam.github.io/intro-gpt}{tyson-swetnam.github.io/intro-gpt}}{2023 -- Present}
+\dated{\textbf{Foundational Open Science Skills (FOSS)} \,\textendash\, CyVerse, \href{https://foss.cyverse.org}{foss.cyverse.org}}{2019 -- 2025}
+\dated{\textbf{Container Camp: Basics \& Advanced} \,\textendash\, CyVerse, \href{https://cc.cyverse.org}{cc.cyverse.org}}{2018 -- 2025}
+
+\subsection{Guest Lectures}
+\dated{\textbf{Agentic AI} \,\textendash\, Ethical AI for Autonomous Systems (RAISE), \textit{University of New Mexico}}{Fall 2026}
+\dated{\textbf{Introduction to Wildland Fire} (RNR 355/455) \,\textendash\, \textit{University of Arizona}}{Spring 2023}
+\dated{\textbf{Ecological Forecasting} (GEOG 595E) \,\textendash\, \textit{University of Arizona}}{9/2019}
+\dated{\textbf{Artificial Intelligence for Health \& Medicine} (SIE 578) \,\textendash\, \textit{University of Arizona}}{2/2019}
+\dated{\textbf{Open Source GIS} (GIST 604B) \,\textendash\, \textit{University of Arizona}}{2018 -- 2025}
+\dated{\textbf{Fire in Ecosystem Management} (M-580) \,\textendash\, \textit{National Advanced Fire \& Resource Institute}, Tucson, AZ}{2018 -- Present}
+\dated{\textbf{Data Institute on Reproducible Workflows} \,\textendash\, \textit{NEON AOP Summer Workshop}, Boulder, CO}{7/2018}
+\dated{\textbf{Remote Sensing} (GEOG 330) \,\textendash\, \textit{University of Arizona}}{10/2017}
+\dated{\textbf{Resource Mapping} (RNR 422/522) \,\textendash\, \textit{University of Arizona}}{2015 -- 2017}
+
+\subsection{Technical Workshops}
+\dated{\textbf{Introduction to LLMs \& ChatGPT} \,\textendash\, CyVerse \& Data Science Institute, University of Arizona}{2023 -- 2025}
+\dated{\textbf{Macrosystems Forest Resilience} cyberinfrastructure training, NSF DEB-2017889, Boulder, CO}{2023 -- Present}
+\dated{\textbf{Sensing the Earth II} \,\textendash\, Tribal College Faculty Data Science Experience (ESIIL), Haskell Indian Nations University}{11/2022}
+\dated{\textbf{Machine Learning in Python} \,\textendash\, Translational AI Center (TrAC), Iowa State University}{4/2022}
+\dated{\textbf{NEON Airborne Observation Platform Data Analyses} \,\textendash\, RISE Conference, Tucson, AZ}{2020 -- 2022}
+\dated{\textbf{The Carpentries} \,\textendash\, Data Carpentry \& Software Carpentry, certified instructor}{2018 -- Present}
+\dated{\textbf{CyVerse Technical Overview} \,\textendash\, Graz University of Technology, Austria}{11/2019}
+\dated{\textbf{CyVerse Technical Overview} \,\textendash\, Battelle NEON, Boulder, CO}{2/2019}
+\dated{\textbf{AstroContainers} \,\textendash\, Event Horizon Telescope PIRE (NSF OISE-1743747), Tucson, AZ}{5/2018}
+
+% ---------- Mentoring -------------------------------------------------
+\section{Mentoring \& Supervision}
+\textbf{Postdoctoral researchers:} R. Bartelme (2020--2021); M. Culshaw-Maurer (2021--2022).
+
+\smallskip
+\textbf{Graduate students (advisor, committee, or supervisor):}
+L. Carpenter (M.S., GIST, 2012);
+J. Kennedy (M.S., GIST, 2014);
+A. Brischke (M.S., Natural Resources, 2015);
+S. Hendryx (M.S., Geography, 2017);
+A. Ruff (M.S., GIST, 2017);
+P.L. Narayan (M.S., Computer Science, 2018);
+D. Slovikosky (M.S., Computer Science, 2018);
+J. Gillan (Ph.D., Natural Resources, 2019);
+B. LaSala (M.S., Mining \& Geological Engineering, 2020);
+J. Lindsay (M.S., Computer Science, 2021);
+D. Somasundaram (M.S., Information Science, 2024);
+N. Jain (M.S., Business Analytics, 2024);
+B. Mani (MBA/MIS, 2025).
+
+\smallskip
+\textbf{Undergraduate researchers:}
+J. Mack (NASA Space Grant, 2010);
+D. Wilcox (NASA Space Grant, 2014);
+N. Callahan (Computer Science, 2016);
+K. Pope (NSF UWIN, 2017);
+V. Mehta (Computer Science, 2020);
+C. Prigge (Computer Science, 2021);
+J. van der Leeuw (Computer Science \& Mathematics, 2021);
+K. Henry (Computer Science, 2021);
+A. Bande (Data Science \& Statistics, 2022);
+S. Jackson (Computer Science \& Mathematics, 2023);
+I. Ale (Computer Science, 2023);
+E. Hagyard (Software Engineering, 2023);
+E. Schillinger (Computer Science, 2025).
+
+\smallskip
+\textbf{High school interns (BIO5 KEYS):}
+D.S. Lee (2018); E. Joshi (2020); S. Ramkumar (2021); E. LeRoy (2022); E. Dorland (2023); A. Noor (2023); D. Patel (2024); A. Kar (2025).
+
+% ---------- Service ---------------------------------------------------
+\section{Professional Service}
+
+\subsection{National \& International}
+\dated{\textbf{NSF CI Compass} \,\textendash\, Cloud Infrastructure Working Group}{2019 -- Present}
+\dated{\textbf{NSF Macrosystems: Forest Resilience} \,\textendash\, Working Group Member (DEB-2017889)}{2023 -- Present}
+\dated{\textbf{Earth Science Information Partners (ESIP)} \,\textendash\, CyVerse Representative}{2019 -- 2025}
+\dated{\textbf{The Carpentries} \,\textendash\, Instructor \& Lesson Maintainer}{2017 -- Present}
+\dated{\textbf{NSF National Ecological Observatory Network (NEON)} \,\textendash\, Lidar Technical Working Group}{2018 -- 2022}
+\dated{\textbf{NASA Transform to Open Science (TOPS)} \,\textendash\, Subject Matter Expert, Open Source Tools \& Data}{5/2022}
+\dated{\textbf{NSF NEON Science Summit} \,\textendash\, Working Group Member (DBI-1906144)}{5/2019}
+\dated{\textbf{NSF EarthCube} \,\textendash\, Standing Committee Member}{2017 -- 2019}
+
+\smallskip
+\textbf{Grant review panels:} NSF Directorate for Computer \& Information Science \& Engineering (CISE); NSF Division of Biological Infrastructure (DBI); USDA National Institute of Food \& Agriculture (NIFA).
+
+\smallskip
+\textbf{Journal reviewer:} \textit{Canadian Journal of Forest Research}; \textit{Ecological Applications}; \textit{International Journal of Wildland Fire}; \textit{Journal of Environmental Informatics}; \textit{PLOS ONE}; \textit{Remote Sensing}; \textit{Remote Sensing of Environment}; \textit{Science of the Total Environment}.
+
+\smallskip
+\textbf{Professional societies:} American Geophysical Union (AGU); Association for Fire Ecology (AFE); Critical Zone Exploration Network (CZEN); Ecological Society of America (ESA).
+
+\subsection{University of Arizona}
+\dated{\textbf{Arizona Board of Regents TRIF} \,\textendash\, Grant Review Panelist}{2022 -- 2026}
+\dated{\textbf{BIO5 Institute Promotion Standing Committee} \,\textendash\, Panelist}{2022 -- 2026}
+\dated{\textbf{BIO5 Institute KEYS Summer Internship Program} \,\textendash\, Student Mentor}{2019 -- 2025}
+\dated{\textbf{Data Science Institute Resource \& Training} \,\textendash\, Steering Committee Member}{2019 -- 2026}
+\dated{\textbf{Research Bazaar Arizona} \,\textendash\, Steering Committee Member}{2018 -- 2026}
+
+% ---------- Media -----------------------------------------------------
+\section{Selected Media Coverage}
+\begin{hanglist}
+\item \href{https://news.arizona.edu/news/uarizona-led-cyverse-part-20m-nsf-award-catalyze-biosciences-discoveries}{University of Arizona-led CyVerse part of \$20M NSF award to catalyze biosciences discoveries}. \textit{University of Arizona News}, 2024.
+\item \href{https://datascience.arizona.edu/news/aeolus-soars-eighteenth-mile-trif-funding}{AEOLUS soars with Eighteenth Mile TRIF funding}. \textit{UA Data Science Institute}, 2024.
+\item \href{https://www.planet.com/pulse/university-of-arizona-explores-our-earth-with-new-campus-wide-planet-license/}{University of Arizona explores our Earth with new campus-wide Planet license}. \textit{Planet Pulse}, 2023.
+\item \href{https://news.iu.edu/it/live/news/31802-jetstream2-supports-open-source-gis-data-catalog-with-}{Jetstream2 supports open-source GIS data catalog with Google Earth Engine}. \textit{Indiana University News}, 2023.
+\item \href{https://uaatwork.arizona.edu/lqp/new-license-gives-campus-access-steady-stream-web-geo-data}{New license gives campus access to a steady stream of web-geo data}. \textit{UA@Work}, 2023.
+\item \href{https://cyverse.org/cyverse-and-ua-host-chatgpt-workshops}{CyVerse and the University of Arizona host ChatGPT workshops}. \textit{CyVerse}, 2023.
+\item \href{https://cyverse.org/cyverses-compute-power-accelerates-doctoral-researchers-science}{CyVerse's compute power accelerates doctoral researcher's science}. \textit{CyVerse}, 2023.
+\item \href{https://news.ucar.edu/132859/wildfire-experts-provide-guidance-new-research-directions}{Wildfire experts provide guidance for new research directions}. \textit{UCAR News}, 2022.
+\item \href{https://www.ucdavis.edu/climate/blog/monitoring-forest-threats-new-open-forest-observatory}{Monitoring forest threats with new Open Forest Observatory}. \textit{UC Davis}, 2022.
+\item \href{https://cyverse.org/esiil-center}{New center brings environmental data science home}. \textit{CyVerse}, 2022.
+\item \href{https://cyverse.org/new-abor-grant-will-utilize-cyverse-technology-and-expertise-to-mitigate-wildfire-risk}{New ABOR grant will use CyVerse's technology and expertise to mitigate wildfire risk}. \textit{CyVerse}, 2022.
+\item \href{https://cyverse.org/deep_learning_workshop}{A deep dive into deep learning techniques: A first-of-its-kind hands-on workshop}. \textit{CyVerse}, 2022.
+\item \href{https://resources.nvidia.com/en-us-ngc/ngc-uofa-success-story?lx=699wyX}{NVIDIA University of Arizona success story}; \href{https://www.youtube.com/watch?v=hanqTQui498}{Leveraging AI and NVIDIA GPUs to advance research in crop production}. \textit{NVIDIA}, 2021.
+\item \href{https://bio5.org/news/hydrogen-project-awarded-5m-model-national-water-resources-using-machine-learning-1}{HydroGEN project awarded \$5M to model national water resources using machine learning}. \textit{BIO5 Institute}, 2021.
+\item \href{https://cyverse.org/foundational-friendships-lead-to-open-ecological-science}{Foundational friendships lead to open ecological science}. \textit{CyVerse}, 2021.
+\item \href{https://www.youtube.com/watch?v=da2gKRdMeXY}{This 30-ton robot could help scientists produce the crops of the future}. \textit{The Wall Street Journal}, 2020.
+\item \href{https://cyverse.org/new-cyverse-node-brings-easier-collaboration-to-austrian-scientists}{New CyVerse node brings easier collaboration to Austrian scientists}. \textit{CyVerse}, 2020.
+\item \href{https://www.xsede.org/-/ecss-program-accelerates-xsede-user-s-career-in-geoinformatics}{ECSS program accelerates XSEDE user's career in geoinformatics}. \textit{XSEDE}, 2019.
+\item \href{https://borderlore.org/the-culture-of-wildfire-perceptions-practices-policies/}{The culture of wildfire: Perceptions, practices, policies}. \textit{BorderLore}, 2018.
+\item \href{https://cyverse.org/Observing-Ecology-with-CyVerse-Atmosphere}{Observing ecology with CyVerse Atmosphere}. \textit{CyVerse}, 2018.
+\item \href{https://www.azpm.org/s/49986-mountain-forests-capture-carbon-from-atmopshere/}{Carbon capture from trees? It's all downhill from here, study says}. \textit{Arizona Public Media}, 2017.
+\item \href{https://sciencenode.org/feature/riding-the-jetstream-to-the-treetops.php}{Riding the Jetstream to the treetops}. \textit{Science Node}, 2017.
+\end{hanglist}
+
+\vfill
+{\centering\footnotesize\color{muted}Last updated September 2026\par}
+
+\end{document}
