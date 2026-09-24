@@ -4,8 +4,6 @@
 
 [View Resume (2 pages) :fontawesome-solid-file-pdf:](https://tysonswetnam.com/assets/2026_09_22_Swetnam_resume.pdf){target=_blank}
 
-*Updated September 2026. Earlier versions: [Full CV, Dec 2025](https://tysonswetnam.com/assets/2025_12_01_Swetnam_CV.pdf){target=_blank} &middot; [Short CV, Dec 2025](https://tysonswetnam.com/assets/2025_12_01_Swetnam_short_CV.pdf){target=_blank}*
-
 ### Foundational experiences
 
 My first career path was with the US Department of Interior at Saguaro National Park (2002-2005). I worked as a wildland firefighter (Forestry Technician) on the Rincon Mountains wilderness firecrew and later on the [Wildland Fire Module [formerly Fire Use Module]](https://en.wikipedia.org/wiki/Wildland_fire_module){target=_blank}.
