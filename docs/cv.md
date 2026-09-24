@@ -1,8 +1,10 @@
 # Curriculum Vitae
 
-[View Short CV :fontawesome-solid-file-pdf:](https://tysonswetnam.com/assets/2025_12_01_Swetnam_short_CV.pdf){target=_blank}
+[View Full CV :fontawesome-solid-file-pdf:](https://tysonswetnam.com/assets/2026_09_22_Swetnam_CV.pdf){target=_blank}
 
-[View Full CV :fontawesome-solid-file-pdf:](https://tysonswetnam.com/assets/2025_12_01_Swetnam_CV.pdf){target=_blank}
+[View Resume (2 pages) :fontawesome-solid-file-pdf:](https://tysonswetnam.com/assets/2026_09_22_Swetnam_resume.pdf){target=_blank}
+
+*Updated September 2026. Earlier versions: [Full CV, Dec 2025](https://tysonswetnam.com/assets/2025_12_01_Swetnam_CV.pdf){target=_blank} &middot; [Short CV, Dec 2025](https://tysonswetnam.com/assets/2025_12_01_Swetnam_short_CV.pdf){target=_blank}*
 
 ### Foundational experiences
 
@@ -10,7 +12,7 @@ My first career path was with the US Department of Interior at Saguaro National 
 
 That experience led me to a master's degree working with Dr. Peter Brown and his [Rocky Mountain Tree Ring Research Laboratory](http://rmtrr.org/){target=_blank}, using [dendrochronology techniques](https://ltrr.arizona.edu/about/treerings){target=_blank} and Geographic Information Systems (GIS) under [D. Phil Guertin](https://profiles.arizona.edu/person/dpg){target=_blank} at UArizona [reconstructing historical fire regimes in Utah](https://doi.org/10.1071/WF08001){target=_blank}.
 
-Later, during my Ph.D. program I worked for the US Department of Agriculture in the Coronado National Forest Supervisor's Office (2008-2012) as a Fire Management Specialist. My doctoral research was inderdisciplinary around [restoration ecology](https://nature.arizona.edu/donald-falk){target=_blank}, GIS and remote sensing in [watershed management and ecohydrology](https://nature.arizona.edu/graduate/watershed-management-ecohydrology){target=_blank}. 
+Later, during my Ph.D. program I worked for the US Department of Agriculture in the Coronado National Forest Supervisor's Office (2008-2012) as a Fire Management Specialist. My doctoral research was interdisciplinary around [restoration ecology](https://nature.arizona.edu/donald-falk){target=_blank}, GIS and remote sensing in [watershed management and ecohydrology](https://nature.arizona.edu/graduate/watershed-management-ecohydrology){target=_blank}. 
 
 My [dissertation :fontawesome-solid-file-pdf:](https://research.fs.usda.gov/treesearch/48047){target=_blank} relied on remote sensing and field plot data to analyze disturbance regimes and [carbon budgets of western US forest ecosystems](http://openknowledge.nau.edu/id/eprint/2293/){target=_blank}. 
 

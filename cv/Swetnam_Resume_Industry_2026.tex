@@ -1,0 +1,145 @@
+%! TEX program = pdflatex
+% =====================================================================
+%  Short CV / Resume (industry) -- Tyson Lee Swetnam, Ph.D.
+%  Updated September 2026. Target length: 2 pages.
+%  Overleaf: upload this file, set Compiler to pdfLaTeX.
+% =====================================================================
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,top=0.65in,bottom=0.7in,left=0.75in,right=0.75in,footskip=0.35in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}          % Computer Modern (Latin Modern)
+\usepackage{microtype}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xurl}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black,
+  pdftitle={Tyson L. Swetnam -- Resume}, pdfauthor={Tyson L. Swetnam}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\frenchspacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize Tyson L. Swetnam \,\textbar\, Resume}
+\fancyfoot[R]{\footnotesize\thepage\ of \pageref{LastPage}}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{\MakeUppercase}[{\vspace{-3pt}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% \job{Title}{Dates}{Organization}{Location}
+\newcommand{\job}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\small #2}\\
+    \textit{#3} & {\small #4}
+  \end{tabularx}\par}
+\newcommand{\jobline}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1}, \textit{#2} & {\small #3}
+  \end{tabularx}\par\vspace{1pt}}
+\newcommand{\me}{\textbf{Swetnam, T.L.}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\nolinkurl{doi:#1}}}
+
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,parsep=0pt,topsep=2pt,label={\small\textbullet}}
+
+\begin{document}
+
+% ---------- Header ----------------------------------------------------
+\begin{center}
+  {\fontsize{22}{26}\selectfont\bfseries Tyson L. Swetnam, \textmd{Ph.D.}}\par\vspace{4pt}
+  {\normalsize Research Computing, Data Platforms \& Applied AI Leader}\par\vspace{5pt}
+  {\small
+   \faMapMarker*\,Albuquerque, NM \quad
+   \faEnvelope[regular]\,\href{mailto:tswetnam@unm.edu}{tswetnam@unm.edu} \quad
+   \faGlobe\,\href{https://tysonswetnam.com}{tysonswetnam.com}\par\vspace{2pt}
+   \faGithub\,\href{https://github.com/tyson-swetnam}{tyson-swetnam} \quad
+   \faLinkedin\,\href{https://www.linkedin.com/in/tyson-swetnam}{tyson-swetnam} \quad
+   \faGraduationCap\,\href{https://scholar.google.com/citations?user=HeftZR8AAAAJ}{Scholar}}
+\end{center}
+
+% ---------- Summary ---------------------------------------------------
+\section{Summary}
+Technical leader with 15+ years building and operating cloud, HPC, and data infrastructure for scientific research. Director of the University of New Mexico's Center for Advanced Research Computing (CARC). Former Co-PI of CyVerse, the NSF-funded national cyberinfrastructure for the life sciences. Track record of winning and delivering large federal programs, standing up platforms that serve thousands of researchers, and translating emerging technology (containers, cloud-native data, LLMs, and agentic AI) into production services and hands-on training.
+
+% ---------- Skills ----------------------------------------------------
+\section{Core Competencies}
+\begin{tabularx}{\linewidth}{@{}p{1.55in}X@{}}
+\textbf{Leadership} & Research-computing strategy \& operations; program management of multi-institution federal awards; budgets \& proposals; team building; stakeholder \& funder relations (NSF, USDA, NIH, NASA) \\[2pt]
+\textbf{AI \& ML} & Large language models, agentic AI \& automation, metadata-aware AI agents, knowledge graphs \& ontologies, GPU computing, prompt engineering \\[2pt]
+\textbf{Data platforms} & Federated data mesh, lakehouse table formats (Apache Iceberg, DuckLake), iRODS, FAIR data \& metadata curation, cloud-optimized \& analysis-ready data \\[2pt]
+\textbf{Infrastructure} & HPC, public research clouds (Jetstream2, ACCESS), Docker, Singularity/Apptainer, Kubernetes, Linux, GitHub CI/CD \\[2pt]
+\textbf{Languages \& tools} & Python, R, Bash, SQL, Jupyter, Google Earth Engine, GIS \\[2pt]
+\textbf{Geospatial} & Satellite, airborne \& drone (sUAS) remote sensing; lidar \& photogrammetry; environmental monitoring
+\end{tabularx}
+
+% ---------- Experience ------------------------------------------------
+\section{Experience}
+
+\job{Director, Center for Advanced Research Computing}{7/2026 -- Present}{University of New Mexico \textbullet{} also Associate Professor of Computer Science}{Albuquerque, NM}
+\begin{itemize}
+  \item Lead UNM's central HPC, storage, and research-computing center, which serves faculty and students across the state's flagship university.
+  \item Setting direction for open-access research data storage and for making advanced computing and AI accessible to all New Mexico researchers.
+  \item PI of \textbf{NSF MESA} (\$4.6M, 2026--2029), a NAIRR research-infrastructure platform in which metadata-aware AI agents describe, organize, and connect scientific data across fields.
+\end{itemize}
+\vspace{4pt}
+
+\job{Research Associate Professor}{7/2023 -- 6/2026}{University of Arizona, Institute for Artificial Intelligence \& Society}{Tucson, AZ}
+\begin{itemize}
+  \item Led the University of Arizona cyberinfrastructure work for two NSF synthesis centers: ESIIL (\$20M program; \$1.46M UA scope) and NCEMS (\$1.93M UA scope).
+  \item Senior personnel on the USDA--NSF AI Institute for Resilient Agriculture (AIIRA, \$20M) and on the Data Management Core of the NIH Superfund DUST Center (\$14.8M).
+  \item Created and taught LLM and agentic-AI workshops and course materials (GPT-101; AI Automation \& Agents) for researchers, staff, and students.
+\end{itemize}
+\vspace{4pt}
+
+\job{Research Assistant Professor \& Data Scientist, CyVerse}{9/2016 -- 6/2023}{University of Arizona, BIO5 Institute}{Tucson, AZ}
+\begin{itemize}
+  \item Co-PI of \textbf{CyVerse} (NSF, \$15.2M), national cyberinfrastructure providing data storage, cloud analysis, and containerized apps to the life-science research community.
+  \item Built and ran Container Camp and Foundational Open Science Skills training, teaching Docker, Kubernetes, Singularity, and reproducible workflows to researchers nationwide.
+  \item Delivered scalable GPU and ML pipelines for crop phenomics (PhytoOracle) and drone data, and secured TACC Frontera and Longhorn GPU allocations.
+  \item Senior personnel on the NSF HydroGEN (\$5M) and Groundwater Data Platform (\$1M) machine-learning water-resource projects.
+\end{itemize}
+\vspace{4pt}
+
+\jobline{Associate Research Scientist / Postdoctoral Researcher}{University of Arizona \& University of Utah}{2014 -- 2016}
+\jobline{Fire Management Specialist}{USDA Forest Service, Coronado National Forest}{2008 -- 2012}
+\jobline{Forestry Technician (Wildland Firefighter)}{U.S.\ Dept.\ of the Interior, Saguaro National Park}{2002 -- 2005}
+
+% ---------- Education -------------------------------------------------
+\section{Education}
+\jobline{Ph.D., Natural Resources (minor: Remote Sensing \& Spatial Analysis)}{University of Arizona}{2013}
+\jobline{M.S., Natural Resources (GIS Technical Certificate)}{University of Arizona}{2006}
+\jobline{B.S., Ecology \& Evolutionary Biology}{University of Arizona}{2002}
+
+% ---------- Impact ----------------------------------------------------
+\section{Selected Impact \& Recognition}
+\begin{itemize}
+  \item PI, Co-PI, or senior personnel on 25+ funded projects, including four programs of \$14M--\$20M each.
+  \item 40 peer-reviewed publications; 2,000+ citations (h-index 26, Google Scholar).
+  \item Best Short Paper, Workforce Development, PEARC '23; ABOR TRIF Eighteenth Mile Award (\$141K, 2023) for AEOLUS, a drone-data laboratory.
+  \item Grant review panelist for NSF CISE, NSF DBI, and USDA NIFA; member of the NSF CI Compass Cloud Infrastructure Working Group; certified Carpentries instructor.
+  \item Invited speaker at TACC, NASA JPL, NVIDIA GPU Cloud, the Santa Fe Institute, the University of Cambridge, and NSF--CNPq (Brazil).
+\end{itemize}
+
+% ---------- Publications ----------------------------------------------
+\section{Selected Publications}
+\begin{itemize}[label={}, leftmargin=1.2em, itemindent=-1.2em, itemsep=2pt]
+  \item \me, P.B. Antin, R. Bartelme, et al.\ (2024) CyVerse: Cyberinfrastructure for open science. \textit{PLOS Computational Biology}. \doi{10.1371/journal.pcbi.1011270}
+  \item Roy, A., E. Ward, I. Choi, et al.\ (2025) MDRepo -- an open data warehouse for community-contributed molecular dynamics simulations of proteins. \textit{Nucleic Acids Research} 53(D1). \doi{10.1093/nar/gkae1109}
+  \item Thessen, A., L. Cooper, \me, et al.\ (2023) Using knowledge graphs to infer gene expression in plants. \textit{Frontiers in Artificial Intelligence} 6:92. \doi{10.3389/frai.2023.1201002}
+  \item Skidmore, E., M. Cosi, \me, et al.\ (2023) Cloud computing for research and education gets a sweet upgrade with CACAO. \textit{PEARC '23}. ACM. \doi{10.1145/3569951.3597555}
+  \item Gonzalez, E.M., A. Zarei, N. Hendler, et al.\ (2023) PhytoOracle: Scalable, modular phenomics data processing pipelines. \textit{Frontiers in Plant Science} 14. \doi{10.1002/essoar.10508789.1}
+\end{itemize}
+
+\vfill
+{\centering\footnotesize Full CV and publication list at \href{https://tysonswetnam.com/cv/}{tysonswetnam.com/cv}\par}
+
+\end{document}
